@@ -3,15 +3,13 @@
 
 [[Background Knowledge of OS's]] 
 
-[[Basics of OS 1.pdf]] 
+[[Basics of OS 1]] 
 
-[[Basics of OS 2.pdf]]
+[[Basics of OS 2]]
 
-[[Fundamentals of Computer Architecture1_v1.2.pdf]]
+[[Fundamentals of Computer Architecture1_v1.2]]
 
-<a href="Fundamentals of Computer Architecture1_v1.2.pdf">
-
-[[Fundamentals of Computer Architecture2_v1.2.pdf]]]
+[[Fundamentals of Computer Architecture2_v1.2]]
 
 [[Index]] 
 
@@ -86,7 +84,7 @@
 
 [[Understanding YAML]]
 
-[[Ansible/Custom Modules/ansible Module-input-manipulation/library/foobar.py.md]] 
+[[Ansible/Custom Modules/ansible Module-input-manipulation/library/foobar.py]] 
 
 [[example.yml]] 
 
@@ -152,6 +150,8 @@
 
 [[Kubernetes]]
 
+[[Kubernetes Troubleshooting]]
+
 [[Docker-Compose]]
 
 ## AWS: 
@@ -198,7 +198,7 @@
 
 [[Jenkins-pipeline-templates]]
 
-[[JenkinsPipeline workplan.pdf]]
+[[Jenkins-workplan]]
 
 ## Terraform & Terragrunt:
 
@@ -206,7 +206,7 @@
 
 ## Ethical Hacking & CyberSecurity
 
-[[Online-Privacy-Security-101.md]]
+[[Online-Privacy-Security-101]]
 
 
 
@@ -222,4 +222,6 @@
 
 
 ## Architecture
+
+ [[Architecture]]
 

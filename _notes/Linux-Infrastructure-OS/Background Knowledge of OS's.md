@@ -516,7 +516,7 @@ likely to be accessed next. Write caching is also provided with some disk caches
 
 2 – Select Option to edit (e).
 
- <img src="/assets/password-retrieve2.png)"/> 
+<img src="/assets/password-retrieve2.png)"/> 
 
 
   
@@ -524,7 +524,7 @@ likely to be accessed next. Write caching is also provided with some disk caches
 
 3 – Go to the line = ro and change it with rw init=/sysroot/bin/sh
 
- <img src="/assets/password-retrieve3.png)"/> 
+<img src="/assets/password-retrieve3.png)"/> 
 
 
 
@@ -534,7 +534,7 @@ likely to be accessed next. Write caching is also provided with some disk caches
 4 – Now press Control+x to start on single user mode
 
 
- <img src="/assets/password-retrieve4.png)"/> 
+<img src="/assets/password-retrieve4.png)"/> 
 
 
 

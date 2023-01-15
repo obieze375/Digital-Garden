@@ -21,7 +21,7 @@
 - Access Control Lists are made up of Access Control Entries which are a series of permit or deny rules
 - Each ACE is written in a separate line
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.001.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.001.png)
 
 *R1(config)# access-list 100 deny tcp 10.10.10.10 0.0.0.0*
 
