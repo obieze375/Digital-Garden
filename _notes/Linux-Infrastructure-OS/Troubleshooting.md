@@ -25,7 +25,8 @@
 
 # Can't SSH to server as root user
 
-  
+
+
 ![](image/can't-ssh-to-server.png)
 
 
@@ -1483,7 +1484,8 @@ munmap
 ~~~~
 
 ## Trace multiple syscalls
- ~~~~ 
+ 
+~~~~ 
 
 strace -e open,close
 

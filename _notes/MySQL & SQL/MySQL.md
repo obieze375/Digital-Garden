@@ -7,10 +7,10 @@ Obtained from https://devhints.io/mysql
 
 
   <img src="/assets/mysql_db_structure.png"/>
-  ![](images/mysql_db_structure.png)
+  
+  <img src="/assets/Mysql-mongoDB-structure.png"/>
 
-
-   ![](images/Mysql-mongoDB-structure.png) 
+  
 
 # Access Monitor
 
