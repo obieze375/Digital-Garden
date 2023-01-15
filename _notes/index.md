@@ -9,6 +9,8 @@
 
 [[Fundamentals of Computer Architecture1_v1.2.pdf]]
 
+<a href="Fundamentals of Computer Architecture1_v1.2.pdf">
+
 [[Fundamentals of Computer Architecture2_v1.2.pdf]]]
 
 [[Index]] 
@@ -84,7 +86,7 @@
 
 [[Understanding YAML]]
 
-[[Ansible/Custom Modules/ansible Module-input-manipulation/library/foobar.py]] 
+[[Ansible/Custom Modules/ansible Module-input-manipulation/library/foobar.py.md]] 
 
 [[example.yml]] 
 

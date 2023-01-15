@@ -648,7 +648,13 @@ ALL – This displays all of the above information. The output will be very long
 
 ~~~~
 
- 
+Ctrl + X - Cut the selected item.
+
+Ctrl + C (or Ctrl + Insert) - Copy the selected item.
+
+Ctrl + V (or Shift + Insert) - Paste the selected item.
+
+Ctrl + Z - Undo an action.
 
 ~~~~
 
