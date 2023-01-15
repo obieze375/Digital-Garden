@@ -83,7 +83,8 @@ CMD ...
 
 Docker is an application that simplifies the process of managing application processes in containers. Containers let you run your applications in resource-isolated processes. They’re similar to virtual machines, but containers are more portable, more resource-friendly, and more dependent on the host operating system. 
 
-![Container Explanation](images/docker_diagram.png)
+
+<img src="/assets/docker_diagram.png"/>
 
 # Step 1 — Installing Docker
 
@@ -687,10 +688,8 @@ After pushing an image to a registry, it should be listed on your account’s da
 	 
 	After pushing an image to a registry, it should be listed on your account’s dashboard, like that show in the image below.
 	
-	 
-	<img src="https://raw.githubusercontent.com/obieze375/DevOps-Notes/main/docker_image.png?sanitize=true&raw=true"/>  
-	 
-	 
+  <img src="/assets/docker_image.png"/>
+	
 	 
 	 
 	If a push attempt results in an error of this sort, then you likely did not log in:

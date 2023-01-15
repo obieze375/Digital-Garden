@@ -102,7 +102,7 @@ cat id_rsa.pub | pbcopy
 ~~~~  
   
 
-# SSH File Config
+## SSH File Config
 
   Used for multiple users trying to access a box
 
@@ -171,7 +171,7 @@ Host *
 
   
 
-# Config for extending SSH timeout
+## Config for extending SSH timeout
 
   
 
@@ -189,7 +189,7 @@ Host *
 
   
 
-# File Transfer
+## File Transfer
 
   
 

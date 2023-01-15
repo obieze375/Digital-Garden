@@ -505,7 +505,11 @@ Often you want to execute or skip a task based on facts. As we mentioned before 
 
 ~~~~
 
-![image](facts.png)
+
+
+<img src="/assets/facts.png"/>
+
+
 
   
 
@@ -810,7 +814,7 @@ ubuntu                     : ok=2    changed=0    unreachable=0  
 
 ## Include statement
 
-~~~~  
+
 
 include plays and tasks
 
@@ -818,10 +822,11 @@ Using include statements is our trick to split a large playbook into smaller pie
 
   
 
-<img src="https://raw.githubusercontent.com/obieze375/DevOps-Notes/master/include.jpg?sanitize=true&raw=true" />
+
+<img src="/assets/include.jpg"/>
 
   
-
+~~~~  
 [user1@controller demo-file]$ cat update-systems-play.yaml
 
 ---

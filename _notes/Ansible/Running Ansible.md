@@ -14,9 +14,11 @@ ansible-playbook test.yml
 
 ~~~~
 
-![](ansible-command-structure.png)
 
-![](ansible-command.png)
+<img src="/assets/ansible-command-structure.png"/>
+
+<img src="/assets/ansible-command.png"/>
+
 
 ## Copy File Playbook
 
@@ -231,7 +233,10 @@ Use become_user the user name that we want to switch to like compare it with sud
 
 Sometimes you want a task to run only when a change is made on a machine. For example, you may want to start a service if a task updates the configuration of that service, but not if the configuration is unchanged. Ansible uses handlers to address this use case. Handlers are tasks that only run when notified. If a handler get notified multiple times, it just runs once. Each handler should have a globally unique name.  
 
-![](handlers.png)
+
+<img src="/assets/handlers.png"/>
+
+
 
   
 
@@ -757,8 +762,12 @@ db1
 
   
 ~~~~  
-  
-![image](when.png)
+
+
+<img src="/assets/when.png"/>
+
+
+
 
 
 ## Sample Inventory File

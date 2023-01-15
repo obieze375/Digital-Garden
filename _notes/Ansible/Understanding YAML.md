@@ -37,8 +37,12 @@ The main advantage of using YAML is readability and writability. If you have a c
 
  Another benefit of YAML is its support of various data types like cases, arrays, dictionaries, lists, and scalars. It has good support for the most popular languages like JavaScript, Python, Ruby, Java, etc.
 
-  
-![](yaml.PNG)
+
+<img src="/assets/yaml.PNG"/>
+
+
+
+
 
 
   
@@ -96,7 +100,11 @@ The following are the building blocks of a YAML file:
 
 3. Dictionary/Map — A more complex type of YAML file would be a Dictionary and Map.
 
-![](yaml-type.PNG)  
+
+<img src="/assets/yaml-type.PNG"/>
+
+
+
 
   
 

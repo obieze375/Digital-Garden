@@ -79,7 +79,7 @@ hostnamectl set-hostname 'node01'  
 
   
 
-# List User Specific Open Files  
+## List User Specific Open Files  
 
   
 
@@ -135,12 +135,13 @@ hostnamectl set-hostname 'node01'  
 
   
 
+
+~~~~
+lsof -i TCP:22
 ~~~~
 
-• # lsof -i TCP:22
-
   
-
+~~~~
   
 
 • COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
@@ -162,7 +163,7 @@ hostnamectl set-hostname 'node01'  
   
 
  ~~~~
-• # lsof -i 4
+# lsof -i 4
 
   
 
@@ -438,7 +439,7 @@ ifup eth0  
 ~~~~
 
 
-  ## Bring Interface down
+## Bring Interface down
 
 ~~~~
   
@@ -539,8 +540,7 @@ root@server1 ~]# ip addr show  
  
  
  
- 
- ## List out all connections  
+## List out all connections  
 
 
 ## The first and most simple command is to list out all the current connections.
@@ -629,8 +629,7 @@ tcp 0 0 enlightened.local:45038 a96-17-181-10.depl:http
 ESTABLISHED
 
   
-
- ~~~~
+~~~~
 
   
 
@@ -678,7 +677,7 @@ udp 0 0 *:ntp :
 
   
 
- ~~~~
+~~~~
 
   
 
@@ -758,29 +757,25 @@ ffctcp6 0 0 ::1:631 :::* LISTEN
 
   
 
-# netstat -tulpn  
+## netstat -tulpn  
 
   
 
 ~~~~
+netstat -tulpn is merge between tcp and udp
+~~~~  
 
   
 
-• netstat -tulpn is merge between tcp and udp
-
-  
-
-  
-
-#Get process name/pid and user id  
+## Get process name/pid and user id  
 
   
 
   
-
+~~~~
 sudo netstat -nlpt
 
-  
+
   
   
 
@@ -1065,14 +1060,11 @@ tcp 0 0 10.61.223.188:43191 10.61.239.93:1984 TIME_WAIT -
   
 
 tcp 0 0 10.61.223.188:22 10.14.40.60:54034 ESTABLISHED -      
-
-  
-
 ~~~~
 
   
 
-# Netstat with grep  
+## Netstat with grep  
 
   
 
@@ -1084,17 +1076,17 @@ netstat -nap |grep :3506  
 
   
 
-# Testing Connectivity with Ping  
+## Testing Connectivity with Ping  
 
   
 
   
 
-# Network Troubleshooting:
+## Network Troubleshooting:
 
   
 
-# Schedule
+## Schedule
 
   
 
@@ -1125,7 +1117,7 @@ Format:
 
   
 
-# ping HOST
+## ping HOST
 
   
 
@@ -1267,7 +1259,7 @@ rtt min/avg/max/mdev = 0.103/0.192/0.272/0.070 ms
 
   
 
-# Traceroute  
+## Traceroute  
 
   
 
@@ -1343,7 +1335,7 @@ $ tracepath -n google.com
 
   
 
-# Using curl to check firewall connectivity  
+## Using curl to check firewall connectivity  
 
 ~~~~
 
@@ -1353,7 +1345,7 @@ curl -k https://<url>:<port.no>
 
   
 
-# Download files with wget
+## Download files with wget
 
 ~~~~
 
@@ -1361,13 +1353,13 @@ wget --no-check-certificate
 
 ~~~~
 
-# Netstat  
+## Netstat  
 
   
 
   
 
-# The netstat Command
+## The netstat Command
 
   
 
@@ -1479,7 +1471,7 @@ tcp 0 0 127.0.0.1:25 0.0.0.0:* LISTEN 1313/master
 
   
 
-# Telnet  
+## Telnet  
 
   
 
@@ -1713,7 +1705,7 @@ Configure static route on system.example.com for destination 10.1.1.0/24 via 192
 
   
 
-#Command Action/Description  
+Command Action/Description  
 
   
 
@@ -1939,6 +1931,8 @@ listening on eth0, link-type EN10MB (Ethernet), capture size 65535 bytes
 
 ~~~~
 
+
+
 ~~~~
 
 $ sudo tcpdump –Anvvv  
@@ -1991,13 +1985,13 @@ tcpdump -w /<dir>/traffic.pcap -i <interface> -v host <ip_addr_interface_is_send
 
   
 
-# Firewall Management
+## Firewall Management
 
   
 
-# IP Tables Method
+## IP Tables Method
 
-# Start/Stop/Restart Iptables Firewall
+## Start/Stop/Restart Iptables Firewall
 
   
 
@@ -2028,7 +2022,7 @@ tcpdump -w /<dir>/traffic.pcap -i <interface> -v host <ip_addr_interface_is_send
   
   
 
-# On SysVinit based Linux Distributions
+## On SysVinit based Linux Distributions
 
   
 
@@ -2048,7 +2042,7 @@ tcpdump -w /<dir>/traffic.pcap -i <interface> -v host <ip_addr_interface_is_send
 
 ~~~~
 
-Check all IPtables Firewall Rules
+## Check all IPtables Firewall Rules
 
 ~~~~
 
@@ -2056,7 +2050,7 @@ iptables -L -n -v
 
 ~~~~
 
-# Block Specific IP Address in IPtables Firewall
+## Block Specific IP Address in IPtables Firewall
 
 ~~~~
 
@@ -2078,7 +2072,7 @@ iptables -D INPUT -s xxx.xxx.xxx.xxx -j DROP
 iptables -A OUTPUT -p tcp --dport xxx -j DROP
 ~~~~
 
-# Unblock IP Address in IPtables Firewall
+## Unblock IP Address in IPtables Firewall
 
 ## To allow incoming connections use:
 
@@ -2398,7 +2392,7 @@ Be extra careful when using the rules below and use them onlyif you are sure wha
 iptables -I INPUT -d SITE -p tcp -m multiport --dports 21,25,110,143,465,587,993,995 -j DROP
 ~~~~
 
-~~~
+~~~~
 
 If you use cPanel or similar control panel, you may need to block it’s’ ports as well. Here is an example:
 
@@ -2549,7 +2543,7 @@ respond to incoming requests from outside users. We’ll look into that next.
 
   
 
-# Allowing SSH Connections
+## Allowing SSH Connections
 
 ~~~~
 
@@ -2575,7 +2569,7 @@ sudo ufw allow 2222
 
 ~~~~
 
-# Allowing Other Connections
+## Allowing Other Connections
 
   
 
@@ -2649,14 +2643,12 @@ sudo ufw allow in on eth1 to any port 3306
 
 ~~~~
 
-# Denying Connections
+## Denying Connections
 
 For example, to deny HTTP connections, you could use this command:
 
 ~~~~
-
 sudo ufw deny http
-
 ~~~~
 
 Or if you want to deny all connections from 203.0.113.4 you could use
@@ -2664,22 +2656,20 @@ Or if you want to deny all connections from 203.0.113.4 you could use
 this command:
 
 ~~~~
-
 sudo ufw deny from 203.0.113.4
-
 ~~~~
 
-# Deleting Rules
+## Deleting Rules
 
   
 
 By Rule Number:
 
 ~~~~
-
 sudo ufw status numbered
-
 ~~~~
+
+
 ~~~~
 Numbered Output:
 
@@ -2723,15 +2713,12 @@ For example to remove the allow http rule, you could write it like this:
 
 ~~~~
 sudo ufw delete allow http
-
 ~~~~  
 
 You could also specify the rule by allow 80, instead of by service name:
 
 ~~~~
-
 sudo ufw delete allow 80
-
 ~~~~
 
 This method will delete both IPv4 and IPv6 rules, if they exist.

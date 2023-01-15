@@ -21,7 +21,7 @@
 
 [[Files & Directories]]
 
-[[Linux-Infrastructure-OS/Firewall]]
+[[Firewall]]
 
 [[Git Aliases]]
 

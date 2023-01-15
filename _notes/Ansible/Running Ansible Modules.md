@@ -159,7 +159,7 @@ $ Ansible abc -m file -a "dest = /path/user1/new state = absent"
 
 ~~~~  
 
-~~~~  
+ 
 
 ## Managing Packages
 

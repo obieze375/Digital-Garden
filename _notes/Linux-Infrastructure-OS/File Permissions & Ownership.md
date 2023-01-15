@@ -1,11 +1,11 @@
+[[Index]] 
 
+<img src="/assets/file-permission-1.png)"/> 
 
-![](image/file-permission-1.png)  
+<img src="/assets/file-permission-2.png)"/> 
 
-![](image/file-permission-2.png)
+<img src="/assets/file-permission-3.png)"/> 
 
-  
-![](image/file-permission-3.png)
 
   
 
@@ -139,7 +139,7 @@ where the dot (.) indicates this directory.
 
   
 
-# File Ownership
+## File Ownership
 
 ~~~~
 
@@ -206,7 +206,7 @@ command.
 Syntax
 
   
-  
+~~~~  
 
 chgrp [options] group file
 
@@ -215,7 +215,7 @@ Common Options
 -R recursively descend through the directory structure
 
 -f force, and don’t report any errors
-
+~~~~
   
 
 Examples

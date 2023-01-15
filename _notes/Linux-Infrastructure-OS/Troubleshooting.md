@@ -1,7 +1,7 @@
 [[Index]] 
   
 
-# How to troubleshoot connectivity issues with mysql database
+## How to troubleshoot connectivity issues with mysql database
 
   
 
@@ -23,16 +23,14 @@
 
 ~~~
 
-# Can't SSH to server as root user
+## Can't SSH to server as root user
 
-
-
-![](image/can't-ssh-to-server.png)
+<img src="/assets/can't-ssh-to-server.png"/>
 
 
   
 
-# Troubleshooting ansible playbook ssh errors
+## Troubleshooting ansible playbook ssh errors
 
   
 
@@ -69,49 +67,56 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 ~~~~
 
 
-# Cannot CD into a Directory
+## Cannot CD into a Directory
 
-  ![](image/cd-directory.png)
-
-  
-
-# Cannot Open a File Or Run a Script
-
- ![](image/can't-open-file.png)
+<img src="/assets/cd-directory.png"/>
 
 
   
 
-# Cannot Create Links
+## Cannot Open a File Or Run a Script
 
-   ![](image/cannot-link.png)
+<img src="/assets/can't-open-file.png"/>
+
 
 
 
   
 
-# Cannot Write to a File
+## Cannot Create Links
 
-   ![](image/cannot-edit-file.png)
-
-
-  
-
-# Cannot Change File Permissions / Ownership
-
-   ![](image/cannot-change-file-perm.png)
+<img src="/assets/cannot-link.png"/>
 
 
 
   
 
-# Cannot View Other Users Files
+## Cannot Write to a File
 
-   ![](image/cannot-view-other-users-files.png)
+<img src="/assets/cannot-edit-file.png"/>
+ 
+
 
   
 
-# How to Delete Old Files
+## Cannot Change File Permissions / Ownership
+
+<img src="/assets/cannot-change-file-perm.png"/>
+
+
+
+
+
+  
+
+## Cannot View Other Users Files
+
+<img src="/assets/image/cannot-view-other-users-files.png"/>
+
+
+  
+
+## How to Delete Old Files
 
   
 
@@ -131,7 +136,7 @@ Command Syntax
 
   
 
-# Explanation
+## Explanation
 
   
 
@@ -159,7 +164,7 @@ Command Syntax
 
   
 
-# Filesystem is Corrupted
+## Filesystem is Corrupted
 
   
 ~~~~
@@ -191,7 +196,7 @@ Command Syntax
 
  ~~~~ 
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
   
 
@@ -211,7 +216,7 @@ Command Syntax
 
   
 
-# /etc/fstab Corruption
+## /etc/fstab Corruption
 
   
 ~~~~
@@ -259,7 +264,7 @@ Command Syntax
 
  ~~~~ 
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
   
 ~~~~
@@ -317,7 +322,7 @@ repeatedly
 
 
 
-# Troubleshooting Commands:
+## Troubleshooting Commands:
 
   
 
@@ -345,12 +350,12 @@ repeatedly
 
   
 
-# Running Out of Memory
+## Running Out of Memory
 
   
   
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
   
 
@@ -454,7 +459,7 @@ repeatedly
 
   
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
   
 
@@ -494,7 +499,7 @@ repeatedly
 
   
 
-# Unable to get an IP Address
+## Unable to get an IP Address
 
   
   
@@ -569,11 +574,11 @@ repeatedly
 
   
 
-# IP Address Assigned but not Reachable
+## IP Address Assigned but not Reachable
 
   
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
 ~~~~
 
@@ -623,12 +628,12 @@ repeatedly
 
   
 
-# Having Trouble Using vi Editor
+## Having Trouble Using vi Editor
 
   
   
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
   
 
@@ -656,13 +661,13 @@ repeatedly
 
   
 
-# Cannot Run Certain Commands
+## Cannot Run Certain Commands
 
   
   
   
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
 ~~~~
 
@@ -696,7 +701,7 @@ yum search telnet
 
   
 
-# Cannot Change Password
+## Cannot Change Password
 
   
 
@@ -728,7 +733,7 @@ file has no information (passwd user)
 
   
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
   
 
@@ -764,7 +769,7 @@ file has no information (passwd user)
 
   
 
-# User Has No Home Directory
+## User Has No Home Directory
 
   
 
@@ -778,7 +783,7 @@ file has no information (passwd user)
 
   
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
   
 
@@ -798,12 +803,12 @@ file has no information (passwd user)
 
   
 
-# How to Change Every Instance of a Word in a File
+## How to Change Every Instance of a Word in a File
 
   
   
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
   
 
@@ -823,12 +828,12 @@ file has no information (passwd user)
 
   
 
-# How to Use sed Command
+## How to Use sed Command
 
   
   
 
-# Replace a string in a file with a newstring
+## Replace a string in a file with a newstring
 
 ~~~~
 
@@ -838,7 +843,7 @@ sed 's/string/newstring/g'
 
   
 
-# Replace a string in a file and save it
+## Replace a string in a file and save it
 
   
 
@@ -850,7 +855,7 @@ sed –i ‘s/string/newstring/g’ filename
 
   
 
-# Remove the first line in a file
+## Remove the first line in a file
 
   
 
@@ -862,7 +867,7 @@ sed ‘1d’ file.out
 
   
 
-# Replace a string during vi :
+## Replace a string during vi :
 
   
 
@@ -874,7 +879,7 @@ sed ‘1d’ file.out
 
   
 
-# Remove spaces
+## Remove spaces
 
   
 
@@ -886,7 +891,7 @@ sed -i 's/ //g' file.txt
 
   
 
-# Add TAB instead of space
+## Add TAB instead of space
 
   
 
@@ -904,7 +909,7 @@ followed by TAB
 
   
 
-# Add a line before the 4th line of the line
+## Add a line before the 4th line of the line
 
   
 
@@ -916,7 +921,7 @@ sed ‘4 i\ newstring’ filename
 
   
 
-# Insert a line before matching word
+## Insert a line before matching word
 
   
 
@@ -928,12 +933,12 @@ sed ‘/string/i \newstring’ filename
 
   
 
-# How to Kill a Process, User or Terminal
+## How to Kill a Process, User or Terminal
 
   
   
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
   
 
@@ -962,7 +967,7 @@ sed ‘/string/i \newstring’ filename
   
   
 
-# System is Running Slow
+## System is Running Slow
 
   
 
@@ -978,7 +983,7 @@ sed ‘/string/i \newstring’ filename
 
   
 
-# Troubleshooting Steps:
+## Troubleshooting Steps:
 
   
 
@@ -1026,7 +1031,7 @@ sed ‘/string/i \newstring’ filename
 
   
 
-# Rollback Updates and Patches
+## Rollback Updates and Patches
 
   
 
@@ -1089,30 +1094,35 @@ bash -v hello1.sh  
 
   
 
-# Server is not reachable
+## Server is not reachable
 
-   ![](image/Server_Unreachable_Troubleshooting.docx_1.png)
+<img src="/assets/Server_Unreachable_Troubleshooting.docx_1.png"/>
+
+
+
+
+  
+
+## Firewall Issue
+
+<img src="/assets/Firewall%20Issue.docx_1.png"/>
+
+
+
+
+
+## Cannot connect to a website or service hosted on server
+
+<img src="/assets/Can't%20connect%20to%20Website.png"/>
+
 
 
 
   
 
-# Firewall Issue
-
-   ![](image/Firewall%20Issue.docx_1.png)
-
-
-
-# Cannot connect to a website or service hosted on server
-
-   ![](image/Can't%20connect%20to%20Website.png)
-
-
   
 
-  
-
-# Can't ssh to an app Server:  
+## Can't ssh to an app Server:  
 
   
 
@@ -1140,7 +1150,7 @@ If the previous 2 fail attempt to log into the server directly e.g. via ILO if i
 
   
 
-# Tip for diagnosing the issue:  
+## Tip for diagnosing the issue:  
 
   
 
@@ -1150,7 +1160,7 @@ Notify all the engineers and teams who have been working on the server and check
 
 ~~~~
 
-# Slowness on Server:
+## Slowness on Server:
 
   
 
@@ -1166,7 +1176,7 @@ Based on the results the best option is to identify and kill PIDS that is causin
 
   
 
-# Troubleshooting Jenkins Build failures in pipeline
+## Troubleshooting Jenkins Build failures in pipeline
 
   
 
@@ -1197,23 +1207,25 @@ Based on the results the best option is to identify and kill PIDS that is causin
   
   
 
-# To learn what a new or running process is doing
+## To learn what a new or running process is doing
 
   
 
-# Troubleshooting with strace
+## Troubleshooting with strace
 
   
 
 One of options of the strace utility is to help as a troubleshooting utility. If you want to know what a process is doing, or why it hangs, strace will definitely help. By running strace without any parameters, it will already show why a process is doing. You can trace a running process, or instruct strace to start it for you.
 
-   ![](image/strace1.png)
+<img src="/assets/strace1.png"/>
+
+
 
 
 
   
 
-# Monitoring file activity
+## Monitoring file activity
 
   
 
@@ -1221,12 +1233,12 @@ Strace can monitor file related activity. There are two useful parts. The first 
 
   
 
-# Monitor opening of files: strace -e open
+## Monitor opening of files: strace -e open
 
   
   
 
-# See all file activity:
+## See all file activity:
 
   
 
@@ -1287,7 +1299,7 @@ close(7) = 0
 
   
 
-# Common calls:
+## Common calls:
 
   
 
@@ -1331,21 +1343,21 @@ statfs (retrieve file system related details)
 
   
 
-# A related example screen output:
+## A related example screen output:
 
-  
-  ![](image/strace2.png) 
+ <img src="/assets/strace2.png"/> 
+ 
 
 screenshot of strace monitoring file access and activity
 
   
   
 
-# Monitoring file access and activity with strace
+## Monitoring file access and activity with strace
 
   
 
-# Monitoring the network
+## Monitoring the network
 
   
 
@@ -1362,7 +1374,7 @@ strace -e trace=network
   
   
 
-# Common syscalls:
+## Common syscalls:
 
   
 
@@ -1386,7 +1398,7 @@ setsockopt – define options for an active socket
 
   
 
-# Monitoring memory calls
+## Monitoring memory calls
 
   
 
@@ -1404,7 +1416,7 @@ strace -e trace=memory
   
   
 
-# Common syscalls:
+## Common syscalls:
 
   
 ~~~~
@@ -1414,12 +1426,12 @@ munmap
 ~~~~
   
 
-# Strace Cheat Sheet – Overview
+## Strace Cheat Sheet – Overview
 
   
   
 
-# Useful options and examples
+## Useful options and examples
 
   
 
@@ -1451,7 +1463,7 @@ munmap
 
   
 
-# Track by specific system call group
+## Track by specific system call group
 
   
 

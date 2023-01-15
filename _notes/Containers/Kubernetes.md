@@ -6,7 +6,8 @@
 
 Kubernetes is an open-source platform, very often called containers’ orchestrator. Each k8s cluster consists of multiple components, where Master, Nodes and k8s resources (k8s objects) are the most essential ones.
 
-![deployment-strategy](images/kub1.jpg)
+
+<img src="/assets/kub1.jpg"/>
 
 # Kubernetes cluster
 
@@ -27,7 +28,8 @@ Nodes are workers, which run application containers. They consist of the kubelet
 
 Pod
 
-![deployment-strategy](images/kub2.jpg)
+
+<img src="/assets/kub2.jpg"/>
 
 # Pod in Kubernetes cluster
 
@@ -1636,7 +1638,7 @@ It’s what you use to scale, roll out, and roll back versions of your applicati
 
 With a deployment, you tell Kubernetes how many copies of a Pod you want running. The deployment takes care of everything else.
 
-![Kubernetes Deployment Diagram](images/kubernetes-deployment-static.png)
+<img src="/assets/kubernetes-deployment-static.png"/>
 
 ## What is a Deployment?
 
@@ -1648,7 +1650,8 @@ With a deployment, you declare a single object in a YAML file. This object is re
 
 You can also easily autoscale your applications using a Kubernetes deployment.
 
-![How Kubernetes Deployments Work Animation](images/deployment-diagram-kubernetes.gif)
+<img src="/assets/deployment-diagram-kubernetes.gif"/>
+
 
 ## YAML reference example
 
@@ -1656,7 +1659,8 @@ Here’s some YAML that you can use as a template for creating your deployments.
 
 First, take a look at the animation that annotates each section of the deployment YAML. (Scroll down for code that can be copy-and-pasted.)
 
-![Deployment YAML example](images/deployment-yaml-diagram.gif)
+<img src="/assets/deployment-yaml-diagram.gif"/>
+
 
 (You can ignore the additional comments about the "service" here – this deployment was taken from a different example that also incorporated services.)
 
@@ -1719,7 +1723,8 @@ A deployment is used to keep a set of pods running by creating pods from a templ
 
 A service is used to allow network access to a set of pods.
 
-![Service vs Deployment in Kubernetes](images/service-vs-deployment.png)
+<img src="/assets/service-vs-deployment.png"/>
+
 
 Both services and deployments choose which pods they operate on using labels and label selectors. This is where the overlap is.
 
@@ -1986,7 +1991,9 @@ When we install minikube on our machine it comes with its own Docker environment
 
 Let’s understand the problem by building the image and running the manifest file on the example project above. Let’s build the image with this command `docker build -t nodejs-server .` and list images with this command `docker images`
 
-![](images/docker-images.png)
+<img src="/assets/docker-images.png"/>
+
+
 
 **Docker Image**
 
@@ -1996,7 +2003,8 @@ Let’s run the **manifest** file here. This is just a Kubernetes deployment obj
 
 If we just check the deployment whether it is successful or not. It fails because of not being able to pull the image. The reason Kubernetes always try to pull the image from the registry instead of searching locally.
 
-![](images/create-deployment.png)
+<img src="/assets/create-deployment.png"/>
+
 
 **ImagePullBackOff error**
 
@@ -2004,13 +2012,15 @@ If we change the **imagePullPolicy** to **never** and add it to the deployment o
 
 You get the **ErrImageNeverPull** error now. That’s because Kubernetes can’t find the Image in its own docker environment. Here is the description with the command `kubectl describe <pod name>.`
 
-![](images/image-pull-off.png)
+<img src="/assets/image-pull-off.png"/>
+
 
 **ErrImageNeverPull**
 
 If we just run this command `kubectl ssh` and `docker images.` You won’t see the docker image that we just built. **_The reason is the minikube docker daemon and actual docker daemon on your machine are different._**
 
-![](images/ssh.png)
+<img src="/assets/ssh.png"/>
+
 
 **minikube ssh and docker images**
 
@@ -2027,7 +2037,8 @@ We know the problem now. Let's find out the solution by following these below st
 
 Let’s implement the above steps one by one and see whether we can use the local images with the minikube.
 
-![](images/build.png)
+<img src="/assets/build.png"/>
+
 
 **implementation**
 
@@ -2036,8 +2047,9 @@ If you see the above image we are able to run the deployment with 5 replicas and
 ```
 // get one of the pod ipkubectl get po -o wide// run the busyboxkubectl run busybox --image=busybox -it --restart=Never -- /bin/sh// shell# wget 172.17.0.5:3000// cat index.html# cat index.html
 ```
+<img src="/assets/final.png"/>
 
-![](images/final.png)
+
 
 **Deployment working**
 

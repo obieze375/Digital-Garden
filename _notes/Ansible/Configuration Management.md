@@ -25,7 +25,7 @@ The picture given below shows the working of Ansible.
 
 Ansible works by connecting to your nodes and pushing out small programs, called "Ansible modules" to them. Ansible then executes these modules (over SSH by default), and removes them when finished. Your library of modules can reside on any machine, and there are no servers, daemons, or databases required.  
 
-  ![Screenshot](ansible_works.jpg)
+<img src="/assets/ansible_works.jpg"/>
 
   
 

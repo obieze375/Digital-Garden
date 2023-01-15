@@ -1,6 +1,8 @@
 [[Index]] 
 
-![](image/file%20system%20tree.png)  
+
+<img src="/assets/file-permission-1.png)"/> 
+ 
 
 
 
@@ -35,7 +37,7 @@ tmpfs 497M 0 497M 0% /sys/fs/cgroup
 
 ~~~~
 
-# Introduction
+## Introduction
 
   
 
@@ -47,7 +49,7 @@ The below variables should be replaced with the appropriate values for the local
 
 
 
-# Variable Name Description
+## Variable Name Description
 
   
 
@@ -165,7 +167,7 @@ tune2fs -c0 -i0 /dev/<vgname>/<lvname>
 
 ## 5. Create the new mount point directory.
 
- ~~~~
+~~~~
 
   mkdir <mount_pt>
 
@@ -177,11 +179,11 @@ tune2fs -c0 -i0 /dev/<vgname>/<lvname>
 
 ## Linux 5 Example 
 
-  ~~~~
+~~~~
 
-  echo "/dev/mapper/<vgname>-<lvname> <mount_pt> ext3 defaults 0 0" >> /etc/fstab
+echo "/dev/mapper/<vgname>-<lvname> <mount_pt> ext3 defaults 0 0" >> /etc/fstab
 
-  ~~~~
+~~~~
 
 ## Linux 6 Example    
 
@@ -193,14 +195,14 @@ echo "/dev/mapper/<vgname>-<lvname> <mount_pt> ext4 defaults 0 0" >> /etc/fstab
 
 ~~~~
 
-  echo "/dev/mapper/<vgname>-<lvname> <mount_pt> xfs defaults,nofail 0 0" >> /etc/fstab  
+echo "/dev/mapper/<vgname>-<lvname> <mount_pt> xfs defaults,nofail 0 0" >> /etc/fstab  
 
 ~~~~
 
 ## 7. Linux 7 Only.  After updating /etc/fstab, it is advisable to update systemd's unit files with the following command.
 
 ~~~~
- systemctl daemon-reload
+systemctl daemon-reload
 
 ~~~~
 
@@ -209,21 +211,21 @@ echo "/dev/mapper/<vgname>-<lvname> <mount_pt> ext4 defaults 0 0" >> /etc/fstab
 
 ## Mount the new file system.
 
-   ~~~~
+~~~~
 
-   mount <mount_pt>
+mount <mount_pt>
 
-   ~~~~
+~~~~
 
 ## If necessary, modify ownership and permissions on the mount point.
 
 ~~~~
 
-  • chown <user>:<group> <mount_pt>
+chown <user>:<group> <mount_pt>
 
   
 
-  • chmod <perm> <mount_pt>
+chmod <perm> <mount_pt>
 
 ~~~~
 
@@ -512,19 +514,16 @@ Verifying mounted share: mount    
 
   
 
-# NFS (Network File Share)
+## NFS (Network File Share)
 
-![](image/nfs.png)  
+<img src="/assets/nfs.png)"/> 
 
-
-
-  
 
 A basic system is used in NFS where a mount command will instruct the server to link with several clients. The clients will get access to the files on the server through the proper platform. The design can allow several security protocols to run in a place that will dictate who will have access to certain files, producing a safe and simplified approach to work.
 
-# Benefits of NFS Server (Pros)
+## Benefits of NFS Server (Pros)
 
-  
+~~~~  
 
 The NFS server stands for central management.
 
@@ -552,11 +551,12 @@ Reduces administration costs.
 
 For more security firewalls and Kerberos can be used.
 
-  
+~~~~ 
 
-# Disadvantages of NFS Network File System (Cons)
+## Disadvantages of NFS Network File System (Cons)
 
-  
+
+~~~~ 
 
 File sharing can be highly complex.
 
@@ -598,7 +598,7 @@ Discover the NFS share exported by NFS server ipaserver.example.com.
 
 • NFS version 3 should be used.
 
-  
+~~~~
 
 ## Command Action Description
 

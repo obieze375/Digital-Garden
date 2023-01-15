@@ -4,7 +4,7 @@
 
 ~~~~
 
-• clear
+clear
 
 ~~~~
 
@@ -14,7 +14,7 @@
 
  ~~~~  
 
- • echo $?
+ echo $?
 
  ~~~~
 
@@ -24,7 +24,7 @@
 
 ~~~~
 
-• reset
+reset
 
 ~~~~
 
@@ -34,7 +34,7 @@
 
 ~~~~
 
-• history
+history
 
   
 
@@ -62,7 +62,7 @@ HISTCONTROL=ignorespace
 
 ~~~~
 
-• xkill
+xkill
 
 ~~~~
 
@@ -114,7 +114,7 @@ HISTCONTROL=ignorespace
 
 ~~~~
 
-• xrandr --output --mode 1920x1200
+xrandr --output --mode 1920x1200
 
 ~~~~
 

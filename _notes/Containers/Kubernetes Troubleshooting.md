@@ -1,3 +1,4 @@
 [[Docker]] [[Docker-Compose]] [[Index]] [[Kubernetes]]
 
-![](images/kub-troubleshooting.pdf)
+
+<img src="/assets/kub-troubleshooting.pdf"/>
