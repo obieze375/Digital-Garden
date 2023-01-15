@@ -4,6 +4,9 @@ Obtained from https://devhints.io/mysql
 
 # Mysql DB Structure
 
+
+
+  <img src="/assets/mysql_db_structure.png"/>
   ![](images/mysql_db_structure.png)
 
 
