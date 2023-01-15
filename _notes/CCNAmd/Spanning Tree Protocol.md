@@ -6,7 +6,7 @@
 
 Below is the outcome of an ARP request from PC1 to R1, without STP protocol.
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.001.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.001.png)
 
 - There will be more broadcast traffic on a production network than a single ARP request
 - We now have a broadcast storm
@@ -47,7 +47,7 @@ Blocking:
 1. Determine the Blocking Port (highest cost path to Root Bridge or highest Bridge ID)
 1. The ports on the other side of those links are Designated Ports
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.002.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.002.png)
 
 # **Spanning Tree Versions**
 IEEE Open Standards:
@@ -65,7 +65,7 @@ MSTP Load Balancing Example
 - Traffic for these VLANs is forwarded on the link to CD2 and blocked on the link to CD1
 - Two Spanning Tree instances run, one for each group of VLANs
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.003.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.003.png)
 
 
 
@@ -86,7 +86,7 @@ PVST+ and RPVST+ Load Balancing Example
 - Traffic for these VLANs is forwarded on the link to CD2 and blocked on the link to CD1
 - Twenty Spanning Tree instances run, one for each VLAN
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.003.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.003.png)
 
 - PVST+ will assign the Root, Designated or Alternate role to ports
 - Alternate Ports are Blocking Ports
@@ -228,7 +228,7 @@ PVST+ and RPVST+ Load Balancing Example
 - Spanning Tree sees the EtherChannel as a single interface, so it does not block any ports
 - We now get the full 20Gbps bandwidth
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.004.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.004.png)
 
 - Traffic is load balanced across all the links in the EtherChannel
 - If an interface goes down its traffic will fail over to the remaining links
@@ -239,7 +239,7 @@ NIC Teaming combines multiple physical network cards into a single
 
 logical interface
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.005.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.005.png)
 
 1. **EtherChannel** is also known as:
    1. A Port Channel
@@ -337,7 +337,7 @@ Show info about etherchannel
 
 
 ## Example
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.006.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.006.png)
 
 **1st Port Channel – Acc3 to CD1 - LACP**
 
@@ -398,17 +398,17 @@ CD1 F0/22 – Acc4 F0/22
 
 
 # **Multi-chassis EtherChannel**
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.007.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.007.png)
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.008.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.008.png)
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.009.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.009.png)
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.010.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.010.png)
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.011.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.011.png)
 
-![](images/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.012.png)
+![](assets/Spanning_Tree_Protocol/Aspose.Words.1f3a7a16-17bd-4249-9787-922ad90f3c8e.012.png)
 
 # **Layer 3 Etherchannel**
 *Switch1(config)#interface range GigabitEthernet 1/0/1 - 2*

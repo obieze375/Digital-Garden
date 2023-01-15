@@ -54,9 +54,9 @@ Tools include:
 - It is typically a brute force style of attack which floods the target system with more traffic than it can handle.
 - DoS attacks from a single source can be easily stopped by blocking traffic from that host.
 ## **TCP Syn Flood Attack**
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.001.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.001.png)
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.002.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.002.png)
 
 ## **DDoS Distributed Denial of Service**
 - A Distributed Denial of Service (DDoS) attack is a DoS attack from multiple sources.
@@ -111,7 +111,7 @@ Tools include:
 - IPS sits inline with the traffic flow and can also block attacks
 - (An IDS may also have the capability to tell a firewall to block attacks)
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.003.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.003.png)
 ## **IPS vs Firewalls**
 - IPS use signatures to inspect packets up to layer 7 of the OSI stack, looking for traffic patterns which match known attacks
 - Firewalls block or permit traffic based on rules such as destination IP address and port number
@@ -126,7 +126,7 @@ Tools include:
 - Specialised devices may also have more advanced features
 - Another option for scalability and higher throughput is clustered devices
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.004.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.004.png)
 
 
 # **Stateful Firewall**
@@ -137,11 +137,11 @@ Tools include:
   - Deny all traffic from outside to inside
   - Permit outbound web traffic from 10.10.10.0/24
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.005.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.005.png)
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.006.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.006.png)
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.007.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.007.png)
 
 ## **Next Generation Firewalls**
 - Next Generation Firewalls move beyond port/protocol inspection and blocking to add application-level inspection, intrusion prevention, and user based security
@@ -160,14 +160,14 @@ Tools include:
   - Inbound ACL on outside interface: Deny all traffic
   - Inbound ACL on inside interface: Permit web traffic from 10.10.10.0/24
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.008.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.008.png)
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.009.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.009.png)
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.010.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.010.png)
 
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.011.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.011.png)
 
 
 
@@ -178,7 +178,7 @@ Tools include:
 - Purely external threats are primarily covered with strong firewall and IPS protection on the network perimeter.
 - Sensitive hosts should also have firewall and IPS protection from internal hosts
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.012.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.012.png)
 
 # **Cryptography**
 - Cryptography transforms readable messages into an unintelligible form and then later reverses the process
@@ -199,7 +199,7 @@ Tools include:
 - Used for large transmissions (eg email, secure web traffic, IPsec)
 - Algorithms include DES, 3DES, AES, SEAL
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.013.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.013.png)
 
 
 
@@ -213,10 +213,10 @@ Tools include:
 - Used for small transmissions (symmetric key exchange, digital signatures)
 - Algorithms include: RSA, ECDSA
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.014.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.014.png)
 
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.015.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.015.png)
 
 
 ## **HMAC Hash-Based Message Authentication Codes**
@@ -228,7 +228,7 @@ Tools include:
 - Used for large transmissions (eg email, secure web traffic, IPsec)
 - Algorithms include: MD5, SHA
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.016.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.016.png)
 
 
 ## **Key Distribution**
@@ -263,9 +263,9 @@ Tools include:
 - Anybody could have sent you the valid certificate for Amazon.com and be pretending to be them
 - You have not authenticated them yet
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.017.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.017.png)
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.018.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.018.png)
 
 
 
@@ -273,13 +273,13 @@ Tools include:
 - But asymmetric key encryption is slow and not suitable for bulk data exchange like web browsing
 - Symmetric key encryption should be used, but Amazon and you do not have a shared key…
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.019.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.019.png)
 
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.020.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.020.png)
 
 
 # **Site-to-Site VPNs**
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.021.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.021.png)
 
 - Site-to-Site VPNs use symmetric encryption algorithms such as DES, 3DES and AES to send encrypted traffic between locations over an untrusted network such as the Internet
 - Traffic inside an office is often unencrypted as it is seen as a trusted network
@@ -368,7 +368,7 @@ Exclude VPN Traffic from NAT ACL
 
 
 # **Remote Access VPN**
-![](images/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.022.png)
+![](assets/Security_Threat_Landscape/Aspose.Words.92a61b51-b493-487c-a295-913aedb29255.022.png)
 ##
 
 [[Index]]]

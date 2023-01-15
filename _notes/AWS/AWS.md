@@ -214,7 +214,7 @@ It is also PCI DSS compliant i.e. payment card industry data security standard. 
 
 **Policies** - the documented rule sets that are applied to grant or limit access. In order for users, groups, or roles to properly set permissions, they use policies. Policies are written in JSON and you can either use custom policies for your specific needs or use the default policies set by AWS.
 
-![](iam.png)
+![](assets/iam.png)
 
 IAM Policies are separated from the other entities above because they are not an IAM Identity. Instead, they are attached to IAM Identities so that the IAM Identity in question can perform its necessary function.
 
@@ -257,7 +257,7 @@ S3 provides developers and IT teams with secure, durable, and highly-scalable ob
 
 This makes it a perfect candidate to host files or directories and a poor candidate to host databases or operating systems. The following table highlights key differences between object and block storage:
 
-![](s3.png)
+![](assets/s3.png)
 
 
 Data uploaded into S3 is spread across multiple files and facilities. The files uploaded into S3 have an upper-bound of 5TB per file and the number of files that can be uploaded is virtually limitless. S3 buckets, which contain all files, are named in a universal namespace so uniqueness is required. All successful uploads will return an HTTP 200 response.
@@ -328,7 +328,7 @@ The Expedited duration listed above could possibly be longer during rare situati
 
 **S3 Deep Glacier** - The lowest cost S3 storage where retrieval can take 12 hours.
 
-![](storage-class.png)
+![](assets/storage-class.png)
 
 ### S3 Encryption:
 S3 data can be encrypted both in transit and at rest.
@@ -474,7 +474,7 @@ Snowball is a giant physical disk that is used for migrating high quantities of 
 - For example, if you have a 100 Mb connection that you can solely dedicate to transferring your data and you need to transfer 100 TB of data in total, it will take more than 100 days for the transfer to complete over that connection. You can make the same transfer in about a week by using multiple Snowballs.
 - Here is a reference for when Snowball should be considered based on the number of days it would take to make the same transfer over an internet connection:
 
-![](snowball.png)
+![](assets/snowball.png)
 
 ### Snowball Edge and Snowmobile:
 - Snowball Edge is a specific type of Snowball that comes with both compute *and* storage capabilities via AWS Lambda and specific EC2 instance types. This means you can run code within your snowball while your data is en route to an Amazon data center. This enables support of local workloads in remote or offline locations and as a result, Snowball Edge does not need to be limited to a data transfer service. An interesting use case is with airliners. Planes sometimes fly with snowball edges onboard so they can store large amounts of flight data and compute necessary functions for the plane’s own systems. Snowball Edges can also be clustered locally for even better performance.
@@ -500,11 +500,11 @@ Storage Gateway is a service that connects on-premise environments with cloud-ba
 ### Stored Volumes vs. Cached Volumes:
 - Volume Gateway's **Stored Volumes** let you store data locally on-prem and backs the data up to AWS as a secondary data source. Stored Volumes allow low-latency access to entire datasets, while providing high availability over a hybrid cloud solution. Further, you can mount Stored Volumes on application infrastructure as iSCSI drives so when data is written to these volumes, the data is both written onto the on-prem hardware and asynchronously backed up as snapshots in AWS EBS or S3.
   - In the following diagram of a Stored Volume architecture, data is served to the user from the Storage Area Network, Network Attached, or Direct Attached Storage within your data center. S3 exists just as a secure and reliable backup.
-  - ![](storedvscache.png)
+  - ![](assets/storedvscache.png)
 
 - Volume Gateway's **Cached Volumes** differ as they do not store the entire dataset locally like Stored Volumes. Instead, AWS is used as the primary data source and the local hardware is used as a caching layer. Only the most frequently used components are retained onto the on-prem infrastructure while the remaining data is served from AWS. This minimizes the need to scale on-prem infrastructure while still maintaining low-latency access to the most referenced data.
   - In the following diagram of a Cached Volume architecture, the most frequently accessed data is served to the user from the Storage Area Network, Network Attached, or Direct Attached Storage within your data center. S3 serves the rest of the data from AWS.
-  ![](storedvscache2.png)
+  ![](assets/storedvscache2.png)
 
 
 ## Elastic Compute Cloud (EC2)
@@ -516,7 +516,7 @@ EC2 spins up resizable server instances that can scale up and down quickly. An i
 - You can launch different types of instances from a single AMI. An instance type essentially determines the hardware of the host computer used for your instance. Each instance type offers different compute and memory capabilities. You should select an instance type based on the amount of memory and computing power that you need for the application or software that you plan to run on top of the instance.   
 - You can launch multiple instances of an AMI, as shown in the following figure:
 
-![](ec2.png)
+![](assets/ec2.png)
 
 - You have the option of using dedicated tenancy with your instance. This means that within an AWS data center, you have exclusive access to physical hardware. Naturally, this option incurs a high cost, but it makes sense if you work with technology that has a strict licensing policy. 
 - With EC2 VM Import, you can import existing VMs into AWS as long as those hosts use VMware ESX, VMware Workstation, Microsoft Hyper-V, or Citrix Xen virtualization formats.
@@ -617,7 +617,7 @@ An Amazon EBS volume is a durable, block-level storage device that you can attac
 - SSD-backed volumes are built for transactional workloads involving frequent read/write operations, where the dominant performance attribute is IOPS. **Rule of thumb**: Will your workload be IOPS heavy? Plan for SSD.
 - HDD-backed volumes are built for large streaming workloads where throughput (measured in MiB/s) is a better performance measure than IOPS. **Rule of thumb**: Will your workload be throughput heavy? Plan for HDD.
 
-![](ssdvshdd.png)
+![](assets/ssdvshdd.png)
 
 
 ### EBS Snapshots:
@@ -740,7 +740,7 @@ Within the storage and content delivery domains, CloudWatch can inform you about
 - CloudWatch is *NOT* CloudTrail so it is important to know that only CloudTrail can monitor AWS access for security and auditing reasons. CloudWatch is all about performance. CloudTrail is all about auditing.
 - CloudWatch with EC2 will monitor events every 5 minutes by default, but you can have 1 minute intervals if you use Detailed Monitoring.
 
-![](cloudwatch.png)
+![](assets/cloudwatch.png)
 
 - You can customize your CloudWatch dashboards for insights.
 - There is a multi-platform CloudWatch agent which can be installed on both Linux and Windows-based instances. This agent enables you to select the metrics to be collected, including sub-resource metrics such as per-CPU core. You can use this single agent to collect both system metrics and log files from Amazon EC2 instances and on-premises servers.
@@ -937,7 +937,7 @@ Aurora is the AWS flagship DB known to combine the performance and availability 
 - Automated failover is only possible with Aurora read replication
 - For more on the differences between RDS replication and Aurora Replication, please consult the following:
 
-![](aurora.png)
+![](assets/aurora.png)
 
 - Automated backups are always enabled on Aurora instances and backups don’t impact DB performance. You can also take snapshots which also don’t impact performance. Your snapshots can be shared across AWS accounts.
 - A common tactic for migrating RDS DBs into Aurora RDs is to create a read replica of a RDS MariaDB/MySQL DB as an Aurora DB. Then simply promote the Aurora DB into a production instance and delete the old MariaDB/MySQL DB.
@@ -1062,7 +1062,7 @@ The ElastiCache service makes it easy to deploy, operate, and scale an in-memory
 - Common configurations that improve DB performance include introducing read replicas of a DB primary and inserting a caching layer into the storage architecture. 
 - MemcacheD is for simple caching purposes with horizontal scaling and multi-threaded performance, but if you require more complexity for your caching environment then choose Redis.
 - A further comparison between MemcacheD and Redis for ElastiCache:
-![](memcachevsredis.png)
+![](assets/memcachevsredis.png)
 
 - Another advantage of using ElastiCache is that by caching query results, you pay the price of the DB query only once without having to re-execute the query unless the data changes.
 - Amazon ElastiCache can scale-out, scale-in, and scale-up to meet fluctuating application demands. Write and memory scaling is supported with sharding. Replicas provide read scaling.
@@ -1202,7 +1202,7 @@ AWS Auto Scaling lets you build scaling plans that automate how groups of differ
   - If there are multiple instances to terminate, it will determine which unprotected instances are closest to the next billing hour. (This helps you maximize the use of your EC2 instances and manage your Amazon EC2 usage costs.) If there are some instances that match this criteria, they will be terminated.
 - This flow chart can provide further clarity on how the default Auto Scaling policy decides which instances to delete:
 
-![](autoscaling2.png)
+![](assets/autoscaling2.png)
 
 ## Auto Scaling Cooldown Period:
 - The cooldown period is a configurable setting for your Auto Scaling Group that helps to ensure that it doesn't launch or terminate additional instances before the previous scaling activity takes effect. 
@@ -1229,7 +1229,7 @@ VPC lets you provision a logically isolated section of the AWS cloud where you c
   - a NACL
   - a security group
   
-![](vpc.png)
+![](assets/vpc.png)
 
 - These components, which will be explained in further depth in case they are not already known, actually correspond to the traffic flow for how data will reach your instances. Whether the traffic originates from outside of the VPC or from within it, it must first go through the route table by way of the router in order to know where the desired destination is. Once that is known, the traffic then passes through subnet level security as described by the NACL. If the NACL deems the traffic as valid, the traffic then passes through to the instance level security as described by the security group. If the traffic hasn't been dropped at this point, only then will it reach its intended instance.
 - The VPC Wizard is an automated tool that is useful for creating custom VPCs.
@@ -1248,7 +1248,7 @@ VPC lets you provision a logically isolated section of the AWS cloud where you c
 - In an ideal and secure VPC architecture, you launch the web servers or elastic load balancers in the public subnet and the database servers in the private subnet.
 - Here is an example of a hypothetical application sitting behind a typical VPC setup:
 
-![](vpc2.png)
+![](assets/vpc2.png)
 
 - Security groups can span subnets, but do not span VPCs. ICMP ensures that instances from one security group can ping others in a different security group. It is IPv4 and IPv6 compatible.
 
@@ -1337,7 +1337,7 @@ VPC lets you provision a logically isolated section of the AWS cloud where you c
 - Although the term "VPN connection" is a general concept, a VPN connection for AWS always refers to the connection between your VPC and your own network. AWS supports Internet Protocol security (IPsec) VPN connections.
 - The following diagram illustrates a single VPN connection.
 
-![](vpc3.png)
+![](assets/vpc3.png)
 
 - The above VPC has an attached virtual private gateway (note: not an internet gateway) and there is a remote network that includes a customer gateway which you must configure to enable the VPN connection. You set up the routing so that any traffic from the VPC bound for your network is routed to the virtual private gateway.
 - **Summary**: VPNs connect your *on-prem with your VPC* over the internet.
@@ -1382,7 +1382,7 @@ VPC lets you provision a logically isolated section of the AWS cloud where you c
 - You cannot do transitive peering for non-central VPCs. Non-central VPCs cannot go through the central VPC to get to another non-central VPC. You must set up a new portal between non-central nodes if you need them to talk to each other.
 - The following diagram highlights the above idea. VPC B is free to communicate with VPC A with VPC Peering enabled between both. However, VPC B cannot continue the conversation with VPC C. Only VPC A can communicate with VPC C.
 
-![](vpc4.png)
+![](assets/vpc4.png)
 
 - It is worth knowing what VPC peering configurations are not supported:
   - Overlapping CIDR Blocks
@@ -1415,7 +1415,7 @@ VPC lets you provision a logically isolated section of the AWS cloud where you c
 - AWS Global Accelerator accelerates connectivity to improve performance and availability for users. Global Accelerator sits on top of the AWS backbone and directs traffic to optimal endpoints worldwide. By default, Global Accelerator provides you two static IP addresses that you can make use of.
 - Global Accelerator helps reduce the number of hops to get to your AWS resources. Your users just need to make it to an edge location and once there, everything will remain internal to the AWS global network. Normally, it takes many networks to reach the application in full and paths to and from the application may vary. With each hop, there is risk involved either in security or in failure. 
   
-![](global-accel.png)
+![](assets/global-accel.png)
 
 
 - In summary, Global Accelerator is a fast/reliable pipeline between user and application. 
@@ -1532,7 +1532,7 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 - You can use Lambda as an event-driven service that executes based on changes in your AWS ecosystem.
 - You can also use Lambda as a handler in response to HTTP events via API calls over the AWS SDK or API Gateway.
 
-![](lambda.png)
+![](assets/lambda.png)
 
 - When you create or update Lambda functions that use environment variables, AWS Lambda encrypts them using the AWS Key Management Service. When your Lambda function is invoked, those values are decrypted and made available to the Lambda code.
 - The first time you create or update Lambda functions that use environment variables in a region, a default service key is created for you automatically within AWS KMS. This key is used to encrypt environment variables. However, if you wish to use encryption helpers and use KMS to encrypt environment variables after your Lambda function is created, you must create your own AWS KMS key and choose it instead of the default key. 
@@ -1549,7 +1549,7 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
   - After CloudFront receives the response from the origin (origin response)
   - Before CloudFront forwards the response to the viewer (viewer response)
   
-![](lambda-edge.png)
+![](assets/lambda-edge.png)
 
 - You'd use Lambda@Edge to simplify and reduce origin infrastructure.
 
@@ -1613,7 +1613,7 @@ CloudFormation is an automated tool for provisioning entire cloud-based environm
 - <a href="https://aws.amazon.com/quickstart/?quickstart-all.sort-by=item.additionalFields.updateDate&quickstart-all.sort-order=desc">AWS Quick Starts is composed of many high-quality CloudFormation stacks designed by AWS engineers.</a>
 - An example template that would spin up an EC2 instance:
 
-![](cloudformation.png)
+![](assets/cloudformation.png)
 
 - For any Logical Resources in the stack, CloudFormation will make a corresponding Physical Resources in your AWS account. It is CloudFormation’s job to keep the logical and physical resources in sync.
 - A template can be updated and then used to update the same stack.

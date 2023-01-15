@@ -13,7 +13,7 @@
 - 203.0.113.1 is used as the default gateway address. It is the SP1 router on the other side of the link
 - 203.0.113.3 – 203.0.113.14 remain available
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.001.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.001.png)
 
 *R1(config)#int f0/0*
 
@@ -27,7 +27,7 @@
 
 
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.002.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.002.png)
 
 **NAT Definitions**
 
@@ -43,7 +43,7 @@
 - For one way NAT, the Outside Local and Outside Global addresses will be reported as being the same.
 
 # **Dynamic NAT**
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.003.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.003.png)
 
 - The hosts in the 10.0.2.0/24 network do not accept incoming connections so they don’t need a fixed public IP address with a static NAT translation
 - They do need outbound connectivity to the Internet so need to be translated to a public IP address
@@ -100,13 +100,13 @@ Associate the access list with the NAT pool to complete the configuration.
 - The 4th and 5th etc. hosts will also be translated to 203.0.113.6 but with different source port numbers
 - When the return traffic is sent back the router checks the destination port number to see which host to forward it to
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.004.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.004.png)
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.005.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.005.png)
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.005.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.005.png)
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.006.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.006.png)
 
 
 
@@ -210,7 +210,7 @@ Example:
 - 16 bits = 65,535 possible subnets
 - 64 bits left over = 18,446,744,073,709,551,616 hosts per subnet
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.003.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.003.png)
 
 
 - Using a /64 for all network subnets including point-to-point links and loopback addresses can seem wasteful, but the official declaration is that the IPv6 address space is so large that it does not create a problem
@@ -273,16 +273,16 @@ Enable IPv6 routing first
 - They are assigned from the range FE80::/10 – FEB0::/10
 - Hosts should be assigned /64 addresses
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.007.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.007.png)
 
 - Link local addresses can be used for communications which should not be forwarded beyond the local link, like routing protocol hello packets and updates
 - They are mandatory on IPv6 enabled Cisco router interfaces
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.008.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.008.png)
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.009.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.009.png)
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.010.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.010.png)
 
 
 ### **Multiple IPv4 Addresses**
@@ -398,11 +398,11 @@ ipv6 address 2001:DB8:0:1::1/64
 - Enter the command ‘ipv6 unicast-routing’ to enable it
 - You can still configure IPv6 addresses on a router without ipv6 unicast-routing enabled and send and receive IPv6 traffic, but the router will not forward IPv6 traffic to other networks
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.011.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.011.png)
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.012.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.012.png)
 
-![](images/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.013.png)
+![](assets/NAT-IPv6/Aspose.Words.7eda2d8d-7978-4a5a-8025-b9bd7512980d.013.png)
 
 
 [[Index]]]

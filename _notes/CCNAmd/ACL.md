@@ -95,27 +95,27 @@ There is no default wildcard mask for Extended ACLs
 
 
 # **ACL Syntax**
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.002.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.002.png)
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.003.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.003.png)
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.004.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.004.png)
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.005.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.005.png)
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.006.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.006.png)
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.007.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.007.png)
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.008.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.008.png)
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.009.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.009.png)
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.010.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.010.png)
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.011.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.011.png)
 
-![](images/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.012.png)
+![](assets/ACL/Aspose.Words.dcc79f08-f3d9-4727-87a1-fb682c02be50.012.png)
 
 
 # **ACL Operations/Groups**

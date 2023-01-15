@@ -102,7 +102,7 @@ Switch Management IP Address
 ### **Encrypting Passwords**
 Line level passwords can also be viewed in plain text in the running configuration by default.
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.001.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.001.png)
 
 
 ### **Service Password-Encryption**
@@ -111,7 +111,7 @@ Line level passwords can also be viewed in plain text in the running configurati
 
 *R1(config)#service password-encryption*
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.002.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.002.png)
 
 
 # **Username Level Security**
@@ -130,7 +130,7 @@ Line level passwords can also be viewed in plain text in the running configurati
 
 *R1(config-line)#login local*
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.003.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.003.png)
 
 
 
@@ -157,7 +157,7 @@ Line level passwords can also be viewed in plain text in the running configurati
 
 *R1(config-line)#login local*
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.004.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.004.png)
 
 
 ## **Configuring Command Privilege Levels Example**
@@ -180,7 +180,7 @@ Change command privilege level. Now also admin3 can execute *show run conf*
 
 *R1(config)#enable secret level 5 secret2* (sets password for privilege level 5)
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.005.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.005.png)
 
 # **Telnet vs SSH**
 - All Telnet communications cross the network in plain text
@@ -193,7 +193,7 @@ Change command privilege level. Now also admin3 can execute *show run conf*
 
 - A digital certificate with a key length of at least 768 bits must be generated to enable SSH encryption
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.006.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.006.png)
 
 **Disable Telnet**
 
@@ -237,7 +237,7 @@ Change command privilege level. Now also admin3 can execute *show run conf*
 - They also offered the Access Control Server (ACS) for a long time but it is now end of sale
 
 ## **Active Directory Integration**
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.007.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.007.png)
 
 
 
@@ -348,9 +348,9 @@ Warning: This CLI will be deprecated soon. Please move to tacacs server <name> C
 - Messages can be displayed in the CLI before and/or after an administrator logs in to a Cisco IOS device
 - This is most commonly used to display security warnings
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.008.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.008.png)
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.009.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.009.png)
 
 ## **Disable Unused Services**
 - It is best practice to disable unused services
@@ -374,7 +374,7 @@ Warning: This CLI will be deprecated soon. Please move to tacacs server <name> C
 - An NTP server should be used to ensure all devices have the same time
 - A Cisco router can function as an NTP server and/or client
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.010.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.010.png)
 
 
 
@@ -393,7 +393,7 @@ Example:
 
 
 ## **Syslog Severity Levels**
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.011.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.011.png)
 
 
 ## **Logging Locations**
@@ -423,18 +423,18 @@ Example:
 - *R1(config)#logging 10.0.0.100*
 - *R1(config)#logging trap debugging*
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.012.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.012.png)
 
 ## **Logging Synchronous**
 - When working in a CLI session, by default any syslog messages will be printed into the middle of any commands you are currently typing
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.013.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.013.png)
 
 
 - You can override this with the logging synchronous command
 - This causes a new line to be printed where you were in the command
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.014.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.014.png)
 
 
 ## **Debug and Terminal Monitor**
@@ -459,7 +459,7 @@ Example:
 - Data variables on SNMP managed systems are organized in a Management Information Base (MIB).
 - The SNMP Manager and Agent need to share the MIB so they know which variables can be reported on.
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.015.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.015.png)
 
 
 ## **SNMP Versions**
@@ -475,7 +475,7 @@ Example:
 - The read write (rw) community is used by the Manager to set information
 
 ## **SNMPv2 Configuration**
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.016.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.016.png)
 
 
 ## **SNMPv3 Configuration**
@@ -492,23 +492,23 @@ Example:
   - AuthNoPriv - Password authentication is used. No encryption is used for communications between the devices.
   - AuthPriv - Password authentication is used. Communications between the agent and the server are also encrypted.
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.017.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.017.png)
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.018.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.018.png)
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.019.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.019.png)
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.020.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.020.png)
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.021.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.021.png)
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.022.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.022.png)
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.023.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.023.png)
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.024.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.024.png)
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.025.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.025.png)
 
 
 # **Syslog vs SNMP**
@@ -516,7 +516,7 @@ Example:
 - Syslog can often provide more granular detail than SNMP but it has support for the device pushing information only (not pulling or setting from the server).
 - NMS servers will typically support both Syslog and SNMP
 
-![](images/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.026.png)
+![](assets/Cisco_Device_Security-Network_Management/Aspose.Words.6a4db4de-66bc-4bd3-ab27-881a62724ea1.026.png)
 
 ## **NMS vs SIEM**
 - There is some overlap between NMS and SIEM products. Both can gather logging information from network infrastructure devices such as routers, switches and firewalls using protocols such as Syslog, SNMP and NetFlow.

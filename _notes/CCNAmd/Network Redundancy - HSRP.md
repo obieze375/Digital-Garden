@@ -1,7 +1,7 @@
  [[Index]]
  
  # **Network Redundancy**
-![](images/Network_Redundancy-HSRP/Aspose.Words.d288ce6b-2660-4bd6-ae2c-d01060fe47f4.001.png)
+![](assets/Network_Redundancy-HSRP/Aspose.Words.d288ce6b-2660-4bd6-ae2c-d01060fe47f4.001.png)
 
 - The point of redundancy is to eliminate single points of failure
 - Now we have added redundant switches, routers and Internet connections
@@ -36,7 +36,7 @@ Backup route to inside via R2 if link to CD1 goes down:
 - That would be inconvenient and would require manual reconfiguration on the PCs
 
 
-![](images/Network_Redundancy-HSRP/Aspose.Words.d288ce6b-2660-4bd6-ae2c-d01060fe47f4.002.png)
+![](assets/Network_Redundancy-HSRP/Aspose.Words.d288ce6b-2660-4bd6-ae2c-d01060fe47f4.002.png)
 
 **First Hop Redundancy Protocols (FHRP)**
 

@@ -32,7 +32,7 @@ Which Automation Method to Use
 - YANG (IETF, 2010) is a data modelling language which provides a standardized way to represent the operational and configuration data of a network device.
 - It can be used both internally and when packaged for transmission.
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.001.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.001.png)
 
 
 # **Network Management Transport**
@@ -60,14 +60,14 @@ Which Automation Method to Use
 - The network infrastructure devices query the controller for guidance as needed, and provide it with information about traffic they are handling.
 
 ## **Pure vs Hybrid SDN**
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.002.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.002.png)
 
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.003.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.003.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.004.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.004.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.005.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.005.png)
 
 
 
@@ -93,21 +93,21 @@ Architecture are:
 - The goal is to continuously monitor and adjust network performance to help assure desired business outcomes.
 
 ## **UI**
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.006.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.006.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.007.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.007.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.008.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.008.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.009.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.009.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.010.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.010.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.011.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.011.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.012.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.012.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.013.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.013.png)
 
 
 ## **SD-Access Software Defined Access**
@@ -125,11 +125,11 @@ Underlay and Overlay Network
 - An overlay network is a logical topology used to virtually connect devices. It is built over the physical underlay network.
 - The combination of underlay and overlay forms the SD-Access ‘network fabric’
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.014.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.014.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.015.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.015.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.016.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.016.png)
 
 
 
@@ -149,29 +149,29 @@ SD-WAN Benefits
 - Integration with the latest cloud and network technologies
 - Lower cost
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.017.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.017.png)
 
 
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.018.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.018.png)
 
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.019.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.019.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.015.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.015.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.020.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.020.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.021.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.021.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.022.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.022.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.023.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.023.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.024.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.024.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.016.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.016.png)
 
-![](images/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.019.png)
+![](assets/Net_Automation-Prog/Aspose.Words.7ea531d4-bdbd-4d00-b05c-84384fe1e534.019.png)
 
  [[Index]]

@@ -58,36 +58,36 @@ industry standard definition of Cloud Computing in 2011:
 - Virtualization has been around a lot longer than Cloud Computing though
 - This lecture focuses on server virtualization because it was the first type available, but the same principles can be applied to virtualize network infrastructure equipment
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.001.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.001.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.002.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.002.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.003.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.003.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.004.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.004.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.005.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.005.png)
 
 ## **Type 1 vs Type 2 Hypervisor**
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.006.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.006.png)
 
 
 # **Virtualization on Network Devices**
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.007.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.007.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.008.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.008.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.009.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.009.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.010.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.010.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.011.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.011.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.002.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.002.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.012.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.012.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.013.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.013.png)
 
 
 
@@ -100,15 +100,15 @@ industry standard definition of Cloud Computing in 2011:
 - The three models define where the customer and provider areas of responsibility are, and at what level the customer gains access.
 - The three models build on top of one another.
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.014.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.014.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.009.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.009.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.015.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.015.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.016.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.016.png)
 
-![](images/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.017.png)
+![](assets/Cloud/Aspose.Words.e650799a-1137-4e9d-91c4-04daf8c20ba7.017.png)
 
 #
 # **Cloud Deployment Models**

@@ -31,9 +31,9 @@
 - They usually use SSL (sometimes IPsec) for encryption.
 
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.001.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.001.png)
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.002.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.002.png)
 
 
 # **WAN Connection Options**
@@ -66,11 +66,11 @@
 
 
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.003.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.003.png)
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.004.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.004.png)
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.005.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.005.png)
 
 **WAN Backup and Small Office Solutions**
 
@@ -89,7 +89,7 @@
 - ATM Asynchronous Transfer Mode
 - X.25
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.006.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.006.png)
 
 
 # **Leased Lines**
@@ -103,7 +103,7 @@
   - A data centre that’s connected to the company’s existing Wide Area Network, providing multipoint connectivity between offices
   - A data centre that’s connected to the Internet, providing Internet connectivity, and optionally corporate office connectivity over Internet VPN
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.007.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.007.png)
 
 
 **Leased Line Benefits and Drawbacks**
@@ -135,7 +135,7 @@
 - Ethernet connections are typically used to the customer router
 - MPLS VPNs provide a full mesh topology by default
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.008.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.008.png)
 
 ## **Layer 3 MPLS VPN**
 - MPLS runs across the providers core on the PE and P routers
@@ -146,16 +146,16 @@
 - The provider’s core routers are transparent to the customer
 - The customer sites are in different IP subnets
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.009.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.009.png)
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.010.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.010.png)
 
 ## **Layer 2 MPLS VPN**
 - The CE devices do not peer with the PE devices. The entire provider network is transparent to the customer
 - The provider network acts like a giant switch
 - The customer sites are in the same IP subnet(s)
 
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.011.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.011.png)
 
 - This may be required for clustering an application over the WAN
 - It can also be useful for migrating hosts during Disaster Recovery
@@ -167,29 +167,29 @@ Layer 2 MPLS VPN Terminology
 
 # **Topology Options**
 ## ` `**Hub and Spoke (Star)**
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.012.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.012.png)
 
 - Advantages: Simplicity, centralised security policy
 - Disadvantages: Single point of failure, suboptimal traffic flow
 
 ## **Redundant Hub and Spoke**
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.013.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.013.png)
 
 - Advantages: Removes single point of failure, centralised security policy
 - Disadvantages: Higher cost, suboptimal traffic flow
 
 
 ## **Full Mesh**
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.014.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.014.png)
 
 - Advantages: Optimal traffic flow
 - Disadvantages: Higher complexity and cost
 
 
 ## **Partial Mesh**
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.015.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.015.png)
 
 # **Internet Redundancy Options**
-![](images/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.016.png)
+![](assets/WAN-VPN/Aspose.Words.8bad8cdf-4d8d-455f-a1af-eec2d9ec8ba4.016.png)
 
  [[Index]]

@@ -15,12 +15,12 @@
   - Covers a large area such as a city
 
 ## **Ad Hoc Networks**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.001.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.001.png)
 
 ## **Infrastructure Mode**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.002.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.002.png)
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.003.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.003.png)
 
 
 **Ad-Hoc vs Infrastructure Mode**
@@ -41,10 +41,10 @@
 - Direct Print
 
 ## **Wireless Bridges**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.004.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.004.png)
 
 ## **Mesh Networks**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.005.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.005.png)
 
 
 # **Wireless Access Points**
@@ -53,39 +53,39 @@
 - Only one device can communicate at a time
 
 ## **BSS Basic Service Set**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.002.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.002.png)
 
 ## **DS Distribution System**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.006.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.006.png)
 
 ## **BSSID Basic Service Set Identifier**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.007.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.007.png)
 
 
 ## **BSA Basic Service Area**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.008.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.008.png)
 
 
 ## **SSID Service Set Identifier**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.009.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.009.png)
 
 
 
 ## **Multiple SSID Service Set Identifiers**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.010.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.010.png)
 
 
 ## **Beacons**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.011.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.011.png)
 
 ## **ESS Extended Service Set**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.012.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.012.png)
 
 ## **Roaming**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.013.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.013.png)
 
 # **WLC Wireless LAN Controllers**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.014.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.014.png)
 
 ## **Autonomous vs Lightweight Access Points**
 - Standalone Access Points are known as Autonomous Access Points
@@ -106,7 +106,7 @@
 - It can also detect rogue APs
 
 ## **Roaming with Wireless LAN Controller**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.015.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.015.png)
 
 
 
@@ -138,33 +138,33 @@ Split MAC – WLC Operations
 - QoS management
 
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.016.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.016.png)
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.017.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.017.png)
 
 ## **Flexconnect**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.011.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.011.png)
 
 
 
 # **Autonomous AP Switch Configuration**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.018.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.018.png)
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.019.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.019.png)
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.020.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.020.png)
 
 
 
 # **Lightweight AP Switch Configuration**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.021.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.021.png)
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.022.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.022.png)
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.023.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.023.png)
 
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.024.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.024.png)
 
 
 # **Wifi Channels and Radio Frequencies**
@@ -173,23 +173,23 @@ Split MAC – WLC Operations
 - A radio operator's license is not required.
 - ISM devices do not have regulatory protection against interference from other users of the band. 
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.025.png) 
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.025.png) 
 
 # **2.4 GHz Spectrum**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.026.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.026.png)
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.027.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.027.png)
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.028.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.028.png)
 
 
 # **5GHz Spectrum** 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.029.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.029.png)
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.030.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.030.png)
 
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.031.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.031.png)
 
 # **Wireless Security**
 - WiFi coverage can leak outside the desired area
@@ -197,8 +197,8 @@ Split MAC – WLC Operations
 - This can make it more vulnerable to attack
 - Strong authentication and encryption techniques should be used
 ## ` `**Wireless Security Standards**
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.032.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.032.png)
 
-![](images/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.033.png)
+![](assets/Wireless_Networks/Aspose.Words.0ff366d5-d578-45b9-b798-d8b69c87b373.033.png)
 
  [[Index]]

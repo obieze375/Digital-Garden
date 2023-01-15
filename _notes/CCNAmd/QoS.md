@@ -9,18 +9,18 @@
 - HD video has stricter requirements
 
 # **Congestion**
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.001.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.001.png)
 
 - Congestion causes delay to packets as they wait in the queue
 - As the size of the queue changes it causes jitter
 - There is a limit to the size of the queue. If a packet arrives when the queue is full the router will drop it
 - Voice and video calls (and applications) will be unacceptable quality if they do not meet their delay, jitter and loss requirements
 
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.002.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.002.png)
 
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.003.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.003.png)
 
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.004.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.004.png)
 
 
 # **Classification and Marking**
@@ -38,7 +38,7 @@
 - IP phones mark their call signalling traffic as 24 (CS3) and their voice payload as 46 (EF)
 - There are standard markings for other traffic types, such as 26 (AF31) for mission critical data, and 34 (AF41) for SD video
 
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.005.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.005.png)
 
 ## **Recognising Traffic with an ACL**
 - An Access Control List can be used to recognise traffic based on its Layer 3 and Layer 4 information
@@ -48,7 +48,7 @@
 - NBAR (Network Based Application Recognition) can be used to recognise traffic based on its Layer 3 to Layer 7 information
 - Signatures can be downloaded from Cisco and loaded on your router which recognise well known applications
 
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.006.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.006.png)
 
 
 
@@ -65,11 +65,11 @@
 - Policy Maps take the action on that traffic
 - Service Policies apply the policy to an interface
 
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.007.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.007.png)
 
 (This config isn’t required on the CCNA)
 
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.008.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.008.png)
 
 
 # **Shaping and Policing**
@@ -79,9 +79,9 @@
 - Traffic policing drops or re-marks excess traffic to enforce the specified rate limit.
 - Classification can be used to allow different rates for different traffic types.
 
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.009.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.009.png)
 
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.010.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.010.png)
 
-![](images/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.004.png)
+![](assets/QoS/Aspose.Words.c93951a8-85a0-466a-9c04-718f77678a03.004.png)
 [[Index]]]
