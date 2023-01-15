@@ -56,7 +56,7 @@
 [[delegate to]] 
 [[Custom Roles]] 
 [[Copy Module]]
-[[ Script Module]]
+[[Script Module]]
 [[Service Module]]
 [[Shell Module]]
 [[User Module]]
@@ -109,7 +109,7 @@
 ## Jenkins:
 
 [[Jenkins-pipeline-templates]]
-[[JenkinsPipeline workplan.docx.pdf]]
+[[JenkinsPipeline workplan.pdf]]
 
 ## Terraform & Terragrunt:
 
@@ -117,29 +117,9 @@
 
 ## Ethical Hacking & CyberSecurity
 
-[[Ethical Hacking & Cyber Security/Online-Privacy-Security-101]]
+[[Online-Privacy-Security-101.md]]
 
-## General Notes
 
-[[Boxing-notes]] 
-
-[[Continuity-testing]] 
-
-[[Foods-to-gain-weight]] 
-
-[[How-to-absorb-new-information]]
-
-[[How-to-file-greivance-take-action-against-employer]]  
-
-[[How-to-plan-holidays]] 
-
-[[how-to-slow-cook-steaks]] 
-
-[[Negotiate-start-date-at-new-job]]
-
-[[Soldering]]
-
-[[Upgrading-laptop-RAM]]
 
 ## Python 
 
@@ -154,7 +134,3 @@
 
 ## Architecture
 
- Cerner: [[pcs-millenium.png]]
- LSEG: [[ATLAS-DataDog.jpg]]
- Public Cloud Private Cloud Integration: [[Public & Private Cloud Integration.jpg]]
- SwapClear Dev Cycle: [[SwapClear Software Deployment Cycle 1.jpg]]
