@@ -104,6 +104,12 @@ NAS Protocols
 From <https://www.netapp.com/data-storage/what-is-san-storage-area-network/>
 
 
+![](assets/SANs.jpg)
+
+![](assets/SANs2.jpg)
+
+![](assets/SANs3.jpg)
+
 <img src="/assets/SANs.jpg"/>
 
 
