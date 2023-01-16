@@ -11,7 +11,7 @@
 
 [[Fundamentals of Computer Architecture2_v1.2]]
 
-[[Index]] 
+[[Git]] 
 
 [[Git Aliases]] 
 
