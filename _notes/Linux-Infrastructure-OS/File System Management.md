@@ -84,7 +84,7 @@ The below variables should be replaced with the appropriate values for the local
 
   
 
-# Steps
+## Steps
 
   
 
@@ -515,14 +515,16 @@ Verifying mounted share: mount    
 
 ## NFS (Network File Share)
 
-<img src="/assets/nfs.png)"/> 
+![](assets/nfs.png)
+
+
 
 
 A basic system is used in NFS where a mount command will instruct the server to link with several clients. The clients will get access to the files on the server through the proper platform. The design can allow several security protocols to run in a place that will dictate who will have access to certain files, producing a safe and simplified approach to work.
 
 ## Benefits of NFS Server (Pros)
 
-~~~~  
+
 
 The NFS server stands for central management.
 
@@ -550,12 +552,11 @@ Reduces administration costs.
 
 For more security firewalls and Kerberos can be used.
 
-~~~~ 
+
 
 ## Disadvantages of NFS Network File System (Cons)
 
 
-~~~~ 
 
 File sharing can be highly complex.
 
@@ -597,7 +598,7 @@ Discover the NFS share exported by NFS server ipaserver.example.com.
 
 • NFS version 3 should be used.
 
-~~~~
+
 
 ## Command Action Description
 
