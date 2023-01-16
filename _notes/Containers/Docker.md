@@ -83,8 +83,7 @@ CMD ...
 
 Docker is an application that simplifies the process of managing application processes in containers. Containers let you run your applications in resource-isolated processes. They’re similar to virtual machines, but containers are more portable, more resource-friendly, and more dependent on the host operating system. 
 
-
-<img src="/assets/docker_diagram.png"/>
+![](assets/docker_diagram.png)
 
 # Step 1 — Installing Docker
 
@@ -688,7 +687,8 @@ After pushing an image to a registry, it should be listed on your account’s da
 	 
 	After pushing an image to a registry, it should be listed on your account’s dashboard, like that show in the image below.
 	
-  <img src="/assets/docker_image.png"/>
+![](assets/docker_image.png)
+
 	
 	 
 	 
