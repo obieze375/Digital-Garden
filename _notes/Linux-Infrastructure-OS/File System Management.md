@@ -6,7 +6,7 @@
 
 
 
-# The df command
+## The df command
 
   
 
@@ -15,10 +15,6 @@
 df -h or df -h. or df -h | grep /<file_system_name>
 
 ~~~~
-
-  
-
-~~~~    
 
 Filesystem Size Used Avail Use% Mounted on
 
@@ -34,7 +30,7 @@ tmpfs 497M 0 497M 0% /sys/fs/cgroup
 
 /dev/sdb3 484G 73M 459G 1% /opt  
 
-~~~~
+
 
 ## Introduction
 
@@ -108,7 +104,7 @@ If the system is a Linux 7 cluster, then special care is required with any share
 
 ~~~~
 
-  vgdisplay -s <vgname>
+vgdisplay -s <vgname>
 
 ~~~~
 
@@ -120,7 +116,7 @@ If the system is a Linux 7 cluster, then special care is required with any share
 
 ~~~~
 
-  lvcreate -L +<size>M -n <lvname> <vgname>
+lvcreate -L +<size>M -n <lvname> <vgname>
 
 ~~~~
 
@@ -168,7 +164,7 @@ tune2fs -c0 -i0 /dev/<vgname>/<lvname>
 
 ~~~~
 
-  mkdir <mount_pt>
+mkdir <mount_pt>
 
 ~~~~
 
