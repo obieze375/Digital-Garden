@@ -84,7 +84,7 @@
 
 [[Understanding YAML]]
 
-[[Ansible/Custom Modules/ansible Module-input-manipulation/library/foobar.py]] 
+[[foobar]]
 
 [[example.yml]] 
 
