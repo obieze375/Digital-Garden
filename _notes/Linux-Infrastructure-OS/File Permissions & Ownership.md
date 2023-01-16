@@ -1,10 +1,12 @@
 [[Index]] 
 
-<img src="/assets/file-permission-1.png)"/> 
 
-<img src="/assets/file-permission-2.png)"/> 
+![](assets/file-permission-1.png)
 
-<img src="/assets/file-permission-3.png)"/> 
+![](assets/file-permission-2.png)
+
+![](assets/file-permission-3.png)
+
 
 
   

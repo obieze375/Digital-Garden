@@ -659,7 +659,7 @@ Ctrl + Z - Undo an action.
 ~~~~
 
 
-# nohup & disown command usage
+## nohup & disown command usage
 
 ~~~~
 

@@ -1,8 +1,7 @@
 [[Index]] 
 
 
-<img src="/assets/file-permission-1.png)"/> 
- 
+ ![](assets/file-permission-1.png)
 
 
 

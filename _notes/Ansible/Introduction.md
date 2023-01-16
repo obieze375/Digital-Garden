@@ -8,8 +8,9 @@
 
 • After connecting to your nodes, Ansible pushes small programs called as “Ansible Modules”. Ansible runs that modules on your nodes and removes them when finished. Ansible manages your inventory in simple text files (These are the hosts file). Ansible uses the hosts file where one can group the hosts and can control the actions on a specific group in the playbooks.             
 
+![](assets/ansible_works.jpg)
 
-<img src="/assets/ansible_works.jpg"/>
+<img src="/assets/"/>
 
 
 

@@ -31,7 +31,7 @@ Conditionals are used where one needs to run a specific step based on a conditio
 
   
 
-# Conditions based on registered variables:
+## Conditions based on registered variables:
 
   
 
@@ -248,7 +248,7 @@ If you want to keep the variables in a separate file and import it with vars_fil
 
   
 
-# vars.yaml
+## vars.yaml
 
 ~~~~
 
@@ -505,15 +505,15 @@ Often you want to execute or skip a task based on facts. As we mentioned before 
 
 ~~~~
 
+![](assets/facts.png")
 
-
-<img src="/assets/facts.png"/>
+<img src="/assets//>
 
 
 
   
 
-# Loops
+## Loops
 
   
 

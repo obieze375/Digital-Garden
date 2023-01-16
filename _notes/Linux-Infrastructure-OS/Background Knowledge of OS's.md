@@ -2,7 +2,6 @@
 [[Index]] 
 
   
-
 # History of Unix/Linux
 
   
@@ -122,11 +121,11 @@ world-wide.
   
   
 
-# Inside Linux
+## Inside Linux
 
   
 
-# Kernel
+## Kernel
 
   
 
@@ -166,7 +165,7 @@ details are provided for your information only.
 
   
 
-# Shell
+## Shell
 
   
 
@@ -226,7 +225,7 @@ scripts" are used to accomplish a series of tasks.
 
   
 
-# Utilities
+## Utilities
 
   
 
@@ -264,7 +263,7 @@ Modular: single functions can be grouped to perform more complex tasks
 
   
 
-# Operating system
+## Operating system
 
   
 
@@ -308,7 +307,7 @@ An operating system performs these services for applications:
 
   
 
-# Various Parts of an Operating System
+## Various Parts of an Operating System
 
   
 
@@ -351,7 +350,7 @@ system. Documentation, and sometimes even games, can also be part of it.
 
   
 
-# Important parts of the kernel
+## Important parts of the kernel
 
   
 
@@ -385,8 +384,8 @@ The Linux kernel consists of several important parts:
 
 The following figure shows some of the more important parts of the Linux kernel
 
+![](assets/kernel.png)
 
-<img src="/assets/kernel.png"/>
 
 
 
@@ -416,7 +415,7 @@ The following figure shows some of the more important parts of the Linux kernel
 
   
 
-# Examples of computer operating systems
+## Examples of computer operating systems
 
   
 
@@ -444,7 +443,7 @@ The following figure shows some of the more important parts of the Linux kernel
 
   
 
-# Hard Disk
+## Hard Disk
 
   
 
@@ -482,7 +481,7 @@ address range on today's hard disks.
 
   
 
-# Disk Cache
+## Disk Cache
 
   
 
@@ -498,14 +497,16 @@ likely to be accessed next. Write caching is also provided with some disk caches
 
   
 
-# Recover/Reset Root Password
+## Recover/Reset Root Password
 
   
   
 
 1 – In the boot grub menu select option to edit
 
-<img src="/assets/password-retrieve1.png"/>
+![](assets/password-retrieve1.png)
+
+
 
   
 
@@ -516,7 +517,9 @@ likely to be accessed next. Write caching is also provided with some disk caches
 
 2 – Select Option to edit (e).
 
-<img src="/assets/password-retrieve2.png)"/> 
+![](assets/password-retrieve2.png)
+
+
 
 
   
@@ -524,7 +527,9 @@ likely to be accessed next. Write caching is also provided with some disk caches
 
 3 – Go to the line = ro and change it with rw init=/sysroot/bin/sh
 
-<img src="/assets/password-retrieve3.png)"/> 
+![](assets/password-retrieve3.png)
+
+
 
 
 
@@ -533,8 +538,8 @@ likely to be accessed next. Write caching is also provided with some disk caches
 
 4 – Now press Control+x to start on single user mode
 
+![](assets/password-retrieve4.png)
 
-<img src="/assets/password-retrieve4.png)"/> 
 
 
 

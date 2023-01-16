@@ -104,7 +104,7 @@
   ~~~~
   
 
-# For Loops
+## For Loops
 
 ~~~~
 
@@ -151,7 +151,7 @@ done
 
   
 
-# Functions
+## Functions
 
   
 
@@ -311,7 +311,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php>  
   
   
 
-# If Statement
+## If Statement
 
   
 
@@ -359,7 +359,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
   
 
-# or example
+## or example
 
 ~~~~
 
@@ -383,7 +383,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
   
 
-# Basic if statement
+## Basic if statement
 
 ~~~~
 
@@ -409,7 +409,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
   
 
-# elif statements
+## elif statements
 
 ~~~~
 
@@ -439,7 +439,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
   
 
-# Nested if statements
+## Nested if statements
 
 ~~~~
 
@@ -467,7 +467,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
   
 
-# and example
+## and example
 
 ~~~~
 
@@ -491,7 +491,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
   
   
 
-# INPUT/OUTPUT REDIRECTORS
+## INPUT/OUTPUT REDIRECTORS
 
   
   
@@ -541,7 +541,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 ~~~~  
   
 
-# Operators
+## Operators
 
   
   
@@ -576,7 +576,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 ~~~~  
   
 
-# Process Handling
+## Process Handling
 
   
   
@@ -651,7 +651,7 @@ wait                # waits until all background jobs have finished
   
   
 
-# Strings
+## Strings
 
 ~~~~
   
@@ -675,7 +675,7 @@ wait                # waits until all background jobs have finished
 
 ~~~~ 
 
-# Switchcase
+## Switchcase
 
 ~~~~
 
@@ -698,7 +698,7 @@ esac
   
   
 
-# case example
+## case example
 
 ~~~~
 
@@ -792,7 +792,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
   
   
 
-# Until
+## Until
 
 # ----------------------
 
@@ -810,7 +810,7 @@ done
 
   
 
-# Basic until loop
+## Basic until loop
 
   
 
@@ -842,7 +842,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php#while> �
   
   
 
-# Variables
+## Variables
 
   
 
@@ -966,7 +966,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php#while> �
 
   
 
-# While
+## While
 
   
 
@@ -986,7 +986,7 @@ done  
 
   
 
-# Basic while loop
+## Basic while loop
 
   
 

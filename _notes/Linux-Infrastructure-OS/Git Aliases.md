@@ -1,7 +1,7 @@
 
 [[Index]] 
 
-# Git Aliases
+## Git Aliases
 
 ~~~~
 

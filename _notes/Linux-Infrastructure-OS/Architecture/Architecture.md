@@ -110,15 +110,6 @@ From <https://www.netapp.com/data-storage/what-is-san-storage-area-network/>
 
 ![](assets/SANs3.jpg)
 
-<img src="/assets/SANs.jpg"/>
-
-
-<img src="/assets/SANs2.png"/>
-  
-
-
-<img src="/assets/SANs3.png"/>
-
 
 
 
@@ -127,7 +118,7 @@ From <https://www.netapp.com/data-storage/what-is-san-storage-area-network/>
   
   
 
-The image example on the left illustrates a highly available system.
+The assets example on the left illustrates a highly available system.
 
   
 
@@ -139,7 +130,7 @@ The individual pieces are not necessarily built with fault tolerance in mind.
 
   
 
-The image on the right shows the rear panel of a rack mounted server.  
+The assets on the right shows the rear panel of a rack mounted server.  
 
   
 
@@ -157,20 +148,8 @@ If one power supply were to fail, the other three could maintain power to the sy
 
 We’re also assuming here that the power supplies can be replaced while the system is up and running.
 
-<img src="/assets/SANs4.png"/>
+ ![](assets/SANs4.jpg)
 
-
-  
-
-
-
-
-
-
-
-
-  
-  
   
 
 In this example diagram we have two nodes in a simple cluster.
@@ -207,7 +186,8 @@ A fencing agent could be a network connected power switch, or some other type of
 
 # Jump Server Architecture
 
-<img src="/assets/jump%20servers.jpg"/>
+![](assets/jump%20servers.jpg)
+
 
 
   
@@ -227,7 +207,9 @@ The concept of a “jump” server has been around for decades, but is rarely in
 
 # SDDC - Software Defined Data Centre
 
-<img src="/assets/sddc.png"/>
+![](assets/sddc.png)
+
+
 
 
 
@@ -242,7 +224,9 @@ An SDDC (software-defined data center) is a data storage facility in which all i
 
 # Blades Server
 
-<img src="/assets/Blade_Server_Chassis.png"/>
+![](assets/Blade_Server_Chassis.png)
+
+
 
 
 A blade server, sometimes referred to as a high-density server, is a compact device containing a computer used to manage and distribute data in a collection of computers and systems, called a network. Its role is to act as a conduit between computers, programs, applications and systems.

@@ -5,9 +5,11 @@
 
 ## Disk Management
 
-<img src="/assets/lvm.jpg"/>
-<img src="/assets/filesystem_explain.png"/>
-<img src="/assets/filesystem_explain2.png"/>
+![](assets/lvm.jpg)
+![](assets/filesystem_explain.png)
+![](assets/filesystem_explain2.png)
+
+
 
 
 # Display Physical Volumes (pvs and pvdisplay)

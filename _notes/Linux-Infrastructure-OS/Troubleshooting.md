@@ -25,7 +25,9 @@
 
 ## Can't SSH to server as root user
 
-<img src="/assets/can't-ssh-to-server.png"/>
+![](assets/can't-ssh-to-server.png)
+
+
 
 
   
@@ -69,14 +71,18 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot CD into a Directory
 
-<img src="/assets/cd-directory.png"/>
+![](assets/cd-directory.png)
+
+
 
 
   
 
 ## Cannot Open a File Or Run a Script
 
-<img src="/assets/can't-open-file.png"/>
+![](assets/can't-open-file.png)
+
+
 
 
 
@@ -85,7 +91,9 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot Create Links
 
-<img src="/assets/cannot-link.png"/>
+![](assets/cannot-link.png)
+
+
 
 
 
@@ -93,7 +101,9 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot Write to a File
 
-<img src="/assets/cannot-edit-file.png"/>
+![](assets/cannot-edit-file.png)
+
+
  
 
 
@@ -101,7 +111,9 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot Change File Permissions / Ownership
 
-<img src="/assets/cannot-change-file-perm.png"/>
+![](assets/cannot-change-file-perm.png)
+
+
 
 
 
@@ -111,7 +123,9 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot View Other Users Files
 
-<img src="/assets/image/cannot-view-other-users-files.png"/>
+![](assets/cannot-view-other-users-files.png)
+
+
 
 
   
@@ -415,7 +429,7 @@ repeatedly
 
   
 
-# System Rebooted Or Process Restarted
+## System Rebooted Or Process Restarted
 
   
 
@@ -1096,7 +1110,9 @@ bash -v hello1.sh  
 
 ## Server is not reachable
 
-<img src="/assets/Server_Unreachable_Troubleshooting.docx_1.png"/>
+![](assets/Server_Unreachable_Troubleshooting.docx_1.png)
+
+
 
 
 
@@ -1105,7 +1121,9 @@ bash -v hello1.sh  
 
 ## Firewall Issue
 
-<img src="/assets/Firewall%20Issue.docx_1.png"/>
+![](assets/Firewall%20Issue.docx_1.png)
+
+
 
 
 
@@ -1113,7 +1131,7 @@ bash -v hello1.sh  
 
 ## Cannot connect to a website or service hosted on server
 
-<img src="/assets/Can't%20connect%20to%20Website.png"/>
+![](assets/Can't%20connect%20to%20Website.png)
 
 
 
@@ -1217,7 +1235,9 @@ Based on the results the best option is to identify and kill PIDS that is causin
 
 One of options of the strace utility is to help as a troubleshooting utility. If you want to know what a process is doing, or why it hangs, strace will definitely help. By running strace without any parameters, it will already show why a process is doing. You can trace a running process, or instruct strace to start it for you.
 
-<img src="/assets/strace1.png"/>
+![](assets/strace1.png)
+
+<img src="/assets/"/>
 
 
 
@@ -1345,7 +1365,9 @@ statfs (retrieve file system related details)
 
 ## A related example screen output:
 
- <img src="/assets/strace2.png"/> 
+![](assets/strace2.png)
+
+
  
 
 screenshot of strace monitoring file access and activity

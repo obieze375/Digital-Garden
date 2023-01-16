@@ -5,10 +5,10 @@ Obtained from https://devhints.io/mysql
 # Mysql DB Structure
 
 
+![](assets/mysql_db_structure.png)
 
-  <img src="/assets/mysql_db_structure.png"/>
-  
-  <img src="/assets/Mysql-mongoDB-structure.png"/>
+![](assets/Mysql-mongoDB-structure.png)
+
 
   
 
