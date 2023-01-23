@@ -1,5 +1,6 @@
 [[Index]] 
 
+
 ## Custom role creation with Ansible Galaxy
 
   
@@ -610,3 +611,5 @@ httpd.service - The Apache HTTP Server
 This is a homepage created by learnitguide.net for ansible roles.
 
 ~~~~
+
+[[Index]] 

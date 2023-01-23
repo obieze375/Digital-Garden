@@ -1,9 +1,26 @@
+
+
+[[defaults-main]]  
+[[handlers-main]]  
+[[meta-main]] 
+[[tasks-main]]
+[[templates-test.py.j2]]  
+[[tests-inventory]]  
+[[tests-test]] 
+[[vars-main]]  
+[[vars-requirements]]
+[[vars.travis]]  
+
+```yml
+
 ---
 language: python
 python: "2.7"
 
 # Use the new container infrastructure
 sudo: false
+
+
 
 # Install ansible
 addons:
@@ -27,3 +44,4 @@ script:
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
+```

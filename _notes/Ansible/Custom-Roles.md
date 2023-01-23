@@ -1,3 +1,4 @@
+[[Index]]  
 
 ## To be incorporated into Obsidian all yml files have been converted to .md extensions -> To get back into yml format change all file extensions to back .yml
 
@@ -44,3 +45,22 @@ Author Information
 ------------------
 
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+
+![](assets/role-structure.png)
+
+## Generic Role creation process
+
+[[Role Creation]]
+
+## Oracle SQL Role files 
+
+[[defaults-main]]  
+[[handlers-main]]  
+[[meta-main]] 
+[[tasks-main]]
+[[templates-test.py.j2]]  
+[[tests-inventory]]  
+[[tests-test]] 
+[[vars-main]]  
+[[vars-requirements]]
+[[vars.travis]]  

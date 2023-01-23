@@ -16,6 +16,12 @@ ansible-playbook -i <play_book_name>.yml    
 
 ~~~~
 
+~~~~
+
+ansible-playbook <play_book_name>.yml    
+
+~~~~
+
   
 
 ## Running the Playbook
