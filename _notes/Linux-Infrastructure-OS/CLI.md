@@ -1,11 +1,57 @@
 [[Index]] 
 
+
+## Access Man Page
+
+```bash
+man <command_name>
+
+man passwd 
+
+man -k <passwd> - Obtains all the parameters that can be used with it
+
+```
+
+
+
+
+
+## Prepare Man page for Printing
+
+```bash
+[student@worksation ~]$ man man
+...output omitted...
+ man -t bash | lpr -Pps
+ Format the manual page for bash into the default troff or groff format
+ and pipe it to the printer named ps. The default output for groff
+ is usually PostScript. man --help should advise as to which processor
+ is bound to the -t option.
+...output omitted...
+```
+
+## Push Output of Man Page to file
+
+```bash
+[student@workstation ~]$ man -t passwd > passwd.ps
+[student@workstation ~]$ ls -al
+...output omitted...
+-rw-r--r--. 1 student student 20168 Mar 8 09:02 passwd.ps
+...output omitted...
+```
+
+```bash
+
+```
+
+
+
+
+
+
 ## clear – Clear the terminal window
 
 ~~~~
-
 clear
-
 ~~~~
 
   
@@ -13,9 +59,7 @@ clear
 ## echo $? - Check if previous bash command run was successful 0 means yes and 1 means no
 
  ~~~~  
-
  echo $?
-
  ~~~~
 
   
@@ -23,9 +67,7 @@ clear
 ## reset – Resets the terminal
 
 ~~~~
-
 reset
-
 ~~~~
 
   
@@ -38,7 +80,7 @@ history
 
   
 
-history | grep - Search for a specific command from the history
+history | grep <value> - Search for a specific command from the history
 
   
 
@@ -123,13 +165,11 @@ xrandr --output --mode 1920x1200
 ## Ctrl + r - Reverse search
 
 ~~~~
-
 Type Ctrl+r to open the reverse search tool.
 
 Search for any command from the history and press Ctrl+r again for
 
 the previous one that contain the string you’re looking for.
-
 ~~~~
 
 ## General commands
@@ -158,6 +198,10 @@ the previous one that contain the string you’re looking for.
 
 shutdown -r -> Shutdowns and reboots the node
 
+command; command; -> Separates commands 
+
+
+
   
 
 General commands continued…
@@ -169,7 +213,7 @@ General commands continued…
   
   
 
-# tmux
+## tmux
 
   
   
@@ -182,7 +226,7 @@ General commands continued…
 
 ~~~~
 
-• tmux
+tmux
 
 ~~~~
 
@@ -194,7 +238,7 @@ General commands continued…
 
 ~~~~
 
-• tmux new -s myname  
+tmux new -s myname  
 
 ~~~~
 
@@ -393,7 +437,7 @@ From <https://gist.github.com/MohamedAlaa/2961058>  
   
   
 
-# Crontab
+## Crontab
 
   
 

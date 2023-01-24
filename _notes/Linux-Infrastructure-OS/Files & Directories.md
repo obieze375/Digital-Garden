@@ -104,7 +104,7 @@ be sure your typed path is correct!
 
 ~~~~
 
-• Example:
+Example:
 
 stuff summer.txt
 
@@ -145,9 +145,7 @@ paul@debian8:~$
 ## Shows all files with read and write permissions
 
 ~~~~
-
 ls –ltr
-
 ~~~~
 
   
@@ -192,9 +190,7 @@ ls -R
   
   
 
-# Search for files in Directories
-
-  
+## Search for files in Directories
 
 ~~~~
 
@@ -202,16 +198,22 @@ ls -R
 
 ~~~~
 
-  
+## Locate a file
 
-# Working with files
+~~~~
+locate passwd
+~~~~
+
+## Working with files
 
   
 
 ~~~~
-
 file – determines file type of file
 
+Syntax: 
+
+file <filename>
 ~~~~
 
   
@@ -234,7 +236,7 @@ HelloWorld.c: ASCII C program text
 
   
 
-# touch – creates empty files
+## touch – creates empty files
 
   
 
@@ -258,7 +260,7 @@ total 0
 
   
 
-# File Creation Commands
+## File Creation Commands
 
 ~~~~
 
@@ -441,7 +443,7 @@ unzip -d /dest/directory/ {file.zip}
   
   
 
-# Check contents of File
+## Check contents of File
 
 
 ~~~~
@@ -458,7 +460,7 @@ narad:x:500:500::/home/narad:/bin/bash
 
   
 
-# Check difference between 2 files
+## Check difference between 2 files
 
 ~~~~
 
@@ -472,7 +474,7 @@ diff filename1 filename2
 
   
 
-# rm – Deletes file forever
+## rm – Deletes file forever
 
 ~~~~
 
@@ -492,7 +494,7 @@ paul@debian7:~
 
   
 
-# rm –i – Deleting file with a check
+## rm –i – Deleting file with a check
 
   
 
@@ -508,7 +510,7 @@ rm: remove regular empty file `file33'? Yes
   
 
 
-# rm-f – Delete files
+## rm-f – Delete files
 
 ~~~~
  • VERY STRONG WAY TO DELETE FILES:
@@ -520,7 +522,7 @@ rm -f /* - Deletes all files in directory
 
   
 
-# cp – Copy One file
+## cp – Copy One file
 
   
 
@@ -540,7 +542,7 @@ file42 file42.copy SinkoDeMayo
 
   
 
-# Copy to another Directory
+## Copy to another Directory
 
   
 
@@ -559,7 +561,7 @@ SinkoDeMay
 
   
 
-# cp –r – Copy complete Directories
+## cp –r – Copy complete Directories
 
 ~~~~
 paul@debian7:~$ ls
@@ -579,7 +581,7 @@ SinkoDeMayo
  
 
 
-# copy multiple files to directory
+## copy multiple files to directory
 
 ~~~~
 
@@ -601,7 +603,7 @@ paul@debian7:~$
 
   
 
-# More Copy notes
+## More Copy notes
 
 ~~~~
 cp filename/directory - copy file and directory
@@ -618,7 +620,7 @@ cp filename directory/directory/filename.bak - creates backup file
 
   
 
-# mv - Rename files with mv
+## mv - Rename files with mv
 
 ~~~~
 
@@ -635,7 +637,7 @@ paul@debian7:~$
   
   
 
-# Running bash script
+## Running bash script
 
 ~~~~
 
@@ -647,7 +649,7 @@ paul@debian7~$
 
   
 
-# figlet
+## figlet
 
   
 
@@ -659,11 +661,11 @@ paul@debian7~$
 
   
 
-# mkdir – Makes new directory
+## mkdir – Makes new directory
 
   
 
-# Creates Directory
+## Creates Directory
 
   
 
@@ -681,12 +683,11 @@ drwxr-xr-x 2 paul paul 4096 Sep 17 00:08 stuff
 
   
 
-# mkdir –p – Creates Parent with new directory
+## mkdir –p – Creates Parent with new directory
 
   
 
 ~~~~
-
 paul@debian8:~$ mkdir -p mydir2/mysubdir2/threedirsdeep
 
 paul@debian8:~$ cd mydir2
@@ -698,50 +699,46 @@ total 4 drwxr-xr-x 3 paul paul 4096 Sep 17 00:11 mysubdir2
 paul@debian8:~/mydir2$ cd mysubdir2
 
 paul@debian8:~/mydir2/mysubdir2$
-
 ~~~~
 
   
 
-# Search through Directory -  
+## Search through Directory -  
 
   
 
 ~~~~
-
 sudo du -a /dir/ | sort -n -r | head -n 20
+~~~
 
-~~~~
+
+
+## rmdir – Deletes Directory
 
   
 
-# rmdir – Deletes Directory
+~~~~
+paul@debian8:~/mydir$ rmdir otherstuff
 
-  
+paul@debian8:~/mydir$ cd ..  
 
 ~~~~
 
-• paul@debian8:~/mydir$ rmdir otherstuff
-
-• paul@debian8:~/mydir$ cd ..  
-
-~~~~
-
-# rmdir –p – Deletes Directory
+## rmdir –p – Deletes Directory
 
   
 
 ~~~~  
 
-• paul@debian8:~$ rmdir -p test42/subdir
+paul@debian8:~$ rmdir -p test42/subdir
 
-• @debian8:~
+@debian8:~
 
 ~~~~
 
   
 
-# move file to another location
+## move file to another location
 
   
 
@@ -753,22 +750,20 @@ mv directory directory - moves file to another location
 
   
 
-# cat - Check contents of file
+## cat - Check contents of file
 
   
 
 ~~~~
 
-• cat /etc/hosts
+cat /etc/hosts 
 
-  
-
-• cat /etc/hosts | grep <string_your're_looking_for>  (To search for a value through a file)
+cat /etc/hosts | grep <string_your're_looking_for>  (To search for a value through a file)
   
 ~~~~
   
 
-# Pattern searching
+## Pattern searching
 
 ~~~~
 grep -v pattern file.txt
@@ -814,7 +809,7 @@ find /home -name tecmint.txt
   
   
 
-# Editing Files with Vi
+## Editing Files with Vi
 
   
 
@@ -823,7 +818,6 @@ Vi Command Mode and Navigation
   
 
 ~~~~    
-
 k  - Up one line.  
 
 j -  Down one line.    
@@ -839,7 +833,6 @@ b  - Left one word.
 ^  - Go to the beginning of the line.
 
 $  - Go to the end of the line.
-
 ~~~~
 
   
@@ -970,24 +963,16 @@ C Same as c$.  
 
 ## Vi - Copying and Pasting
 
-  
-
 ~~~~    
-
 yy Yank (copy) the current line.  
 
 y Yank the .  
 
 p Paste the most recent deleted or yanked text.
 
-  
-
 To set paste if having formatting issues - (:set paste + shift I ) and then paste
 
 4yy - Pastes 4 lines down page
-
-  
-
 ~~~~
 
 ## Vi - Undo / Redo  
@@ -998,10 +983,10 @@ u Undo
 
 ~~~~    
 
-Ctrl-R Redo  
+  
 
 ~~~~  
-
+Ctrl-R - Redo
 ~~~~
 
 ## Vi - Searching  
