@@ -1,3 +1,3 @@
 [[Index]] 
 
-<img src="/assets/Fundamentals of Computer Architecture2_v1.2.pdf"/> 
+<pdf src="/assets/Fundamentals of Computer Architecture2_v1.2.pdf"/> 
