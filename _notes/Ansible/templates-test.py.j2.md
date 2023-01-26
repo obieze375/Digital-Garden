@@ -9,7 +9,7 @@
 [[vars-requirements]]
 [[vars.travis]] 
 
-
+```
 #!/usr/bin/env python
 
 import cx_Oracle
@@ -40,5 +40,7 @@ sql = """Enter multi-value sql here"""
     # release the connection
     if connection:
         connection.close()
+```
+
 
 ## Change md extension to just py.j2 to make it a runnable python script

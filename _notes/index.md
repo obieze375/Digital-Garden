@@ -15,7 +15,7 @@
 
 [[Git Aliases]] 
 
-[[Flow Control]] 
+[[Bash Scripting]] 
 
 [[CLI]] 
 
@@ -86,7 +86,7 @@
 
 [[foobar]]
 
-[[example.yml]] 
+[[Custom-Module-Input-Manipulation]] 
 
 [[Epoch Module]] 
 

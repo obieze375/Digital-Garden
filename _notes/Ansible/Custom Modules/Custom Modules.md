@@ -1,5 +1,9 @@
 [[Index]] 
 
+[[Epoch Module]] 
+
+[[Custom-Module-Input-Manipulation]] 
+
 Ansible modules are in fact python programs which are located on /usr/lib/pythonX.Y/dist-packages/ansible/modules. You can write down any custom program in python langiage and place it there and use it. Check ansible github web page for default modules ( https://github.com/ansible/ansible/tree/devel/lib/ansible/modules) but that's more advanced topic.
 
  After creating the .py file we can add the module to**/usr/share/ansible/plugins/modules/** or **~/.ansible/plugins/modules/** to use the it with **-m** option. When runnig the playbook 

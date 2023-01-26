@@ -6,11 +6,9 @@
 
 ## pwd command
 
-  
+```bash
+pwd : prints current working directory
 
-• pwd : prints current working directory
-
-~~~~  
 
 Example:
 
@@ -18,7 +16,12 @@ paul@debian8:~$ pwd
 
 /home/paul
 
-~~~~
+```
+
+
+
+
+
 
   
 
@@ -281,7 +284,8 @@ process ending the cat command
   
 ~~~~ 
 
-  ## File Compression
+
+## File Compression
  
  gzip -
 
@@ -463,13 +467,7 @@ narad:x:500:500::/home/narad:/bin/bash
 ## Check difference between 2 files
 
 ~~~~
-
-  
-
 diff filename1 filename2
-
-  
-
 ~~~~
 
   
@@ -499,12 +497,10 @@ paul@debian7:~
   
 
 ~~~~
-
 paul@debian7:~$ rm -i file33
 
 rm: remove regular empty file `file33'? Yes
-
- ~~~~
+~~~~
 
 
   
@@ -516,7 +512,6 @@ rm: remove regular empty file `file33'? Yes
  • VERY STRONG WAY TO DELETE FILES:
 
 rm -f /* - Deletes all files in directory
-
 ~~~~
   
 
@@ -527,7 +522,6 @@ rm -f /* - Deletes all files in directory
   
 
 ~~~~
-
 paul@debian7:~$ ls
 
 file42 SinkoDeMayo
@@ -537,7 +531,6 @@ paul@debian7:~$ cp file42 file42.copy
 paul@debian7:~$ ls
 
 file42 file42.copy SinkoDeMayo
-
 ~~~~
 
   
@@ -547,7 +540,6 @@ file42 file42.copy SinkoDeMayo
   
 
 ~~~~
-
 paul@debian7:~$ mkdir dir42
 
 paul@debian7:~$ cp SinkoDeMayo dir42
@@ -584,7 +576,6 @@ SinkoDeMayo
 ## copy multiple files to directory
 
 ~~~~
-
 paul@debian7:~$ cp file42 file42.copy SinkoDeMayo dir42/
 
 paul@debian7:~$ ls
@@ -597,8 +588,7 @@ paul@debian7:~$ cp -i SinkoDeMayo file42
 
 cp: overwrite `file42’? N
 
-paul@debian7:~$
-  
+paul@debian7:~$  
 ~~~~
 
   
@@ -611,8 +601,6 @@ cp filename/directory - copy file and directory
 cp filename directory/directory - copy and move file
 
 cp filename directory/directory/filename.bak - creates backup file
- 
-
 ~~~~
 
 
@@ -709,20 +697,20 @@ paul@debian8:~/mydir2/mysubdir2$
 
 ~~~~
 sudo du -a /dir/ | sort -n -r | head -n 20
-~~~
-
+~~~~
 
 
 ## rmdir – Deletes Directory
 
-  
-
-~~~~
+```bash
 paul@debian8:~/mydir$ rmdir otherstuff
 
-paul@debian8:~/mydir$ cd ..  
+paul@debian8:~/mydir$ cd ..
+```  
 
-~~~~
+
+  
+
 
 ## rmdir –p – Deletes Directory
 

@@ -1,5 +1,12 @@
 [[Index]] 
+
+[[Custom-Module-Input-Manipulation]] 
+
+[[Custom Modules]] 
+
 ## Module Python
+
+## Shows how to take an input via a playbook and pass to a python module which generates an output
 
 ```
 
