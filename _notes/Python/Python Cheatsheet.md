@@ -4490,6 +4490,32 @@ For example we are developing script which is designed to be used as module, we 
 
 [_Return to the Top_](#python-cheatsheet)
 
+### Calling Main Function from anotherr function
+
+```python
+from time import sleep
+ 
+ print("This is my file to demonstrate best practices.")
+ 
+ def process_data(data):
+     print("Beginning data processing...")
+     modified_data = data + " that has been modified"
+     sleep(3)
+     print("Data processing finished.")
+     return modified_data
+
+def main():
+    data = "My data read from the Web"
+    print(data)
+    modified_data = process_data(data)
+    print(modified_data)
+
+if __name__ == "__main__":
+    main()
+```
+
+
+
 ## setup.py
 
 The setup script is the centre of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
