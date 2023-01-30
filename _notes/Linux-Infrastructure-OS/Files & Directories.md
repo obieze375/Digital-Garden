@@ -963,15 +963,13 @@ To set paste if having formatting issues - (:set paste + shift I ) and then past
 4yy - Pastes 4 lines down page
 ~~~~
 
+
+
 ## Vi - Undo / Redo  
 
 ~~~~
-
-u Undo
-
-~~~~    
-
-  
+u - Undo
+~~~~     
 
 ~~~~  
 Ctrl-R - Redo
@@ -980,11 +978,9 @@ Ctrl-R - Redo
 ## Vi - Searching  
 
 ~~~~    
+/ - Start a forward search.  
 
-/ Start a forward search.  
-
-? Start a reverse search.
-
+? - Start a reverse search.
 ~~~~
 
   
@@ -1005,7 +1001,6 @@ vim -r
   
 
 ~~~~
-
 ---TODO: Overlay with characters that I'm
 
 using.---- (Might be hard, maybe come back and
@@ -1013,7 +1008,6 @@ using.---- (Might be hard, maybe come back and
 do that later????)
 
 key-mon --nomouse --scale=2.1
-
 ~~~~
 
 ## Substitution Command
