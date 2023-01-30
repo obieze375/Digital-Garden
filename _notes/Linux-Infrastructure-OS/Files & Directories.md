@@ -801,11 +801,11 @@ find /home -name tecmint.txt
 
   
 
-Vi Command Mode and Navigation
+## Vi Command Mode and Navigation
 
   
+```bash
 
-~~~~    
 k  - Up one line.  
 
 j -  Down one line.    
@@ -821,7 +821,11 @@ b  - Left one word.
 ^  - Go to the beginning of the line.
 
 $  - Go to the end of the line.
-~~~~
+
+```
+
+    
+
 
   
 
@@ -1029,7 +1033,6 @@ key-mon --nomouse --scale=2.1
   
 ~~~~
  :s/first value at beginning of line/
-
 ~~~~  
   
   
@@ -1059,27 +1062,20 @@ Shift + g
   
 
 ~~~~            
-
 press shift key + ‘:’ and press the up arrow key
-
 ~~~~
 
 
 ## Set Numbering:
 
 ~~~~
-
-
 set nu
-
 ~~~~
 
 ## Check for tabs:
 
 ~~~~
-
 :set list - for yamls there should be no tabs or whitespaces between $ signs
-
 ~~~~
 
   
@@ -1089,9 +1085,7 @@ set nu
   
 
 ~~~~
-
 :set nolist
-
 ~~~~
 
   
@@ -1101,9 +1095,7 @@ set nu
   
 
 ~~~~
-
 :644
-
 ~~~~
 
   
@@ -1113,9 +1105,7 @@ set nu
   
 
 ~~~~
-
 'o'
-
 ~~~~
 
   
