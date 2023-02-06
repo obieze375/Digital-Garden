@@ -25,8 +25,7 @@ A YAML starts with --- (3 hyphens)
 
 Let us start by writing a sample YAML file. We will walk through each section written in a yaml file.
 
-~~~~
-
+```yaml
 ---
 
    name: install and configure DB
@@ -51,7 +50,10 @@ Let us start by writing a sample YAML file. We will walk through each section wr
 
       name: <your service name>
 
-~~~~
+
+```
+
+
 
   
 
@@ -90,13 +92,10 @@ All playbooks should contain tasks or a list of tasks to be executed. Tasks are 
 
 ## Example 2: Simple Playbook
 
-  
 
-~~~~
 
+```yaml
 ---
-
-  
 
   - name: Simple Playbook
 
@@ -112,20 +111,20 @@ All playbooks should contain tasks or a list of tasks to be executed. Tasks are 
 
           state: latest
 
-~~~~
+```  
+
+
+
+
+
 
   
 
 ## Example 3: Apache
 
-  
+abcd.yml -> Installs Apache  
 
-~~~~  
-
-abcd.yml -> Installs Apache
-
-  
-
+```yaml
 ---
 
 - hosts: all
@@ -150,12 +149,23 @@ state: started
 
   
 
+
+```
+
 From <https://www.decodingdevops.com/ansible-basics-tutorial-commands/>
 
+ 
+
+
+
+  
+
+
+
   
   
 
-~~~~
+
 
   
 
@@ -163,15 +173,8 @@ From <https://www.decodingdevops.com/ansible-basics-tutorial-commands/>
 
 ## Sample Ansible Playbook1.yml
 
-~~~~  
-
+```yaml
 ---
-
-  
-
-
-
--
 
   name: Play1
 
@@ -202,8 +205,14 @@ From <https://www.decodingdevops.com/ansible-basics-tutorial-commands/>
         name: httpd
 
         state: started
+```
 
-~~~~
+
+ 
+
+
+
+
 
   
 
@@ -231,17 +240,14 @@ The different actions run by tasks are called modules. In our example, command, 
 
 ## Sample Ansible Playbook2.yml
 
-~~~~
-
+```yaml
 ---
 
   
 
 
 
--
-
-  name: Play1
+- name: Play1
 
   hosts: centos
 
@@ -257,9 +263,7 @@ The different actions run by tasks are called modules. In our example, command, 
 
   
 
--
-
-  name: Play2
+- name: Play2
 
   hosts: centos
 
@@ -280,8 +284,15 @@ The different actions run by tasks are called modules. In our example, command, 
         name: httpd
 
         state: started
+```
 
-~~~~
+
+
+
+
+
+
+
 
   
 
@@ -289,18 +300,10 @@ The different actions run by tasks are called modules. In our example, command, 
 
 ## ping-playbook.yaml
 
-
-~~~~  
-
+```yaml
 ---
 
-  
-
-
-
--
-
-  name: Test Connectivity
+- name: Test Connectivity
 
   hosts: all
 
@@ -343,8 +346,14 @@ centos                     : ok=2    changed=0    unreachable=0  
 ubuntu                     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
   
+```
+ 
 
-~~~~
+
+
+
+
+
 
 ## Yaml Linter:  
 
@@ -361,11 +370,7 @@ ATOM ide with linter-js-yaml and remote-sync (if you need)
 # Dynamic environment usage
 
   
-
-~~~~
-
-  
-
+```yaml
 host: "{{ env_name }}"
 
 vars:
@@ -376,8 +381,17 @@ vars:
   
 
 CLI USAGE: ansible-playbook .yml --extra-vars "env_name=<value>"
+```
+
 
   
 
-~~~~
 
+
+  
+
+
+
+```yaml
+
+```
