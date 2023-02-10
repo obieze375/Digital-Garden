@@ -9,47 +9,39 @@ Note: The new task must be executed first, so place it accordingly.
 
 ## Use the Lineinfile module
 
-~~~~
+```yaml
 
--
+- name: 'Execute a script on all web server nodes and start httpd service'
 
-    name: 'Execute a script on all web server nodes and start httpd service'
+  hosts: web_nodes
 
-    hosts: web_nodes
+  tasks:
 
-    tasks:
+  - name: 'Update entry into /etc/resolv.conf'
 
-        -
+    lineinfile:
 
-            name: 'Update entry into /etc/resolv.conf'
+        path: /etc/resolv.conf
 
-            lineinfile:
+        line: 'nameserver 10.1.250.10'
 
-                path: /etc/resolv.conf
+  - name: 'Execute a script'
 
-                line: 'nameserver 10.1.250.10'
+    script: /tmp/install_script.sh
 
-        -
+  - name: 'Start httpd service'
 
-            name: 'Execute a script'
+    service:
 
-            script: /tmp/install_script.sh
+        name: httpd
 
-        -
+        state: present
+  
+  ```
 
-            name: 'Start httpd service'
 
-            service:
 
-                name: httpd
-
-                state: present
-
-  
-
-~~~~
-
-~~~~
+```yaml
   - name: Add a line to a file if it doesnt exist
 
     ansible.builtin.lineinfile:
@@ -59,4 +51,4 @@ Note: The new task must be executed first, so place it accordingly.
       line: "This line must exist in the file"
 
       state: present
-~~~~     
+```     

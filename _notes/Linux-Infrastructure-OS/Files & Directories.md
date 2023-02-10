@@ -784,7 +784,7 @@ find . -name tecmint.txt
 
   
 
-# Find Files Under Home Directory
+## Find Files Under Home Directory
 
 ~~~~
 
@@ -831,10 +831,8 @@ $  - Go to the end of the line.
 
 ## Vi Insert Mode
 
-  
 
-~~~~    
-
+```bash
 i Insert at the cursor position.
 
 I Insert at the beginning of the line.  
@@ -843,13 +841,13 @@ a Append after the cursor position.  
 
 A Append at the end of the line.
 
-~~~~
+```  
+
 
 ## Vi Line Mode
 
-  
 
-~~~~
+```bash
 
 :w Writes (saves) the file.    
 
@@ -863,14 +861,12 @@ A Append at the end of the line.
 
 :x Same as :wq.
 
-~~~~
+```  
 
 ## Vi Line Mode
 
-  
 
-~~~~
-
+```bash
 :n Positions the cursor at line n.
 
 :$ Positions the cursor on the last line.
@@ -881,35 +877,35 @@ A Append at the end of the line.
 
 :help [subcommand] Get help.
 
-~~~~
+```  
+
+
 
 ## Vi Modes
 
-~~~~
+
+
+```bash
 
 Mode Key
 
 Command Esc
 
 Insert i I a A
-
-~~~~
-
 Line :
+
+```
+
 
   
 
 ## Vi - Repeating Commands
 
-  
-
 ● Repeat a command by preceding it with a
 
 number.
 
-  
-
-~~~~  
+```bash
 
 ○ 5k = Move up a line 5 times
 
@@ -917,11 +913,13 @@ number.
 
 ○ 80i_ = Insert 80 "_" characters
 
-~~~~   
+```  
 
 ## Vi - Deleting Text
 
-~~~~
+
+
+```bash
 x Delete a character.
 
 dw Delete a word.
@@ -929,7 +927,9 @@ dw Delete a word.
 dd Delete a line.  
 
 D Delete from the current position.
-~~~~
+
+```
+
 
 
 
@@ -937,7 +937,8 @@ D Delete from the current position.
 
 ## Vi - Changing Text
 
-~~~~
+
+```bash
 
 r Replace the current character.  
 
@@ -951,11 +952,15 @@ C Same as c$.  
 
 ~ Reverses the case of a character.
 
-~~~~
+
+```
+
+
+
 
 ## Vi - Copying and Pasting
 
-~~~~    
+```bash
 yy Yank (copy) the current line.  
 
 y Yank the .  
@@ -965,38 +970,46 @@ p Paste the most recent deleted or yanked text.
 To set paste if having formatting issues - (:set paste + shift I ) and then paste
 
 4yy - Pastes 4 lines down page
-~~~~
+
+```
 
 
 
 ## Vi - Undo / Redo  
 
-~~~~
-u - Undo
-~~~~     
+```bash
 
-~~~~  
+u - Undo
+
+```
+
+```bash
+
 Ctrl-R - Redo
-~~~~
+
+```
+
 
 ## Vi - Searching  
 
-~~~~    
+```bash
 / - Start a forward search.  
 
 ? - Start a reverse search.
-~~~~
+```
+
+
+
 
   
 
 ## Vi - Recover swap file  
 
-~~~~    
+```bash
 
 vim -r
 
-~~~~
-
+```
   
   
 
@@ -1016,125 +1029,124 @@ key-mon --nomouse --scale=2.1
 
 ## Substitution Command
 
-  
+```bash
 
-~~~~
+:%s/NEW VALUE TO INPUT/g  
 
-• :%s/NEW VALUE TO INPUT/g  
+:%s/NEW VALUE TO INPUT/gic
 
-• :%s/NEW VALUE TO INPUT/gic
-
-~~~~
+```  
 
   
 
 ## Substitution Command II
 
-  
-~~~~
- :s/first value at beginning of line/
-~~~~  
+```bash
+
+:s/first value at beginning of line/
+
+```
+
+
   
   
 
 ## Mass Delete and move to the bottom of file
 
-  
+```bash
 
-~~~~
+dG
 
-• dG
+```  
 
-~~~~
+
 
   
 
 ## Move to the bottom of the file:  
 
-~~~~
-
+```bash
 Shift + g
 
-~~~~
+
+```
+
+
 
 ## To reclaim previous command used
 
-  
+```bash
 
-~~~~            
 press shift key + ‘:’ and press the up arrow key
-~~~~
+
+```
 
 
 ## Set Numbering:
 
-~~~~
+```bash
+
 set nu
-~~~~
+
+```
 
 ## Check for tabs:
 
-~~~~
+```bash
+
 :set list - for yamls there should be no tabs or whitespaces between $ signs
-~~~~
+
+```
 
   
 
 ## Remove tab checker:
 
-  
+```bash
 
-~~~~
 :set nolist
-~~~~
 
-  
+```   
 
 ## Go to line:
 
   
-
-~~~~
+```bash
 :644
-~~~~
-
-  
+```
 
 ## Create new Blank line
 
   
+```bash
 
-~~~~
 'o'
-~~~~
+
+```
+
 
   
 
 ## Undo changes
 
-  
-
-~~~~
+```bash
 
 u
 
-~~~~
+```  
+
 
   
   
 
 ## Paste from particular line number to another line number
 
-~~~~
+```bash
 
 :6,12 co .
 
-  
-
+```
 6 is the 1st line, 12 is the endding line and place the cursor at the location you want to paste
-
-~~~~
-
 
 [[Index]] 
 

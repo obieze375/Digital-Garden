@@ -1,4 +1,4 @@
-
+```yml
   - name: Add a block of configuration options at the end of the file if it doesnt exist
 
     ansible.builtin.blockinfile:
@@ -14,3 +14,6 @@
         feature2_enabled: true
 
       insertafter: EOF
+```
+
+

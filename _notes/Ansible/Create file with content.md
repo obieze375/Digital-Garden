@@ -1,7 +1,8 @@
 [[Index]] 
 
 
-~~~~
+
+```bash
 
 - name: create file and add context
 
@@ -13,4 +14,4 @@
 
     content: "value_to_add"
 
-~~~~
+```

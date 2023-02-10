@@ -4,15 +4,12 @@
 
 ## Sample Ansible Playbook-firewalld.yml
 
-~~~~
-
+```yaml
 ---
 
 
 
--
-
-  name: Set Firewall Configurations
+- name: Set Firewall Configurations
 
   hosts: centos
 
@@ -50,6 +47,8 @@
 
          zone: internal
 
-         state: enabled        
+         state: enabled  
 
-~~~~
+```
+
+

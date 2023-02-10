@@ -3,15 +3,12 @@
 
 ## Sample Ansible yum-playbook.yml
 
-~~~~
-
+```yaml
 ---
 
 
 
--
-
-  name: Install package(s) using yum
+- name: Install package(s) using yum
 
   hosts: centos
 
@@ -50,5 +47,11 @@
           - postgresql-server
 
         state: present
+```
 
-~~~~
+
+
+
+
+
+  

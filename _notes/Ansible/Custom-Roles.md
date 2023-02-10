@@ -27,6 +27,8 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
+```
+
     - hosts: servers
 
     - name: Using oracle role
@@ -35,7 +37,7 @@ Including an example of how to use your role (for instance, with variables passe
       when: role_name | default(true)|bool == true # role_name variable is set to false in variable yamls for e.g. prod, or test or any other env you don't want this command to run in the default value is set false and the condition is checing to run if the value is true
 
       when: role_name | default(true) == true
-
+```
 License
 -------
 
@@ -46,21 +48,30 @@ Author Information
 
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
 
-![](assets/role-structure.png)
-
 ## Generic Role creation process
 
-[[Role Creation]]
+![](assets/role-structure.png)
 
 ## Oracle SQL Role files 
 
-[[defaults-main]]  
-[[handlers-main]]  
+[[Role Creation]]
+
+[[defaults-main]] 
+
+[[handlers-main]] 
+
 [[meta-main]] 
+
 [[tasks-main]]
+
 [[templates-test.py.j2]]  
+
 [[tests-inventory]]  
+
 [[tests-test]] 
-[[vars-main]]  
+
+[[vars-main]] 
+
 [[vars-requirements]]
+
 [[vars.travis]]  

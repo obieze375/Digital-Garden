@@ -1,6 +1,6 @@
 [[Index]] 
 
-~~~~
+```yml
   - name: Add a line to a file if it doesnt exist
 
     ansible.builtin.lineinfile:
@@ -10,4 +10,6 @@
       line: "This line must exist in the file"
 
       state: present
-~~~~
+```
+
+

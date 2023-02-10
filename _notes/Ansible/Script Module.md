@@ -2,25 +2,21 @@
 
 Update the playbook with a play to Execute a script on all web server nodes. The script is located at /tmp/install_script.sh
 
-~~~~
+```
 
--
+- name: 'Execute a script on all web server nodes'
 
-    name: 'Execute a script on all web server nodes'
+  hosts: web_nodes
 
-    hosts: web_nodes
-
-    tasks:
-
-        -
-
-            name: 'Execute a script on all web server nodes'
-
-            script: /tmp/install_script.sh
+  tasks:
+    
+    - name: 'Execute a script on all web server nodes'
+      
+      script: /tmp/install_script.sh
 
   
 
-~~~~
+```
 
   
 
@@ -30,7 +26,7 @@ Update the playbook with a play to Execute a script on all web server nodes. The
 
 ## Web Servers
 
-~~~~
+```yaml
 
 sql_db1 ansible_host=sql01.xyz.com ansible_connection=ssh ansible_user=root ansible_ssh_pass=Lin$Pass
 
@@ -72,6 +68,6 @@ db_nodes
 
 web_nodes
 
-~~~~
+```
 
   

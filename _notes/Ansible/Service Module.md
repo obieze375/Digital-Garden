@@ -10,37 +10,38 @@ Use the Service module
 
   
 
-~~~~
-
--
-
-    name: 'Execute a script on all web server nodes'
+```yaml
+- name: 'Execute a script on all web server nodes'
 
     hosts: web_nodes
 
     tasks:
 
-        -
+      - name: 'Execute a script'
 
-            name: 'Execute a script'
+        script: /tmp/install_script.sh  
 
-            script: /tmp/install_script.sh
+            
 
-        -
+      - name: 'Start httpd service'
 
-            name: 'Start httpd service'
+        service: 'name=httpd state=started' 
+```
 
-            service: 'name=httpd state=started'  
-
-  
-
-
-
-
-~~~~
-  
-~~~~
  
+    
+
+    
+              
+
+  
+
+
+
+
+
+  
+```yaml
  - name: Restart docker service
 
     ansible.builtin.service:
@@ -48,8 +49,11 @@ Use the Service module
       name: docker
 
       state: restarted
+```
+ 
 
-~~~~
+
+
 
 
 ## Sample Inventory File

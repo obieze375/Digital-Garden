@@ -1,5 +1,8 @@
 [[Index]] 
 
+## Rule of thumb: Mirror playbook structure to other playbooks in repo i.e to solve and issue take a look and see if other playbooks have are using something like a module that could help. Also use modules as much as possible for cleaner code creation
+
+
 Playbooks are the files where Ansible code is written. Playbooks are written in YAML format. YAML stands for Yet Another Markup Language. Playbooks are one of the core features of Ansible and tell Ansible what to execute. They are like a to-do list for Ansible that contains a list of tasks.
 
 Playbooks contain the steps which the user wants to execute on a particular machine. Playbooks are run sequentially. Playbooks are the building blocks for all the use cases of Ansible.
@@ -243,10 +246,6 @@ The different actions run by tasks are called modules. In our example, command, 
 ```yaml
 ---
 
-  
-
-
-
 - name: Play1
 
   hosts: centos
@@ -367,10 +366,28 @@ ATOM ide with linter-js-yaml and remote-sync (if you need)
 
 ~~~~
 
-# Dynamic environment usage
+## Running Playbook Normally
+
+```bash
+
+ ansible-playbook <playbook>.yml 
+
+```
+
+## Troubleshooting Playbook
+
+
+```bash
+
+ ansible-playbook <playbook>.yml -vvv
+
+```
+
+## Dynamic environment usage
 
   
-```yaml
+```bash
+
 host: "{{ env_name }}"
 
 vars:
@@ -380,18 +397,12 @@ vars:
   
   
 
-CLI USAGE: ansible-playbook .yml --extra-vars "env_name=<value>"
-```
+CLI USAGE: ansible-playbook <playbook>.yml --extra-vars "env_name=<value>"
+
+host searches for env_name group in inventory file specified under group vars dir
 
 
-  
-
-
-
-  
-
-
-
-```yaml
+hostname in group_names" # Searches for hostname group in inventory file specified under group vars dir  
 
 ```
+

@@ -1,7 +1,7 @@
 [[Index]] 
 
-~~~~
 
+```yaml
 ---
 
 - hosts: webservers
@@ -39,11 +39,7 @@
       delegate_to: 127.0.0.1 #   can swap with localhost
 
       run_once: true
-
-  
-
-~~~~
-
+```
 
 
 ~~~~

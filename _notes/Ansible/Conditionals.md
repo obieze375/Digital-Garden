@@ -178,6 +178,10 @@ play scope: Ansible playbook supports defining the variable in two forms, Either
 
 ~~~~
 
+
+
+
+
 ~~~~
 
 ---

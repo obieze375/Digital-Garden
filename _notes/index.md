@@ -29,8 +29,6 @@
 
 [[Networks]]
 
-[[Groups & Users Management]]
-
 [[HashiCorp Vault]]
 
 [[Logic Volume Management]]
@@ -66,9 +64,8 @@
 
  [[Ansible Adhoc Commands]] 
 
- [[Ansible Templates files]] 
 
- [[Conditionals]] 
+ [[Templates files]]
 
  [[Configuration Management]]
 

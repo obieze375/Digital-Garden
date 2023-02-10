@@ -1,11 +1,7 @@
 [[Index]] 
 
 
-~~~~
-
-  
-
-tasks:
+```bash
 
 - name: ansible create multiple directory example
 
@@ -25,6 +21,8 @@ with_items:
 
       - '/tmp/devops_system3'
 
-when: "hostname in group_names" # Searches for hostname group in inventory file specified under group vars dir
+when: "
 
-~~~~
+```
+
+

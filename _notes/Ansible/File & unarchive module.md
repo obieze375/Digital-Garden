@@ -5,8 +5,7 @@
 
 ## File module & unarchive module example
 
-~~~~
-
+```yaml
 ---
 
 - name: Playbook to download and install tomcat8
@@ -75,4 +74,8 @@
 
       chdir: "/opt/tomcat8/apache-tomcat-8.5.49/bin"
 
-~~~~
+```
+
+
+
+

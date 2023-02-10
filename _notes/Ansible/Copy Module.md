@@ -1,8 +1,8 @@
 
 [[Index]] 
 
-~~~~
 
+```yaml
 - name: copy files to destination
 
   hosts: localhost
@@ -24,11 +24,10 @@
       tags:
 
         - simple_copy
+```
 
-~~~~
 
-
-~~~~
+```yaml
  - name: Copy file with owner and permissions
 
     ansible.builtin.copy:
@@ -42,4 +41,5 @@
       group: admins
 
       mode: '0755'
-~~~~
+
+```

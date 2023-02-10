@@ -22,54 +22,51 @@ group: developers
 
 ~~~~
 
-~~~~
 
--
 
-    name: 'Execute a script on all web server nodes and start httpd service'
+```yaml
+  - name: 'Execute a script on all web server nodes and start httpd service'
 
     hosts: web_nodes
 
     tasks:
 
-        -
+      - name: 'Update entry into /etc/resolv.conf'
 
-            name: 'Update entry into /etc/resolv.conf'
+         lineinfile:
 
-            lineinfile:
+             path: /etc/resolv.conf
 
-                path: /etc/resolv.conf
+             line: 'nameserver 10.1.250.10'
 
-                line: 'nameserver 10.1.250.10'
+            
 
-        -
+        - name: 'Create a new user'
 
-            name: 'Create a new user'
+          user:
 
-            user:
+          name: web_user
 
-                name: web_user
+          uid: 1040      
 
-                uid: 1040
+          group: developers            
 
-                group: developers
+            
 
-        -
+        - name: 'Execute a script'
 
-            name: 'Execute a script'
+          script: /tmp/install_script.sh
 
-            script: /tmp/install_script.sh
+            
 
-        -
-
-            name: 'Start httpd service'
+        - name: 'Start httpd service'
 
             service:
 
                 name: httpd
 
-                state: present
+                state: present  
+```
 
-~~~~
 
   

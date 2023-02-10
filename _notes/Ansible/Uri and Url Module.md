@@ -34,10 +34,7 @@ args:
 
 # get_url module
 
-  
-
-~~~~
-
+```yaml
 - hosts: all    
 
   
@@ -70,4 +67,5 @@ args:
 
       dest: /backups
 
-~~~~
+```  
+

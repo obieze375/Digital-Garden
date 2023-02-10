@@ -3,10 +3,8 @@
 
 ## Using Shell Module
 
-  
 
-~~~~
-
+```yaml
 ---
 
 - hosts: loc
@@ -36,38 +34,26 @@
       chdir: /home/mdtutorials2/command_chdir_example
 
       executable: /bin/bash
-
-~~~~
+```
 
 
 Update the playbook with a play to Execute a script on all web server nodes. The script is located at /tmp/install_script.sh
 
-~~~~
 
--
-
-    name: 'Execute a script on all web server nodes'
+```yaml
+- name: 'Execute a script on all web server nodes'
 
     hosts: web_nodes
 
     tasks:
 
-        -
+      - name: 'Execute a script on all web server nodes'
 
-            name: 'Execute a script on all web server nodes'
-
-            script: /tmp/install_script.sh
-
-  
-
-~~~~
+        script: /tmp/install_script.sh
+```
 
 
-
-~~~~
-
-  
-
+```yaml
 ---
 
 - hosts: loc
@@ -108,10 +94,7 @@ Update the playbook with a play to Execute a script on all web server nodes. The
 
       executable: /bin/bash
 
-  
-
-~~~~
-
+```
 
 
 

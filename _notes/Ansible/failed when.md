@@ -1,10 +1,7 @@
 
 [[Index]] 
 
-~~~~
-
-  
-
+```yaml
 ---
 
 - hosts: all
@@ -21,7 +18,4 @@
 
           (ansible_distribution == "Debian" and ansible_distribution_major_version == "8")
 
-  
-  
-
-~~~~
+```
