@@ -7,29 +7,18 @@
 ## Example main.yml
 
 ```yaml
----
+- name: Starting with Myapp Application deployment to tomcat nodes
+  hosts: '{{ target_env }}'
+  gather_facts: True
+  any_errors_fatal: true
+  roles:
+    - role: deploy
+      tags:
+        - deploy
+      become: yes
+      become_user: tomcat
+      become_method: sudo
 
- - name: Starting with  Myapp Application deployment to tomcat nodes
-
-   hosts: '{{ target_env }}'
-
-   gather_facts: True
-
-   any_errors_fatal: true
-
-   roles:
-
-     - role: deploy
-
-       tags:
-
-         - deploy
-
-       become: yes
-
-       become_user: tomcat
-
-       become_method: sudo
 ``` 
 
 

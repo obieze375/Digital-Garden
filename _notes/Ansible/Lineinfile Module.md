@@ -12,43 +12,27 @@ Note: The new task must be executed first, so place it accordingly.
 ```yaml
 
 - name: 'Execute a script on all web server nodes and start httpd service'
-
-  hosts: web_nodes
-
-  tasks:
-
-  - name: 'Update entry into /etc/resolv.conf'
-
-    lineinfile:
-
-        path: /etc/resolv.conf
-
-        line: 'nameserver 10.1.250.10'
-
-  - name: 'Execute a script'
-
-    script: /tmp/install_script.sh
-
-  - name: 'Start httpd service'
-
-    service:
-
-        name: httpd
-
-        state: present
-  
-  ```
+  hosts: web_nodes
+  tasks:
+    - name: 'Update entry into /etc/resolv.conf'
+      lineinfile:
+          path: /etc/resolv.conf
+          line: 'nameserver 10.1.250.10'
+    - name: 'Execute a script'
+      script: /tmp/install_script.sh
+    - name: 'Start httpd service'
+      service:
+          name: httpd
+          state: present
+```
 
 
 
 ```yaml
-  - name: Add a line to a file if it doesnt exist
+- name: Add a line to a file if it doesn't exist
+  ansible.builtin.lineinfile:
+    path: /tmp/example_file
+    line: "This line must exist in the file"
+    state: present
 
-    ansible.builtin.lineinfile:
-
-      path: /tmp/example_file
-
-      line: "This line must exist in the file"
-
-      state: present
 ```     

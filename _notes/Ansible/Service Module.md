@@ -13,19 +13,21 @@ Use the Service module
 ```yaml
 - name: 'Execute a script on all web server nodes'
 
-    hosts: web_nodes
+  hosts: web_nodes
 
-    tasks:
+  tasks:
 
-      - name: 'Execute a script'
+    - name: 'Execute a script'
 
-        script: /tmp/install_script.sh  
+      script: /tmp/install_script.sh
 
-            
+    - name: 'Start httpd service'
 
-      - name: 'Start httpd service'
+      service:
+        name: httpd
+        state: started
 
-        service: 'name=httpd state=started' 
+
 ```
 
  

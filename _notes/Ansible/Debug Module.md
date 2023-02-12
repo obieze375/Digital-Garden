@@ -5,24 +5,17 @@
 
 
 ```yaml
-
 - name: Ansible debug module in action
+  hosts: all
+  tasks:
+    - name: Print system uptime
+      shell: uptime -p
+      register: system_uptime
 
-  hosts: all
+    - name: Print uptime of managed node
+      debug:
+        msg: "{{ system_uptime }}"
 
-  tasks:
-
-    - name: Print system uptime
-
-      shell: uptime -p
-
-      register: system_uptime
-
-    - name: Print uptime of managed node
-
-      debug:
-
-      msg: "{{ system_uptime }}"
 ```
 
 
@@ -51,15 +44,11 @@
 ```yaml
 
 - name: Ansible debug module in action
-
   hosts: all
-
   tasks:
 
     - name: Print a simple statement
-
       debug:
-
       msg: "Hello World! Welcome to Linuxtechi"
 
 ```

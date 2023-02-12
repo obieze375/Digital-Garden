@@ -31,27 +31,18 @@ Let us start by writing a sample YAML file. We will walk through each section wr
 ```yaml
 ---
 
-   name: install and configure DB
+- name: install and configure DB
+  hosts: testServer
+  become: yes
+  vars:
+    oracle_db_port_value : 1521
+  tasks:
+    - name: Install the Oracle DB
+      yum: <code to install the DB>
+    - name: Ensure the installed service is enabled and running
+      service:
+        name: <your service name>
 
-   hosts: testServer
-
-   become: yes
-
-   vars:
-
-      oracle_db_port_value : 1521
-
-   tasks:
-
-   -name: Install the Oracle DB
-
-      yum: <code to install the DB>
-
-   -name: Ensure the installed service is enabled and running
-
-   service:
-
-      name: <your service name>
 
 
 ```
@@ -100,19 +91,14 @@ All playbooks should contain tasks or a list of tasks to be executed. Tasks are 
 ```yaml
 ---
 
-  - name: Simple Playbook
+- name: Simple Playbook
+  hosts: webservers
+  tasks:
+    - name: ensure apache is at the latest version
+      yum:
+        name: httpd
+        state: latest
 
-    hosts: webservers
-
-    tasks:
-
-      - name: ensure apache is at the latest version
-
-        yum:
-
-          name: httpd
-
-          state: latest
 
 ```  
 
@@ -131,24 +117,16 @@ abcd.yml -> Installs Apache
 ---
 
 - hosts: all
+  tasks:
+  - name: install apchae2 in all 100 servers
+    apt:
+      name: apache2
+      state: present
+  - name: start apche2 in all 100 servers
+    service:
+      name: apache2
+      state: started
 
-tasks:
-
-- name: install apchae2 in all 100 servers
-
-apt:
-
-name: apache2
-
-state: present
-
-- name: start apche2 in all 100 servers
-
-service:
-
-name: apache2
-
-state: started
 
   
 
@@ -247,42 +225,25 @@ The different actions run by tasks are called modules. In our example, command, 
 ---
 
 - name: Play1
-
-  hosts: centos
-
-  tasks:
-
-    - name : Execute command 'date'
-
-      command: date
-
-    - name : Execute script on server
-
-      script: my_script.sh
-
-  
+  hosts: centos
+  tasks:
+    - name: Execute command 'date'
+      command: date
+    - name: Execute script on server
+      script: my_script.sh
 
 - name: Play2
+  hosts: centos
+  tasks:
+    - name: Install httpd service
+      yum:
+        name: httpd
+        state: present
+    - name: Start web server
+      service:
+        name: httpd
+        state: started
 
-  hosts: centos
-
-  tasks:
-
-    - name : Install httpd service
-
-      yum:
-
-        name: httpd
-
-        state: present
-
-    - name : Start web server
-
-      service:
-
-        name: httpd
-
-        state: started
 ```
 
 
@@ -395,14 +356,17 @@ vars:
   env_name: ""
 
   
-  
+
+```  
+
+```bash
 
 CLI USAGE: ansible-playbook <playbook>.yml --extra-vars "env_name=<value>"
+``` 
 
 host searches for env_name group in inventory file specified under group vars dir
 
 
 hostname in group_names" # Searches for hostname group in inventory file specified under group vars dir  
 
-```
 
