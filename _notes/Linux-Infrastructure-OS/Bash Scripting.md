@@ -13,7 +13,7 @@ echo "Hello $name!"
 ## DEBUGGING SHELL PROGRAMS
 
 
-~~~~
+```bash
 
   • bash -n scriptname  # don't run commands; check for syntax errors only
 
@@ -108,11 +108,11 @@ echo "Hello $name!"
 
     file1 -ot file2           # file1 is older than file2
 
-~~~~
+```
   
 ### Shell execution
 
-```
+```bash
 echo "I'm in $(pwd)"
 echo "I'm in `pwd`"  # obsolescent
 # Same
@@ -122,7 +122,7 @@ echo "I'm in `pwd`"  # obsolescent
 
 ## For Loops
 
-~~~~
+```bash
 
 for x in {1..10}
 
@@ -134,12 +134,12 @@ done
 
   
 
-~~~~
+```
 
   
   
 
-~~~~
+```bash
 
 for name [in list]
 
@@ -149,11 +149,11 @@ do
 
 done
 
-~~~~
+```
 
   
 
-~~~~
+```bash
 
 for (( initialisation ; ending condition ; update ))
 
@@ -163,11 +163,11 @@ do
 
 done
 
-~~~~
+```
 
 ### Basic for loop
 
-```
+```bash
 for i in /etc/rc.*; do
   echo "$i"
 done
@@ -175,7 +175,7 @@ done
 
 ### C-like for loop
 
-```
+```bash
 for ((i = 0 ; i < 100 ; i++)); do
   echo "$i"
 done
@@ -183,7 +183,7 @@ done
 
 ### Ranges
 
-```
+```bash
 for i in {1..5}; do
     echo "Welcome $i"
 done
@@ -191,7 +191,7 @@ done
 
 #### With step size
 
-```
+```bash
 for i in {5..50..5}; do
     echo "Welcome $i"
 done
@@ -207,7 +207,7 @@ $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters
 
   
 
-~~~~
+```bash
 
 function functname() {
 
@@ -215,13 +215,13 @@ function functname() {
 
 }
 
-~~~~
+```
 
   
 
 Example:
 
-~~~~
+```bash
 
 !/bin/bash
 
@@ -241,7 +241,7 @@ print_something () {
 
   
 
-~~~~
+```
 
 From <https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php>
 
@@ -256,7 +256,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php>
   
   
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -272,13 +272,13 @@ print_something Mars
 
 print_something Jupiter
 
-~~~~
+```
 
 From <https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php>
 
   
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -298,7 +298,7 @@ print_something Jupiter
 
 echo The previous function has a return value of $?
 
-~~~~
+```
 
   
 
@@ -307,7 +307,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php>
   
   
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -343,7 +343,7 @@ var_change
 
 echo After function call: var1 is $var1 : var2 is $var2
 
-~~~~
+```
 
   
 
@@ -352,7 +352,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php>  
 
 ### Functions Extra Examples
 
-```
+```bash
 get_name() {
   echo "John"
 }
@@ -361,45 +361,45 @@ echo "You are $(get_name)"
 ```  
 ### Defining functions
 
-```
+```bash
 myfunc() {
     echo "hello $1"
 }
 ```
 
-```
+```bash
 # Same as above (alternate syntax)
 function myfunc() {
     echo "hello $1"
 }
 ```
 
-```
+```bash
 myfunc "John"
 ```
 
 ### Returning values
 
-```
+```bash
 myfunc() {
     local myresult='some value'
     echo "$myresult"
 }
 ```
 
-```
+```bash
 result=$(myfunc)
 ```
 
 ### Raising errors
 
-```
+```bash
 myfunc() {
   return 1
 }
 ```
 
-```
+```bash
 if myfunc; then
   echo "success"
 else
@@ -414,7 +414,7 @@ fi
 
   
 
-~~~~
+```bash
 
 if condition
 
@@ -432,9 +432,9 @@ then
 
 fi
 
-~~~~
+```
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -452,7 +452,7 @@ nl /dev/stdin
 
 fi
 
-~~~~
+```
 
 From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
@@ -460,7 +460,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
 ## or example
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -476,7 +476,7 @@ ls
 
 fi
 
-~~~~
+```
 
 From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
@@ -484,7 +484,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
 ## Basic if statement
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -500,7 +500,7 @@ fi
 
 date
 
-~~~~
+```
 
   
 
@@ -510,7 +510,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
 ## elif statements
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -532,7 +532,7 @@ echo You may not go to the party.
 
 fi
 
-~~~~
+```
 
 From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
@@ -540,7 +540,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
 ## Nested if statements
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -560,7 +560,7 @@ fi
 
 fi
 
-~~~~
+```
 
 From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
@@ -568,7 +568,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
 ## and example
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -580,7 +580,7 @@ echo This file is useful.
 
 fi
 
-~~~~
+```
 
   
 
@@ -603,7 +603,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
 ## INPUT/OUTPUT REDIRECTORS
   
-~~~~
+```bash
 
   • cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
 
@@ -645,7 +645,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
   • n<&-       # closes the input from file descripor n
 
-~~~~  
+```  
   
 
 
@@ -655,7 +655,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 ## Operators
 
     
-~~~~
+```bash
 
   • -lt                       # less than
 
@@ -682,18 +682,18 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
   -o                 # or operator inside a test conditional expression
 
   
-~~~~  
+```  
 
 ### Conditional execution
 
-```
+```bash
 git commit && git push
 git commit || echo "Commit failed"
 ```
 
 ### Conditionals
 
-```
+```bash
 if [[ -z "$string" ]]; then
   echo "String is empty"
 elif [[ -n "$string" ]]; then
@@ -747,7 +747,7 @@ Note that `[[` is actually a command/program that returns either `0` (true) or `
 
 ### Example
 
-```
+```bash
 # String
 if [[ -z "$string" ]]; then
   echo "String is empty"
@@ -758,30 +758,30 @@ else
 fi
 ```
 
-```
+```bash
 # Combinations
 if [[ X && Y ]]; then
   ...
 fi
 ```
 
-```
+```bash
 # Equal
 if [[ "$A" == "$B" ]]
 ```
 
-```
+```bash
 # Regex
 if [[ "A" =~ . ]]
 ```
 
-```
+```bash
 if (( $a < $b )); then
    echo "$a is smaller than $b"
 fi
 ```
 
-```
+```bash
 if [[ -e "file.txt" ]]; then
   echo "file exists"
 fi
@@ -789,7 +789,7 @@ fi
 
 ### Brace expansion
 
-```
+```bash
 echo {A,B}.js
 ```
 
@@ -803,7 +803,7 @@ See: [Brace expansion](http://wiki.bash-hackers.org/syntax/expansion/brace)
 
 ### Basics
 
-```
+```bash
 name="John"
 echo "${name}"
 echo "${name/J/j}"    #=> "john" (substitution)
@@ -815,14 +815,14 @@ echo "${name:(-2):1}" #=> "h" (slicing from right)
 echo "${food:-Cake}"  #=> $food or "Cake"
 ```
 
-```
+```bash
 length=2
 echo "${name:0:length}"  #=> "Jo"
 ```
 
 See: [Parameter expansion](http://wiki.bash-hackers.org/syntax/pe)
 
-```
+```bash
 str="/path/to/foo.cpp"
 echo "${str%.cpp}"    # /path/to/foo
 echo "${str%.cpp}.o"  # /path/to/foo.o
@@ -837,13 +837,13 @@ echo "${str##*/}"     # foo.cpp
 echo "${str/foo/bar}" # /path/to/bar.cpp
 ```
 
-```
+```bash
 str="Hello world"
 echo "${str:6:5}"   # "world"
 echo "${str: -5:5}"  # "world"
 ```
 
-```
+```bash
 src="/path/to/foo.cpp"
 base=${src##*/}   #=> "foo.cpp" (basepath)
 dir=${src%$base}  #=> "/path/to/" (dirpath)
@@ -864,10 +864,10 @@ dir=${src%$base}  #=> "/path/to/" (dirpath)
 
 ```
 
-# Single line comment
+## Single line comment
 ```
 
-```
+```bash
 : '
 This is a
 multi line
@@ -930,7 +930,7 @@ Omitting the `:` removes the (non)nullity checks, e.g. `${foo-val}` expands to `
 ## Of course, to interrupt a job, type CTRL+C.
 
   
-~~~~
+```bash
 
   • myCommand &  # runs job in the background and prompts back the shell
 
@@ -986,14 +986,14 @@ disown <PID|JID>    # removes the process from the list of jobs
 
 wait                # waits until all background jobs have finished
 
-~~~~
+```
   
   
   
 
 ## Strings
 
-~~~~
+```bash
   
   
 
@@ -1013,15 +1013,15 @@ wait                # waits until all background jobs have finished
 
         * -z str1                    # str1 is null (has length 0)
 
-~~~~ 
+``` 
 
 ### Defining arrays
 
-```
+```bash
 Fruits=('Apple' 'Banana' 'Orange')
 ```
 
-```
+```bash
 Fruits[0]="Apple"
 Fruits[1]="Banana"
 Fruits[2]="Orange"
@@ -1029,7 +1029,7 @@ Fruits[2]="Orange"
 
 ### Working with arrays
 
-```
+```bash
 echo "${Fruits[0]}"           # Element #0
 echo "${Fruits[-1]}"          # Last element
 echo "${Fruits[@]}"           # All elements, space-separated
@@ -1042,7 +1042,7 @@ echo "${!Fruits[@]}"          # Keys of all elements, space-separated
 
 ### Operations
 
-```
+```bash
 Fruits=("${Fruits[@]}" "Watermelon")    # Push
 Fruits+=('Watermelon')                  # Also Push
 Fruits=( "${Fruits[@]/Ap*/}" )          # Remove by regex match
@@ -1054,7 +1054,7 @@ lines=(`cat "logfile"`)                 # Read from file
 
 ### Iteration
 
-```
+```bash
 for i in "${arrayName[@]}"; do
   echo "$i"
 done
@@ -1064,11 +1064,11 @@ done
 
 ### Defining
 
-```
+```bash
 declare -A sounds
 ```
 
-```
+```bash
 sounds[dog]="bark"
 sounds[cow]="moo"
 sounds[bird]="tweet"
@@ -1091,36 +1091,36 @@ Declares `sound` as a Dictionary object (aka associative array).
 
 ### String quotes
 
-```
+```bash
 name="John"
 echo "Hi $name"  #=> Hi John
 echo 'Hi $name'  #=> Hi $name
 ```
 ### Numeric calculations
 
-```
+```bash
 $((a + 200))      # Add 200 to $a
 ```
 
-```
+```bash
 $(($RANDOM%200))  # Random number 0..199
 ```
 
-```
+```bash
 declare -i count  # Declare as type integer 
 count+=1          # Increment
 ```
 
 ### Subshells
 
-```
+```bash
 (cd somedir; echo "I'm now in $PWD")
 pwd # still in first directory
 ```
 
 ### Redirection
 
-```
+```bash
 python hello.py > output.txt            # stdout to (file)
 python hello.py >> output.txt           # stdout to (file), append
 python hello.py 2> error.log            # stderr to (file)
@@ -1131,27 +1131,27 @@ python hello.py &>/dev/null             # stdout and stderr to (null)
 echo "$0: warning: too many users" >&2  # print diagnostic message to stderr
 ```
 
-```
+```bash
 python hello.py < foo.txt      # feed foo.txt to stdin for python
 diff <(ls -r) <(ls)            # Compare two stdout without files
 ```
 
 ### Inspecting commands
 
-```
+```bash
 command -V cd
 #=> "cd is a function/alias/whatever"
 ```
 
 ### Trap errors
 
-```
+```bash
 trap 'echo Error at about $LINENO' ERR
 ```
 
 or
 
-```
+```bash
 traperr() {
   echo "ERROR: ${BASH_SOURCE[1]} at about ${BASH_LINENO[0]}"
 }
@@ -1162,7 +1162,7 @@ trap traperr ERR
 
 ## Switchcase
 
-~~~~
+```bash
 
   
 
@@ -1178,14 +1178,14 @@ trap traperr ERR
 
 esac
 
-~~~~
+```bash
 
   
   
 
 ## case example
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -1219,7 +1219,7 @@ echo don\'t know
 
 esac
 
-~~~~
+```
 
   
 
@@ -1227,7 +1227,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
   
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -1267,7 +1267,7 @@ echo Something is not quite right here
 
 esac
 
-~~~~
+```
 
   
 
@@ -1275,7 +1275,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php>
 
 ### Case/switch
 
-```
+```bash
 case "$1" in
   start | up)
     vagrant up
@@ -1295,7 +1295,7 @@ esac
 
   
 
-~~~~
+```bash
 
 until condition; do
 
@@ -1303,7 +1303,7 @@ until condition; do
 
 done
 
-~~~~
+```
 
   
 
@@ -1311,7 +1311,7 @@ done
 
   
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -1329,7 +1329,7 @@ done
 
 echo All done
 
-~~~~
+```
 
   
 
@@ -1343,7 +1343,7 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php#while> �
 
   
 
-~~~~
+```bash
 
   
 
@@ -1457,9 +1457,9 @@ From <https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php#while> �
 
   • $(UNIX command)              # command substitution: runs the command and returns standard output
 
-~~~~
-
 ```
+
+```bash
 name="John"
 echo $name  # see below
 echo "$name"
@@ -1468,7 +1468,7 @@ echo "${name}!"
 
 Generally quote your variables unless they contain wildcards to expand or command fragments.
 
-```
+```bash
 wildcard="*.txt"
 option="iv"
 cp -$options $wildcard /tmp
@@ -1480,7 +1480,7 @@ cp -$options $wildcard /tmp
 
   
 
-~~~~
+```bash
 
 while condition; do
 
@@ -1492,7 +1492,7 @@ while condition; do
 
 done  
 
-~~~~
+```
 
   
 
@@ -1500,7 +1500,7 @@ done  
 
   
 
-~~~~
+```bash
 
 #!/bin/bash
 
@@ -1532,11 +1532,11 @@ done
 
 echo All done
 
-~~~~
+```
 
 ### Reading lines
 
-```
+```bash
 while read -r line; do
   echo "$line"
 done <file.txt
@@ -1544,7 +1544,7 @@ done <file.txt
   
 ### Working with dictionaries
 
-```
+```bash
 echo "${sounds[dog]}" # Dog's sound
 echo "${sounds[@]}"   # All values
 echo "${!sounds[@]}"  # All keys
@@ -1556,7 +1556,7 @@ unset sounds[dog]     # Delete dog
 
 #### Iterate over values
 
-```
+```bash
 for val in "${sounds[@]}"; do
   echo "$val"
 done
@@ -1564,7 +1564,7 @@ done
 
 #### Iterate over keys
 
-```
+```bash
 for key in "${!sounds[@]}"; do
   echo "$key"
 done
@@ -1574,7 +1574,7 @@ done
 
 ### Options
 
-```
+```bash
 set -o noclobber  # Avoid overlay files (echo "hi" > foo)
 set -o errexit    # Used to exit upon error, avoiding cascading errors
 set -o pipefail   # Unveils hidden failures
@@ -1583,7 +1583,7 @@ set -o nounset    # Exposes unset variables
 
 ### Glob options
 
-```
+```bash
 shopt -s nullglob    # Non-matching globs are removed  ('*.foo' => '')
 shopt -s failglob    # Non-matching globs throw errors
 shopt -s nocaseglob  # Case insensitive globs
@@ -1606,7 +1606,7 @@ Set `GLOBIGNORE` as a colon-separated list of patterns to be removed from glob m
   
 ## Whoami
 
-~~~~
+```bash
 
 if [[ `whoami` != root && `whoami` != obi ]]
 
@@ -1618,17 +1618,17 @@ then
 
 fi
 
-~~~~
+```bash
 
 ### Source relative
 
-```
+```bash
 source "${0%/*}/../share/foo.sh"
 ```
 
 ### printf
 
-```
+```bash
 printf "Hello %s, I'm %s" Sven Olga
 #=> "Hello Sven, I'm Olga
 
@@ -1660,7 +1660,7 @@ printf '%i+%i=%i\n' 1 2 3  4 5 9
 
 #### Example
 
-```
+```bash
 echo "Welcome To Devhints" | tr '[:lower:]' '[:upper:]'
 WELCOME TO DEVHINTS
 ```
@@ -1669,7 +1669,7 @@ WELCOME TO DEVHINTS
 
 ### Getting options
 
-```
+```bash
 while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do case $1 in
   -V | --version )
     echo "$version"
@@ -1687,7 +1687,7 @@ if [[ "$1" == '--' ]]; then shift; fi
 
 ### Heredoc
 
-```
+```bash
 cat <<END
 hello world
 END
@@ -1695,7 +1695,7 @@ END
 
 ### Reading input
 
-```
+```bash
 echo -n "Proceed? [y/n]: "
 read -r ans
 echo "$ans"
@@ -1703,7 +1703,7 @@ echo "$ans"
 
 The `-r` option disables a peculiar legacy behavior with backslashes.
 
-```
+```bash
 read -n 1 ans    # Just one character
 ```
 
@@ -1722,7 +1722,7 @@ See [Special parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_p
 
 ### Go to previous directory
 
-```
+```bash
 pwd # /home/user/foo
 cd bar/
 pwd # /home/user/foo/bar
@@ -1732,7 +1732,7 @@ pwd # /home/user/foo
 
 ### Check for command’s result
 
-```
+```bash
 if ping -c 1 google.com; then
   echo "It appears you have a working internet connection"
 fi
@@ -1740,7 +1740,7 @@ fi
 
 ### Grep check
 
-```
+```bash
 if grep -q 'foo' ~/.bash_history; then
   echo "You appear to have typed 'foo' in the past"
 fi

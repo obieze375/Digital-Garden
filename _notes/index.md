@@ -55,7 +55,27 @@
 
 [[Creating Hard and Soft Links]]
 
-[[Architecture]]
+[[Tune System Performance]] 
+
+[[SE Linux]]
+
+[[NFS]]
+
+[[Control the Boot Process]]
+
+[[Control Services & Daemons]]
+
+[[Containers]] 
+
+[[Control the Boot Process]]
+
+[[Control Services & Daemons]]
+
+[[Configure and Manage Server Security]] 
+
+[[Basic LVM & Storage Management]] 
+
+
 
 
 ## Ansible: 
@@ -63,7 +83,6 @@
  [[Introduction]] 
 
  [[Ansible Adhoc Commands]] 
-
 
  [[Templates files]]
 
@@ -99,7 +118,7 @@
 
 [[delegate to]] 
 
-[[Custom Roles]] 
+[[Custom-Roles]] 
 
 [[Copy Module]]
 
@@ -142,6 +161,22 @@
 [[Add line in file]]
 
 [[Custom-Roles]] 
+
+[[Automating Linux Administration Tasks]] 
+
+[[Manage Complex Plays & Playbooks]]
+
+[[Managing Secrets]]
+
+[[Managing Users & Authentification]] 
+
+[[Managing Variables and Facts]] 
+
+[[Flow Control]]
+
+[[Groups Module]] 
+
+
 
 ## Containers: 
 

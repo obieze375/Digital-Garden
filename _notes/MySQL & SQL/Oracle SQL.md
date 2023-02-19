@@ -4,7 +4,7 @@
 
 
 
-~~~
+``` 
 
   
 
@@ -20,13 +20,13 @@ CREATE TABLE [table name]
 
        (id int, name varchar(20));
 
-~~~
+``` 
 
 # Drop table  
 
   
 
-~~~  
+```   
 
   
 
@@ -35,7 +35,7 @@ drop tablename;
   
   
 
-~~~
+``` 
 
   
 
@@ -43,7 +43,7 @@ drop tablename;
 
   
 
-~~~  
+```   
 
 SQL> desc dba_tables;
 
@@ -68,7 +68,7 @@ ______________________________________________________
 
   
 
-~~~
+``` 
 
   
 
@@ -76,7 +76,7 @@ ______________________________________________________
 
   
 
-~~~  
+```   
 
   
 
@@ -86,7 +86,7 @@ select * from <table_name>;
   
   
 
-~~~
+``` 
 
   
 
@@ -94,7 +94,7 @@ select * from <table_name>;
 
   
 
-~~~
+``` 
 
   
 
@@ -102,7 +102,7 @@ commit;
 
   
 
-~~~
+``` 
 
   
 
@@ -110,7 +110,7 @@ commit;
 
   
 
-~~~  
+```   
 
   
 
@@ -118,7 +118,7 @@ SQL> select name from v$database;
 
   
 
-~~~
+``` 
 
   
 
@@ -126,7 +126,7 @@ SQL> select name from v$database;
 
   
 
-~~~  
+```   
 
   
 
@@ -134,7 +134,7 @@ SQL>Select name from v$instance;
 
   
 
-~~~
+``` 
 
   
 
@@ -143,11 +143,11 @@ SQL>Select name from v$instance;
   
   
 
-~~~
+``` 
 
 select OWNER from dba_tables where TABLE_NAME='REQUEST';
 
-~~~
+``` 
 
   
 
@@ -155,11 +155,11 @@ select OWNER from dba_tables where TABLE_NAME='REQUEST';
 
   
 
-~~~
+``` 
 
 2021-02-08 16:09:52 - SQL> show parameter remote_listener;
 
-~~~
+``` 
 
   
 
@@ -167,7 +167,7 @@ select OWNER from dba_tables where TABLE_NAME='REQUEST';
 
   
 
-~~~
+``` 
 
 create tablespace <tsname> datafile '+<diskgroup>' size 1m
 
@@ -177,7 +177,7 @@ extent management local autoallocate
 
 segment space management auto;
 
-~~~
+``` 
 
   
 
@@ -185,7 +185,7 @@ segment space management auto;
 
   
 
-~~~
+``` 
 
   
 
@@ -193,7 +193,7 @@ drop tablespace;  
 
   
 
-~~~
+``` 
 
   
 
@@ -201,7 +201,7 @@ drop tablespace;  
 
   
 
-~~~
+``` 
 
 INSERT INTO table
 
@@ -229,7 +229,7 @@ FROM source_table
 
   
 
-~~~
+``` 
 
   
 
@@ -237,7 +237,7 @@ FROM source_table
 
   
 
-~~~
+``` 
 
 UPDATE TABLE-NAME SET COLUMN-NAME = REPLACE(TABLE-NAME.COLUMN-NAME, 'STRING-TO-REPLACE', 'REPLACEMENT-STRING');
 
@@ -251,7 +251,7 @@ UPDATE TABLE-NAME SET COLUMN-NAME = REPLACE(TABLE-NAME.COLUMN-NAME, 'STRING-TO-R
 
   REPLACEMENT-STRING - The replacement
 
-~~~
+``` 
 
   
 
@@ -259,10 +259,10 @@ UPDATE TABLE-NAME SET COLUMN-NAME = REPLACE(TABLE-NAME.COLUMN-NAME, 'STRING-TO-R
 
   
 
-~~~
+``` 
 
 ctrl + A and ctrl + C then paste into Notepad ++ using ctrl + v
 
   
 
-~~~
+``` 

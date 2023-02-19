@@ -36,7 +36,7 @@
 
   
 
-~~~~
+``` bash
 
   
 
@@ -54,11 +54,11 @@ Both above give better outputs in terms of useful info
   
   
 
-~~~~
+```
 
 ## SSH Errors
 
-~~~~
+``` bash
 
 permission denied -> points to failed ssh certificate signing -> check the ssh key/token, maybe it's stale and a new one needs to be generated
 
@@ -66,7 +66,7 @@ permission denied -> points to failed ssh certificate signing -> check the ssh k
 
 failed to connect -> Firewall/connectivity issue -> sshd or the whole server might be down
 
-~~~~
+``` 
 
 
 ## Cannot CD into a Directory
@@ -142,11 +142,11 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 Command Syntax
 
-~~~~
+``` bash
 
 • find /path/to/files/ -type f -name '*.jpg' -mtime +30 -exec rm {} \;
 
-~~~~
+``` 
 
   
 
@@ -154,7 +154,7 @@ Command Syntax
 
   
 
-~~~~
+``` bash
 
 • First part is the path where your files are located.
 
@@ -174,14 +174,14 @@ Command Syntax
 
 • Fifth part -exec executes a command. In this case rm is the command, {} gets the filelist and \; closes the command
 
-~~~~
+``` 
 
   
 
 ## Filesystem is Corrupted
 
   
-~~~~
+``` bash
 • Filesystem?
 
   
@@ -208,13 +208,13 @@ Command Syntax
 
 • df, fdisk –l
 
- ~~~~ 
+ ```  
 
 ## Troubleshooting Steps:
 
   
 
-~~~~
+``` bash
 
 • Check /var/log/messages or /var/log/syslog
 
@@ -226,14 +226,14 @@ Command Syntax
 
 • Unmount filesystem and run fsck
 
-~~~~
+``` 
 
   
 
 ## /etc/fstab Corruption
 
   
-~~~~
+``` bash
 • What is /etc/fstab?
 
   
@@ -276,12 +276,12 @@ Command Syntax
 
 • Accidental deletion of /etc/fstab
 
- ~~~~ 
+ ``` 
 
 ## Troubleshooting Steps:
 
   
-~~~~
+``` bash
 • Boot in rescue mode by mounting CD / CD ISO image
 
   
@@ -331,7 +331,7 @@ of cache memory is to store program instructions and data that are used
 repeatedly
 
   
-~~~~
+``` 
 
 
 
@@ -340,7 +340,7 @@ repeatedly
 
   
 
-~~~~
+``` bash
 
 • free –m (mega bytes) or –h (human readable)
 
@@ -360,7 +360,7 @@ repeatedly
 
 • Memory commitment in configuration file /etc/sysctl.conf.
 
-~~~~
+```
 
   
 
@@ -373,7 +373,7 @@ repeatedly
 
   
 
-~~~~
+``` bash
 
 • Identify the process causing the memory usage
 
@@ -425,7 +425,7 @@ repeatedly
 
 • Add additional physical memory.
 
-~~~~
+```
 
   
 
@@ -433,7 +433,7 @@ repeatedly
 
   
 
-~~~~
+``` bash
 
 • System reboot/crash
 
@@ -469,7 +469,7 @@ repeatedly
 
 • Watchdog application
 
-~~~~
+```
 
   
 
@@ -477,7 +477,7 @@ repeatedly
 
   
 
-~~~~
+``` bash
 
 • Login through SSH and the following commands to troubleshoot
 
@@ -509,7 +509,7 @@ repeatedly
 
 • For hardware, check logs from the console and reach out to the vendor.
 
-~~~~
+```
 
   
 
@@ -520,7 +520,7 @@ repeatedly
 
 # Troubleshooting Steps:
 
-~~~~
+``` bash
 
 • Check your DHCP server (Modem at home)
 
@@ -584,7 +584,7 @@ repeatedly
 
 • IPADDR=192.168.1.200
 
-~~~~
+```
 
   
 
@@ -594,7 +594,7 @@ repeatedly
 
 ## Troubleshooting Steps:
 
-~~~~
+``` bash
 
 • Check if you are on the correct network interface (ifconfig)
 
@@ -638,7 +638,7 @@ repeatedly
 
 • Turn off firewall
 
-~~~~
+```
 
   
 
@@ -651,7 +651,7 @@ repeatedly
 
   
 
-~~~~
+``` bash
 
 • Permissions issues
 
@@ -671,7 +671,7 @@ repeatedly
 
 • Use vim editor instead of vi.
 
-~~~~
+```
 
   
 
@@ -683,7 +683,7 @@ repeatedly
 
 ## Troubleshooting Steps:
 
-~~~~
+``` bash
 
 • Permissions and ownership issues
 
@@ -711,7 +711,7 @@ yum search telnet
 
   
 
-~~~~
+```
 
   
 
@@ -719,7 +719,7 @@ yum search telnet
 
   
 
-~~~~
+``` bash
 
 • Two important files for password
 
@@ -743,7 +743,7 @@ file has no information (passwd user)
 
 • /etc/shadow file is missing (pwconv will recreate the file)
 
-~~~~
+```
 
   
 
@@ -751,7 +751,7 @@ file has no information (passwd user)
 
   
 
-~~~~
+``` bash
 
 • Correct user
 
@@ -779,7 +779,7 @@ file has no information (passwd user)
 
 • Run the pwconv command to recreate the /etc/shadow file. (Remember you will have to setup passwords for each user again)
 
-~~~~
+```
 
   
 
@@ -801,7 +801,7 @@ file has no information (passwd user)
 
   
 
-~~~~
+``` bash
 
 • Directory does not exist
 
@@ -813,7 +813,7 @@ file has no information (passwd user)
 
 • Directory name should match with directory listed in /etc/passwd
 
-~~~~
+```
 
   
 
@@ -826,7 +826,7 @@ file has no information (passwd user)
 
   
 
-~~~~
+``` bash
 
 • Manually change every word
 
@@ -838,7 +838,7 @@ file has no information (passwd user)
 
 • Use the sed command (sed 's/string/newstring/g‘)
 
-~~~~
+```
 
   
 
@@ -849,11 +849,11 @@ file has no information (passwd user)
 
 ## Replace a string in a file with a newstring
 
-~~~~
+``` bash
 
 sed 's/string/newstring/g'
 
-~~~~
+```
 
   
 
@@ -861,11 +861,11 @@ sed 's/string/newstring/g'
 
   
 
-~~~~
+``` bash
 
 sed –i ‘s/string/newstring/g’ filename
 
-~~~~
+```
 
   
 
@@ -873,11 +873,11 @@ sed –i ‘s/string/newstring/g’ filename
 
   
 
-~~~~
+``` bash
 
 sed ‘1d’ file.out
 
-~~~~
+```
 
   
 
@@ -885,11 +885,11 @@ sed ‘1d’ file.out
 
   
 
-~~~~
+``` bash
 
 1,$s/string/replacingstring/
 
-~~~~
+```
 
   
 
@@ -897,11 +897,11 @@ sed ‘1d’ file.out
 
   
 
-~~~~
+``` bash
 
 sed -i 's/ //g' file.txt
 
-~~~~
+```
 
   
 
@@ -909,7 +909,7 @@ sed -i 's/ //g' file.txt
 
   
 
-~~~~
+``` bash
 
 sed -i 's/ /{--TAB--]/g' file.txt
 
@@ -919,7 +919,7 @@ In place of --TAB-- , give CTRL + V
 
 followed by TAB
 
-~~~~
+```
 
   
 
@@ -927,11 +927,11 @@ followed by TAB
 
   
 
-~~~~
+``` bash
 
 sed ‘4 i\ newstring’ filename
 
-~~~~
+```
 
   
 
@@ -939,11 +939,11 @@ sed ‘4 i\ newstring’ filename
 
   
 
-~~~~
+``` bash
 
 sed ‘/string/i \newstring’ filename
 
-~~~~
+```
 
   
 
@@ -956,7 +956,7 @@ sed ‘/string/i \newstring’ filename
 
   
 
-~~~~
+``` bash
 
 • Find the process ID (ps –ef)
 
@@ -976,7 +976,7 @@ sed ‘/string/i \newstring’ filename
 
 • Run killall
 
-~~~~
+```
 
   
   
@@ -1001,7 +1001,7 @@ sed ‘/string/i \newstring’ filename
 
   
 
-~~~~
+``` bash
 
 • Check if the right system is reported or you are on the right system
 
@@ -1041,7 +1041,7 @@ sed ‘/string/i \newstring’ filename
 
 • Other tools (htop, iotop, iptraf, psacct)
 
-~~~~
+```
 
   
 
@@ -1049,7 +1049,7 @@ sed ‘/string/i \newstring’ filename
 
   
 
-~~~~
+``` bash
 
 • Virtual machine
 
@@ -1089,7 +1089,7 @@ sed ‘/string/i \newstring’ filename
 
 • yum history undo <id>
 
-~~~~
+```
 
   
   
@@ -1100,11 +1100,11 @@ sed ‘/string/i \newstring’ filename
 
   
 
-~~~~
+``` bash
 
 bash -v hello1.sh  
 
-~~~~
+```
 
   
 
@@ -1144,7 +1144,7 @@ bash -v hello1.sh  
 
   
 
-~~~~  
+``` bash  
 
 - Ping IP from localhost  
 
@@ -1158,13 +1158,13 @@ bash -v hello1.sh  
 
 - Attempt to ssh from that node to node in question  
 
-~~~~
+```
 
-~~~~
+``` bash
 
 If the previous 2 fail attempt to log into the server directly e.g. via ILO if it's a physical server like HP-UX series , or directly from Vsphere if a virtual server. If that issue fails, then it's need to be escalated to the infrastructure team/on site team of engineers to diagnose the issue further.  
 
-~~~~
+```
 
   
 
@@ -1172,11 +1172,11 @@ If the previous 2 fail attempt to log into the server directly e.g. via ILO if i
 
   
 
-~~~~
+``` bash
 
 Notify all the engineers and teams who have been working on the server and check if any of the changes they made could have caused the server's sshd capabilities to stop functioning. E.g. If a certain config file was edited, then revert the changes made to it and test and so forth  
 
-~~~~
+```
 
 ## Slowness on Server:
 
@@ -1186,11 +1186,11 @@ Check CPU, RAM, & Swap usage using top command  
 
   
 
-~~~~
+``` bash
 
 Based on the results the best option is to identify and kill PIDS that is causing the issue and if that is not resolution reboot the node and free up swap space as it doesn't get released after RAM usage goes down
 
-~~~~
+```
 
   
 
@@ -1198,7 +1198,7 @@ Based on the results the best option is to identify and kill PIDS that is causin
 
   
 
-~~~~
+``` bash
 
  After locating the failed build do the following:
 
@@ -1220,7 +1220,7 @@ Based on the results the best option is to identify and kill PIDS that is causin
 
   
 
-~~~~
+```
 
   
   
@@ -1262,19 +1262,19 @@ Strace can monitor file related activity. There are two useful parts. The first 
 
   
 
-~~~~
+``` bash
 
 strace -e trace=file -p 1234  or
 
-~~~~
+```
 
   
 
-~~~~
+``` bash
 
 strace -e trace=desc -p 1234
 
-~~~~
+```
 
   
 
@@ -1282,16 +1282,16 @@ If you want to track specific paths, use 1 or more times the -P parameter, follo
 
   
 
-~~~~
+``` bash
 
 sudo strace -P /etc/cups -p 2261
 
-~~~~
+```
 
   
   
 
-~~~~
+``` bash
 
 Process 2261 attached
 
@@ -1315,7 +1315,7 @@ getdents(7, /* 0 entries */, 32768) = 0
 
 close(7) = 0
 
-~~~~
+```
 
   
 
@@ -1323,7 +1323,7 @@ close(7) = 0
 
   
 
-~~~~
+``` bash
 
 access
 
@@ -1359,7 +1359,7 @@ read (read a piece of data)
 
 statfs (retrieve file system related details)
 
-~~~~
+```
 
   
 
@@ -1387,11 +1387,11 @@ Strace definitely can be useful for revealing more details about network traffic
 
   
 
-~~~~
+``` bash
 
 strace -e trace=network
 
-~~~~
+```
 
   
   
@@ -1400,7 +1400,7 @@ strace -e trace=network
 
   
 
-~~~~
+``` bash
 
 bind – link the process to a network port
 
@@ -1416,7 +1416,7 @@ socket – open a local or network socket
 
 setsockopt – define options for an active socket
 
-~~~~
+```
 
   
 
@@ -1424,16 +1424,16 @@ setsockopt – define options for an active socket
 
   
 
-~~~~
+``` bash
 
 To get better insights on the memory usage and system calls, strace can monitor for these as well. They are nicely grouped in the memory group.
-~~~~
+```
 
 
-~~~~
+``` bash
 strace -e trace=memory
 
-~~~~
+```
 
   
   
@@ -1441,11 +1441,11 @@ strace -e trace=memory
 ## Common syscalls:
 
   
-~~~~
+``` bash
 mmap
 
 munmap
-~~~~
+```
   
 
 ## Strace Cheat Sheet – Overview
@@ -1457,7 +1457,7 @@ munmap
 
   
 
-~~~~
+``` bash
 
 -c – See what time is spend and where (combine with -S for sorting)
 
@@ -1481,7 +1481,7 @@ munmap
 
 -T – Display syscall duration in the output
 
-~~~~
+```
 
   
 
@@ -1489,7 +1489,7 @@ munmap
 
   
 
-~~~~
+``` bash
 
   
 
@@ -1515,15 +1515,15 @@ munmap
 
 -e trace=file – Track file related syscalls
 
-~~~~
+```
 
 ## Trace multiple syscalls
  
-~~~~ 
+``` bash 
 
 strace -e open,close
 
 
-~~~~  
+```
   
 [[Index]] 

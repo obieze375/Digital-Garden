@@ -3,7 +3,7 @@
 
 ## Git Aliases
 
-~~~~
+``` 
 
 alias ga='git add'
 
@@ -135,7 +135,7 @@ alias gstp='git stash pop'  
 
 alias gsts='git stash save'
 
-~~~~
+``` 
 
   
   
@@ -149,13 +149,13 @@ alias gsts='git stash save'
 
   
 
-~~~~
+``` 
 
 function glf() { git log --all --grep="$1"; }
 
   
 
-~~~~
+``` 
 
   
 
@@ -173,7 +173,7 @@ From <https://jonsuh.com/blog/git-command-line-shortcuts/>  
 
   
 
-~~~~
+``` 
 
 1. Edit ~/.bash_aliases or ~/.bashrc file using: vi ~/.bash_aliases
 
@@ -185,13 +185,13 @@ From <https://jonsuh.com/blog/git-command-line-shortcuts/>  
 
 5. Activate alias by typing: source ~/.bash_aliases
 
-~~~~
+``` 
 
   
 
 Please note that ~/.bash_aliases file only works if the following line presents in the ~/.bashrc file:
 
-~~~~
+``` 
 
 if [ -f ~/.bash_aliases ]; then
 
@@ -199,7 +199,7 @@ if [ -f ~/.bash_aliases ]; then
 
 fi
 
-~~~~
+``` 
 
   
 
@@ -209,19 +209,19 @@ Examples
 
 Let us create four aliases as follows:
 
-~~~~
+``` 
 
 $ vi ~/.bash_aliases
 
-~~~~
+``` 
 
 OR
 
-~~~~
+``` 
 
 $ joe ~/.bashrc
 
-~~~~
+``` 
 
 Append text:
 
@@ -231,33 +231,33 @@ Append text:
 
   
 
-~~~~
+``` 
 
 alias update='sudo -- sh -c "apt update && apt upgrade"'
 
-~~~~
+``` 
 
 # make grep output colorful  
 
-~~~~
+``` 
 
 alias grep='grep --color=auto'
 
-~~~~
+``` 
 
 # set eth0 as an interface for eth0  
 
   
 
-~~~~
+``` 
 
 alias vnstat='vnstat -i eth0'
 
-~~~~
+``` 
 
 # flush redis cache for wp
 
-~~~~
+``` 
 
 alias flush_redis='redis-cli -h 127.0.0.1 FLUSHDB'
 
@@ -307,5 +307,5 @@ $ vnstat
 
 $ flush_redis
 
-~~~~
+``` 
 [[Index]] 

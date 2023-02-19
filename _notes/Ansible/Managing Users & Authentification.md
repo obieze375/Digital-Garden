@@ -1,5 +1,4 @@
-## In this exercise, you manage users and groups, adjust Sudo configuration, and configure SSH
-on your managed hosts.
+## In this exercise, you manage users and groups, adjust Sudo configuration, and configure SSH on your managed hosts.
 
 ```yaml
 ---

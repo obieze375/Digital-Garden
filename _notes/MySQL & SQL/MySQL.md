@@ -16,21 +16,21 @@ Obtained from https://devhints.io/mysql
 
   
 
-~~~~
+``` 
 
 mysql -u [username] -p;
 
-~~~~
+``` 
 
   
 
 # Access Database
 
-~~~~
+``` 
 
 mysql -u [username] -p [database];
 
-~~~~
+``` 
 
   
 
@@ -38,7 +38,7 @@ mysql -u [username] -p [database];
 
   
 
-~~~~
+``` 
 
 SHOW DATABASES;
 
@@ -52,7 +52,7 @@ SHOW PROCESSLIST;
 
 KILL process_number;
 
-~~~~
+``` 
 
   
 
@@ -60,11 +60,11 @@ KILL process_number;
 
   
 
-~~~~
+``` 
 
 describe db_mgnt;
 
-~~~~
+``` 
 
   
 
@@ -72,7 +72,7 @@ describe db_mgnt;
 
   
 
-~~~~
+``` 
 
 CREATE DATABASE DatabaseName;
 
@@ -84,7 +84,7 @@ DROP DATABASE DatabaseName;
 
 ALTER DATABASE DatabaseName CHARACTER SET utf8;
 
-~~~~
+``` 
 
   
 
@@ -92,7 +92,7 @@ ALTER DATABASE DatabaseName CHARACTER SET utf8;
 
   
 
-~~~~
+``` 
 
 SELECT * FROM table;
 
@@ -143,7 +143,7 @@ From <https://devhints.io/mysql>
   
   
 
-~~~~
+``` 
 
   
   
@@ -153,11 +153,11 @@ From <https://devhints.io/mysql>
   
   
 
-~~~~
+``` 
 
 select database();
 
-~~~~
+``` 
 
   
 
@@ -165,7 +165,7 @@ select database();
 
   
 
-~~~~
+``` 
 
   
 
@@ -173,7 +173,7 @@ show tables;
 
   
 
-~~~~
+``` 
 
   
 
@@ -181,11 +181,11 @@ show tables;
 
   
 
-~~~~
+``` 
 
 describe [table];
 
-~~~~
+``` 
 
   
 
@@ -193,11 +193,11 @@ describe [table];
 
   
 
-~~~~
+``` 
 
 show index from [table];
 
-~~~~
+``` 
 
   
 
@@ -205,11 +205,11 @@ show index from [table];
 
   
 
-~~~~
+``` 
 
 CREATE TABLE [table] ([column] VARCHAR(120), [another-column] DATETIME)
 
-~~~~
+``` 
 
   
 
@@ -217,11 +217,11 @@ CREATE TABLE [table] ([column] VARCHAR(120), [another-column] DATETIME)
 
   
 
-~~~~
+``` 
 
 ALTER TABLE [table] ADD COLUMN [column] VARCHAR(120);
 
-~~~~
+``` 
 
   
 
@@ -229,11 +229,11 @@ ALTER TABLE [table] ADD COLUMN [column] VARCHAR(120);
 
   
 
-~~~~
+``` 
 
 ALTER TABLE [table] ADD COLUMN [column] int NOT NULL AUTO_INCREMENT PRIMARY KEY;
 
-~~~~
+``` 
 
   
 
@@ -241,11 +241,11 @@ ALTER TABLE [table] ADD COLUMN [column] int NOT NULL AUTO_INCREMENT PRIMARY KEY;
 
   
 
-~~~~
+``` 
 
 INSERT INTO [table] ([column], [column]) VALUES ('[value]', '[value]');
 
-~~~~
+``` 
 
   
 
@@ -253,7 +253,7 @@ INSERT INTO [table] ([column], [column]) VALUES ('[value]', '[value]');
 
   
 
-~~~~
+``` 
 
     SELECT * FROM table;
 
@@ -279,7 +279,7 @@ INSERT INTO [table] ([column], [column]) VALUES ('[value]', '[value]');
 
   
 
-~~~~
+``` 
 
   
 
@@ -287,11 +287,11 @@ INSERT INTO [table] ([column], [column]) VALUES ('[value]', '[value]');
 
   
 
-~~~~
+``` 
 
 NOW()
 
-~~~~
+``` 
 
   
 
@@ -299,11 +299,11 @@ NOW()
 
   
 
-~~~~
+``` 
 
 EXPLAIN SELECT * FROM [table];
 
-~~~~
+``` 
 
   
 
@@ -311,11 +311,11 @@ EXPLAIN SELECT * FROM [table];
 
   
 
-~~~~
+``` 
 
 SELECT [column], [another-column] FROM [table];
 
-~~~~
+``` 
 
   
 
@@ -323,11 +323,11 @@ SELECT [column], [another-column] FROM [table];
 
   
 
-~~~~
+``` 
 
 SELECT COUNT([column]) FROM [table];
 
-~~~~
+``` 
 
   
 
@@ -335,11 +335,11 @@ SELECT COUNT([column]) FROM [table];
 
   
 
-~~~~
+``` 
 
 SELECT *, (SELECT COUNT([column]) FROM [table]) AS count FROM [table] GROUP BY [column];
 
-~~~~
+``` 
 
   
 
@@ -347,7 +347,7 @@ SELECT *, (SELECT COUNT([column]) FROM [table]) AS count FROM [table] GROUP BY [
 
   
 
-~~~~
+``` 
 
 SELECT * FROM table;
 
@@ -373,7 +373,7 @@ SELECT DISTINCT field1, field2 FROM ...
 
   
 
-~~~~
+``` 
 
   
 
@@ -381,11 +381,11 @@ SELECT DISTINCT field1, field2 FROM ...
 
   
 
-~~~~
+``` 
 
 SELECT * FROM [table] WHERE [column] = [value]; (Selectors: <, >, !=; combine multiple selectors with AND, OR)
 
-~~~~
+``` 
 
   
 
@@ -393,11 +393,11 @@ SELECT * FROM [table] WHERE [column] = [value]; (Selectors: <, >, !=; combine mu
 
   
 
-~~~~
+``` 
 
 SELECT * FROM [table] WHERE [column] LIKE '%[value]%';
 
-~~~~
+``` 
 
   
 
@@ -405,11 +405,11 @@ SELECT * FROM [table] WHERE [column] LIKE '%[value]%';
 
   
 
-~~~~
+``` 
 
 SELECT * FROM [table] WHERE [column] LIKE '[value]%';
 
-~~~~
+``` 
 
   
 
@@ -417,11 +417,11 @@ SELECT * FROM [table] WHERE [column] LIKE '[value]%';
 
   
 
-~~~~
+``` 
 
 SELECT * FROM [table] WHERE [column] LIKE '[value]';
 
-~~~~
+``` 
 
   
 
@@ -429,11 +429,11 @@ SELECT * FROM [table] WHERE [column] LIKE '[value]';
 
   
 
-~~~~
+``` 
 
 SELECT * FROM [table] WHERE [column] BETWEEN [value1] and [value2];
 
-~~~~
+``` 
 
   
 
@@ -441,11 +441,11 @@ SELECT * FROM [table] WHERE [column] BETWEEN [value1] and [value2];
 
   
 
-~~~~
+``` 
 
 SELECT * FROM [table] WHERE [column] ORDER BY [column] ASC LIMIT [value]; (Order: DESC, ASC)
 
-~~~~
+``` 
 
   
 
@@ -453,11 +453,11 @@ SELECT * FROM [table] WHERE [column] ORDER BY [column] ASC LIMIT [value]; (Order
 
   
 
-~~~~
+``` 
 
 UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value]
 
-~~~~
+``` 
 
   
 
@@ -465,11 +465,11 @@ UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value]
 
   
 
-~~~~
+``` 
 
 DELETE FROM [table] WHERE [column] = [value];
 
-~~~~
+``` 
 
   
 
@@ -477,11 +477,11 @@ DELETE FROM [table] WHERE [column] = [value];
 
   
 
-~~~~
+``` 
 
 DELETE FROM [table]; (This also resets the incrementing counter for auto generated columns like an id column.)
 
-~~~~
+``` 
 
   
 
@@ -489,11 +489,11 @@ DELETE FROM [table]; (This also resets the incrementing counter for auto generat
 
   
 
-~~~~
+``` 
 
 truncate table [table];
 
-~~~~
+``` 
 
   
 
@@ -501,11 +501,11 @@ truncate table [table];
 
   
 
-~~~~
+``` 
 
 ALTER TABLE [table] DROP COLUMN [column];
 
-~~~~
+``` 
 
   
 
@@ -513,7 +513,7 @@ ALTER TABLE [table] DROP COLUMN [column];
 
   
 
-~~~~
+``` 
 
 DROP TABLE table;
 
@@ -521,7 +521,7 @@ DROP TABLE IF EXISTS table;
 
 DROP TABLE table1, table2, ...
 
-~~~~
+``` 
 
   
 
@@ -529,7 +529,7 @@ DROP TABLE table1, table2, ...
 
   
 
-~~~~
+``` 
 
 DELETE FROM table1 / TRUNCATE table1
 
@@ -541,7 +541,7 @@ DELETE FROM table1, table2 FROM table1, table2 WHERE table1.id1 =
 
   
 
-~~~~
+``` 
 
   
 
@@ -549,11 +549,11 @@ DELETE FROM table1, table2 FROM table1, table2 WHERE table1.id1 =
 
   
 
-~~~~
+``` 
 
 DROP DATABASE [database];
 
-~~~~
+``` 
 
   
 
@@ -561,11 +561,11 @@ DROP DATABASE [database];
 
   
 
-~~~~
+``` 
 
 SELECT [column] AS [custom-column] FROM [table];
 
-~~~~
+``` 
 
   
 
@@ -573,11 +573,11 @@ SELECT [column] AS [custom-column] FROM [table];
 
   
 
-~~~~
+``` 
 
 mysqldump -u [username] -p [database] > db_backup.sql
 
-~~~~
+``` 
 
   
 
@@ -585,11 +585,11 @@ mysqldump -u [username] -p [database] > db_backup.sql
 
   
 
-~~~~
+``` 
 
 mysql - u Username -p dbNameYouWant < databasename_backup.sql;
 
-~~~~
+``` 
 
   
 
@@ -597,11 +597,11 @@ mysql - u Username -p dbNameYouWant < databasename_backup.sql;
 
   
 
-~~~~
+``` 
 
 mysql -u [username] -p -h localhost [database] < db_backup.sql
 
-~~~~
+``` 
 
   
 
@@ -609,11 +609,11 @@ mysql -u [username] -p -h localhost [database] < db_backup.sql
 
   
 
-~~~~
+``` 
 
 exit;
 
-~~~~
+``` 
 
   
 
@@ -621,7 +621,7 @@ exit;
 
   
 
-~~~~
+``` 
 
 SELECT ... FROM t1 JOIN t2 ON t1.id1 = t2.id2 WHERE condition;
 
@@ -629,7 +629,7 @@ SELECT ... FROM t1 LEFT JOIN t2 ON t1.id1 = t2.id2 WHERE condition;
 
 SELECT ... FROM t1 JOIN (t2 JOIN t3 ON ...) ON ...
 
-~~~~
+``` 
 
   
 
@@ -637,7 +637,7 @@ SELECT ... FROM t1 JOIN (t2 JOIN t3 ON ...) ON ...
 
   
 
-~~~~
+``` 
 
 field1 = value1
 
@@ -657,7 +657,7 @@ condition1 AND condition2
 
 condition1 OR condition2
 
-~~~~
+``` 
 
   
 
@@ -665,7 +665,7 @@ condition1 OR condition2
 
   
 
-~~~~
+``` 
 
 CREATE USER 'user'@'localhost';
 
@@ -705,7 +705,7 @@ DROP USER 'user'@'host';
 
   
 
-~~~~
+``` 
 
   
 
@@ -713,13 +713,13 @@ DROP USER 'user'@'host';
 
   
 
-~~~~
+``` 
 
 mysqlcheck --all-databases;
 
 mysqlcheck --all-databases --fast;
 
-~~~~
+``` 
 
   
 
@@ -727,11 +727,11 @@ mysqlcheck --all-databases --fast;
 
   
 
-~~~~
+``` 
 
 INSERT INTO table1 (field1, field2) VALUES (value1, value2);
 
-~~~~
+``` 
 
   
 
@@ -739,7 +739,7 @@ INSERT INTO table1 (field1, field2) VALUES (value1, value2);
 
   
 
-~~~~
+``` 
 
     UPDATE table1 SET field1=new_value1 WHERE condition;
 
@@ -749,7 +749,7 @@ INSERT INTO table1 (field1, field2) VALUES (value1, value2);
 
   table1.id1 = table2.id2 AND condition;
 
-~~~~
+``` 
 
   
 
@@ -757,7 +757,7 @@ INSERT INTO table1 (field1, field2) VALUES (value1, value2);
 
   
 
-~~~~
+``` 
 
 CREATE TABLE table (..., PRIMARY KEY (field1, field2))
 
@@ -771,7 +771,7 @@ CREATE TABLE table (..., FOREIGN KEY (field1, field2) REFERENCES table2
 
   
 
-~~~~
+``` 
 
   
 
@@ -779,7 +779,7 @@ CREATE TABLE table (..., FOREIGN KEY (field1, field2) REFERENCES table2
 
   
 
-~~~~
+``` 
 
     • CREATE TABLE table (field1 type1, field2 type2);
 
@@ -818,7 +818,7 @@ CREATE TABLE table (..., FOREIGN KEY (field1, field2) REFERENCES table2
 
   
 
-~~~~
+``` 
 
   
 
@@ -826,7 +826,7 @@ CREATE TABLE table (..., FOREIGN KEY (field1, field2) REFERENCES table2
 
   
 
-~~~~
+``` 
 
   
 
@@ -869,7 +869,7 @@ ALTER TABLE table CHANGE old_name_field1 new_name_field1 type1 AFTER
 
   
 
-~~~~
+``` 
 
   
 
@@ -877,7 +877,7 @@ ALTER TABLE table CHANGE old_name_field1 new_name_field1 type1 AFTER
 
   
 
-~~~~
+``` 
 
 TINYINT (1o: -217+128)
 
@@ -923,7 +923,7 @@ ENUM ('value1', 'value2', ...) -- (default NULL, or '' if NOT NULL)
 
   
 
-~~~~
+``` 
 
   
 
@@ -931,7 +931,7 @@ ENUM ('value1', 'value2', ...) -- (default NULL, or '' if NOT NULL)
 
   
 
-~~~~
+``` 
 
 $ /etc/init.d/mysql stop
 
@@ -945,7 +945,7 @@ mysql> UPDATE mysql.user SET password=PASSWORD('new_pass') WHERE user='root';
 
 $ /etc/init.d/mysql start
 
-~~~~
+``` 
 
   
 
@@ -953,11 +953,11 @@ $ /etc/init.d/mysql start
 
   
 
-~~~~
+``` 
 
 mysql -u root -h 127.0.0.1 -p
 
-~~~~
+``` 
 
   
 
@@ -965,24 +965,24 @@ mysql -u root -h 127.0.0.1 -p
 
   
 
-~~~~
+``` 
 
 mysql -u root -p -h* -P 3306 -e "select @@version;"
 
-~~~~
+``` 
 
   
 # MySQL DB backup & Restore
 
-~~~~
+``` 
 
   A simple and easy method for creating MySQL backups is to use the mysqldump command. This command will create a simple .sql file of an existing database, which can then be restored to any other empty MySQL database. This article will work for any Linux distribution running MySQL.
 
-~~~~
+``` 
 
 1. Back up the database using the following command:
 
-~~~~  
+```   
 
 mysqldump -u [username] –p[password] [database_name] > [dump_file.sql]
 
@@ -997,23 +997,23 @@ The parameters of the said command as follows:
 [database_name] - A valid Database name you want to take backup.
 
 [dump_file.sql] - The name of backup dump file you want to generate.
-~~~~
+``` 
 
 2. Restore the backup to a local database server - the mysql command will let you take the contents of a .sql file backup, and restore it directly to a database. This is the syntax for the command:
 
   
-~~~~
+``` 
 mysql -u [username] –p[password] [database_name] < [dump_file.sql]
 
-~~~~
+``` 
 
 3. Restore the backup to a remote database server - you can also use the mysql command to restore a .sql file backup to a remote MySQL server. If you have another server running MySQL, and you have the database credentials, you can define a hostname in the command by adding the -h flag to specify a hostname. This changes the syntax of the command to:
 
   
-~~~~
+``` 
  mysql –h [hostname] –u [username] –p[password] [database_name] < [dump_file.sql]
 
-~~~~  
+```   
 
 As long as you have the correct credentials and the remote server is running, you will be able to restore the database remotely.
 

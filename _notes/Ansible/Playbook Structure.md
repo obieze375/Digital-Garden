@@ -347,7 +347,7 @@ ATOM ide with linter-js-yaml and remote-sync (if you need)
 ## Dynamic environment usage
 
   
-```bash
+```yaml
 
 host: "{{ env_name }}"
 
@@ -363,6 +363,31 @@ vars:
 
 CLI USAGE: ansible-playbook <playbook>.yml --extra-vars "env_name=<value>"
 ``` 
+
+```yaml
+---
+- name: harmful playbook
+  hosts: "{{ HOSTS }}"
+  tasks:
+    - name: harmful task
+      ansible.builtin.debug:
+        msg: "harmful task"
+``` 
+```bash
+ansible-pilot $ ansible-playbook -i limit/inventory -e "HOSTS=demo.example.com" limit/playbook3.yml
+PLAY [harmful playbook] ***************************************************************************
+TASK [Gathering Facts] ****************************************************************************
+ok: [demo.example.com]
+TASK [harmful task] *******************************************************************************
+ok: [demo.example.com] => {
+    "msg": "harmful task"
+}
+PLAY RECAP ****************************************************************************************
+demo.example.com           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+ansible-pilot $
+
+```
+
 
 host searches for env_name group in inventory file specified under group vars dir
 

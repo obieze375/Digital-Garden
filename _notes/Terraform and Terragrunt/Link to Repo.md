@@ -11,7 +11,7 @@ https://github.com/obieze375/terraform-on-aws-ec2
 
   
 
-~~~~
+``` 
 
   
 
@@ -45,7 +45,7 @@ inputs {
 
   
 
-~~~~
+``` 
 
   
 
@@ -53,7 +53,7 @@ inputs {
 
   
 
-~~~~
+``` 
 
   
 
@@ -61,7 +61,7 @@ locals {}
 
   
 
-~~~~
+``` 
 
   
   
@@ -70,7 +70,7 @@ locals {}
 
   
 
-~~~~
+``` 
 
   
 
@@ -167,7 +167,7 @@ EOF
   
   
 
-~~~~
+``` 
 
   
 
@@ -175,7 +175,7 @@ EOF
 
   
 
-~~~~
+``` 
 
   
 
@@ -203,14 +203,14 @@ kms_secrets = [
 
   
 
-~~~~
+``` 
 
   
   
   
   
 
-~~~~
+``` 
 
   
 
@@ -226,4 +226,4 @@ For maps, the two maps are combined together recursively. That is, if the map ke
 
 For blocks, if the label is the same, the two blocks are combined together recursively. Otherwise, the blocks are appended like a list. This is similar to maps, with block labels treated as keys.
 
-~~~~
+``` 

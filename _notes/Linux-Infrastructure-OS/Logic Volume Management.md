@@ -16,7 +16,7 @@
 
   
 
-~~~~
+``` 
 
 To display Physical Volumes (PV) on a system you can issue the pvs command:
 
@@ -78,13 +78,13 @@ To display more details about a PV, you can issue the pvdisplay command:
 
   PV UUID               Q3lBfV-tDi9-LJOw-nZKj-fge1-pqSQ-l0Cute
 
-~~~~
+``` 
 
-~~~~
+``` 
 
   ► pvdisplay | grep <pv_name> - To grab pv specifically
 
-~~~~
+``` 
 
   
   
@@ -95,7 +95,7 @@ To display more details about a PV, you can issue the pvdisplay command:
 
 To display basic information regarding a Volume Group on a Linux system you can issue the vgs command:
 
-~~~~
+``` 
 
 [root@rhel01a ~]# vgs
 
@@ -159,15 +159,15 @@ For a more detailed view of Volume Groups on a Linux system, you can use the com
 
   VG UUID               ttO0aF-RgCq-OZM7-dKcj-sDr0-vfg1-TDFzj0
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
   ► vgdisplay | grep <vg_name> - To grab vg specifically
 
-~~~~
+``` 
 
   
 
@@ -179,13 +179,13 @@ To display Logical Volume (LV) information on a Linux system you can issue the l
 
   
 
-~~~~
+``` 
 
   ► lvs
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 [root@rhel01a ~]# lvs
 
@@ -197,20 +197,20 @@ To display Logical Volume (LV) information on a Linux system you can issue the l
 
   lv_swap vg_rhel01 -wi-ao--  1.97g
 
-~~~~
+``` 
 
   
 
 For a more detailed display of Logical Volumes on a Linux system you can use the command lvdisplay:
 
-~~~~
+``` 
 
   • lvdisplay /dev/vg_name/<lv_name>
 
-~~~~
+``` 
 
 
-~~~~  
+```   
 [root@rhel01a ~]# lvdisplay /dev/vg_rhel01/lv_root
 
   
@@ -247,7 +247,7 @@ For a more detailed display of Logical Volumes on a Linux system you can use the
 
   Block device           253:0
 
-~~~~
+``` 
 
   
 
@@ -255,11 +255,11 @@ If you issue the "lvdisplay" command without specifying a specific Logical Volum
 
   
 
-~~~~
+``` 
 
   • lvdisplay | grep <lv_name> - To grab lv specifically
 
-~~~~
+``` 
 
   
 
@@ -271,7 +271,7 @@ Although this command is not a LVM command, it us useful for displaying partitio
 
   
 
-~~~~
+``` 
 
 [root@rhel01a ~]# lsblk
 
@@ -299,7 +299,7 @@ sdb                            8:16   0     5G  0 disk
 
 sdc                            8:32   0     2G  0 disk
 
-~~~~
+``` 
 
   
 
@@ -307,11 +307,11 @@ sdc                            8:32   0     2G  0 disk
 
   
 
-~~~~
+``` 
 
 To display partition information on a Linux system, you can issue the fdisk -l command:
 
-~~~~
+``` 
 
   
 
@@ -323,7 +323,7 @@ To display partition information on a Linux system, you can issue the fdisk -l c
 
   
 
-~~~~
+``` 
 
 [root@rhel01a ~]# fdisk -l /dev/sda
 
@@ -359,11 +359,11 @@ Sometimes it is useful to use the command in conjunction with "grep" to limit th
 
   
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 [root@rhel01a ~]# fdisk -l | grep /dev/sd
 
@@ -381,7 +381,7 @@ Disk /dev/sdb: 5368 MB, 5368709120 bytes
 
 Disk /dev/sdc: 2147 MB, 2147483648 bytes
 
-~~~~
+``` 
 
   
 
@@ -389,15 +389,15 @@ From the above we can see that we have a spare disk on our Red Hat system "/dev/
 
   
 
-~~~~
+``` 
 
   ► pvcreate /dev/<pv_name>
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 [root@rhel01a ~]# pvcreate /dev/sdc
 
@@ -421,7 +421,7 @@ From the above we can see that we have a spare disk on our Red Hat system "/dev/
 
   /dev/sdc             lvm2 a--  2.00g 2.00g
 
-~~~~
+``` 
 
   
 
@@ -433,15 +433,15 @@ To remove storage from a Volume Group, the command vgreduce is used. This comman
 
   
 
-~~~~
+``` 
 
   ► vgreduce <vg_name> /dev/<pv_name>
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 [root@rhel01a ~]# pvs
 
@@ -455,9 +455,9 @@ To remove storage from a Volume Group, the command vgreduce is used. This comman
 
   /dev/sdc   vg_rhel01 lvm2 a--  2.00g 2.00g
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 [root@rhel01a ~]# vgreduce vg_rhel01 /dev/sdc
 
@@ -465,9 +465,9 @@ To remove storage from a Volume Group, the command vgreduce is used. This comman
 
   Removed "/dev/sdc" from volume group "vg_rhel01"
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 [root@rhel01a ~]# pvs
 
@@ -485,7 +485,7 @@ To remove storage from a Volume Group, the command vgreduce is used. This comman
 
 The pvs command is initially used to show the relationship between the Physical Volume and the Volume Group. After the vgreduce command is issued, we use the pvs command to verify that the Physical Volume "/dev/sdc" is no longer attached to the Volume Group "vg_rhel01
 
-~~~~
+``` 
 
   
 
@@ -495,15 +495,15 @@ The pvs command is initially used to show the relationship between the Physical 
 
 To remove a Physical Volume from a system, you use the pvremove command:
 
-~~~~
+``` 
 
   ► pvremove  /dev/<pv_name>    
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
   [root@rhel01a ~]# pvremove /dev/sdc
 
@@ -511,7 +511,7 @@ To remove a Physical Volume from a system, you use the pvremove command:
 
   Labels on physical volume "/dev/sdc" successfully wiped
 
-~~~~
+``` 
 
   
   
@@ -528,7 +528,7 @@ In the example below we are using a newly added disk /dev/sdc. Before the newly 
 
   
 
-~~~~
+``` 
 
 [root@rhel01a ~]# pvcreate /dev/sdc
 
@@ -576,7 +576,7 @@ Now when the pvs command is issued, we can see that the storage is now associate
 
   /dev/sdc   vg01      lvm2 a--  2.00g 2.00g
 
-~~~~
+``` 
 
   
 
@@ -588,13 +588,13 @@ To remove a Volume Group, the command vgremove is used:
 
   
 
-~~~~
+``` 
 
   vgremove <vg_name>
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 [root@rhel01a ~]# vgremove test_vg01
 
@@ -602,7 +602,7 @@ To remove a Volume Group, the command vgremove is used:
 
   Volume group "test_vg01" successfully removed
 
-~~~~
+``` 
 
   
 
@@ -614,13 +614,13 @@ To rename an existing Volume Group, the vgrename command is used:
 
   
 
-~~~~
+``` 
 
   vgrename <old_vg_name>< new_vg_name >
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 [root@rhel01a ~]# vgs
 
@@ -652,7 +652,7 @@ To rename an existing Volume Group, the vgrename command is used:
 
   vg_rhel01   2   2   0 wz--n- 12.50g    0  
 
-~~~~
+``` 
 
   
   
@@ -670,15 +670,15 @@ To add additional space to an existing Volume Group, the command vgextend is use
 
   
 
-~~~~  
+```   
 
   vgextend <vg_name> /dev/<pg_name>
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 [root@rhel01a ~]# vgdisplay vg_rhel01
 
@@ -722,11 +722,11 @@ To add additional space to an existing Volume Group, the command vgextend is use
 
   VG UUID               ttO0aF-RgCq-OZM7-dKcj-sDr0-vfg1-TDFzj0
 
-~~~~
+``` 
 
   
 
-~~~~  
+```   
 
 [root@rhel01a ~]# vgextend vg_rhel01 /dev/sdc
 
@@ -780,7 +780,7 @@ To add additional space to an existing Volume Group, the command vgextend is use
 
   VG UUID               ttO0aF-RgCq-OZM7-dKcj-sDr0-vfg1-TDFzj0
 
-~~~~
+``` 
 
   
   
@@ -801,13 +801,13 @@ To create a Logical Volume on an existing Volume Group, the command lvcreate is 
 
   
 
-~~~~  
+```   
 
   lvcreate -n <lv_name> -l <space_to_allocate> <vg_name>
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 [root@rhel01a ~]# lvcreate -n lv01 -l 100%VG vg01
 
@@ -815,7 +815,7 @@ To create a Logical Volume on an existing Volume Group, the command lvcreate is 
 
   Logical volume "lv01" created
 
-~~~~
+``` 
 
   
 
@@ -831,7 +831,7 @@ IN the following example, the command lvcreate is used to create a new Logical V
 
   
 
-~~~~  
+```   
 
 [root@rhel01a ~]# pvs
 
@@ -866,7 +866,7 @@ IN the following example, the command lvcreate is used to create a new Logical V
 
   /dev/sdc   vg01      lvm2 a--  2.00g 1020.00m
 
-~~~~
+``` 
 
   
   
@@ -875,11 +875,11 @@ In the above example we can see that initially there is 2GB of space allocated t
 
   
 
-~~~~
+``` 
 
 lvcreate -n lv01 -L1G vg01 - The command will create a Logical Volume (LV) called lv01 with an allocation of 1GB from the Volume Group (VG) vg01
 
-~~~~
+``` 
 
   
   
@@ -894,19 +894,19 @@ Before we can add space, you must verify that space is available to the Logical 
 
 IN the example below we can see that there is 1020MB of available space within Volume Group vg01.
 
-~~~~
+``` 
 
   lvextend /dev/<vg_name>/<lv_name> -L<+space_to_allocateM> -r
 
-~~~~
+``` 
 
-~~~~  
+```   
 
   lvextend /dev/<vg_name>/<lv_name> -L<+space_to_allocateM> 
 
-~~~~
+``` 
 
-~~~~  
+```   
 
 
 [root@rhel01a /]# df -h /testfs
@@ -929,11 +929,11 @@ Filesystem            Size  Used Avail Use% Mounted on
 
   /dev/sdc   vg01      lvm2 a--  2.00g 1020.00m
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 [root@rhel01a /]# lvextend /dev/vg01/lv01 -L+1000M -r
 
@@ -957,7 +957,7 @@ The filesystem on /dev/mapper/vg01-lv01 is now 518144 blocks long.
 
 The command lvextend /dev/vg01/lv01 -L+1000M -r is used to increase the size of the Logical Volume by 1000MB. the -r option is specified as this will carry out a resize of the file system online.
 
-~~~~
+``` 
 
   
   
@@ -965,7 +965,7 @@ Now when we use the df command, we can see that the file system has been increas
 
   
 
-~~~~
+``` 
 
 [root@rhel01a /]# df -h testfs/
 
@@ -975,7 +975,7 @@ Filesystem            Size  Used Avail Use% Mounted on
 
                       2.0G   34M  1.9G   2% /testfs
 
-~~~~
+``` 
 
   
 
@@ -987,7 +987,7 @@ If you wanted to specify the size of a file system, we can use the option -L. He
 
   
 
-~~~~
+``` 
 
 [root@rhel01a /]# df -h /testfs/
 
@@ -999,11 +999,11 @@ Filesystem            Size  Used Avail Use% Mounted on
 
                       492M   33M  435M   8% /testfs
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 [root@rhel01a /]# lvextend /dev/vg01/lv01 -L1.5GB -r
 
@@ -1015,11 +1015,11 @@ Filesystem            Size  Used Avail Use% Mounted on
 
 resize2fs 1.41.12 (17-May-2010)
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 Filesystem at /dev/mapper/vg01-lv01 is mounted on /testfs; on-line resizing required
 
@@ -1029,7 +1029,7 @@ Performing an on-line resize of /dev/mapper/vg01-lv01 to 393216 (4k) blocks.
 
 The filesystem on /dev/mapper/vg01-lv01 is now 393216 blocks long.
 
-~~~~
+``` 
 
   
 
@@ -1041,19 +1041,19 @@ To reduce the size of a file system, the lvreduce command is used to change the 
 
   
 
-~~~~
+``` 
 
   ► lvreduce /dev/<vg_name>/<lv_name> <-Lspace_to_allocate_M> -r  
 
   ► lvreduce /dev/<vg_name>/<lv_name> <-Lspace_to_allocate_M>
 
-~~~~
+``` 
 
   
 
 In the example below, we will use the command lvreduce /dev/vg01/lv01 -L500M -r
 
- ~~~~   
+ ```    
   
 
 [root@rhel01a /]# df -h /testfs/
@@ -1094,7 +1094,7 @@ Filesystem            Size  Used Avail Use% Mounted on
 
 
 
-~~~~
+``` 
 
 
 ## Reduce a file system by a specified amount
@@ -1105,7 +1105,7 @@ In the following example, we will specify the amount of size to reduce the file 
 
   
 
-~~~~
+``` 
 [root@rhel01a /]# df -h /testfs/
 
   
@@ -1139,11 +1139,11 @@ Reducing logical volume lv01 to 268.00 MiB
   Logical volume lv01 successfully resized
 
   
-  ~~~~
+  ``` 
 
 
 
-~~~~
+``` 
 [root@rhel01a /]# df -h /testfs/
 
 Filesystem            Size  Used Avail Use% Mounted on
@@ -1151,7 +1151,7 @@ Filesystem            Size  Used Avail Use% Mounted on
 /dev/mapper/vg01-lv01
 
                       262M   33M  217M  14% /testfs
-~~~~
+``` 
 
 
 
@@ -1159,17 +1159,17 @@ Filesystem            Size  Used Avail Use% Mounted on
 
 
 
-~~~~
+``` 
  ► lvremove /dev/<vg>/<lv>
 
   ► lvremove /dev/t1-sub1/082720
   
 
-~~~~
+``` 
 
 ## Creating Swap Space
 
-~~~~
+``` 
  2545  2020-11-12 01:17:41 lvcreate -L 150M -n swaplv t1-s1
 
  2546  2020-11-12 01:17:56 swapon -s
@@ -1183,7 +1183,7 @@ Filesystem            Size  Used Avail Use% Mounted on
  2550  2020-11-12 01:24:05 swapon -va
 
  2551  2020-11-12 01:24:27 swapon -s
-  ~~~~
+  ``` 
 
 ## Create new volume in HA config
 
@@ -1196,7 +1196,7 @@ Device-mapper is assumed to be configured and in use.
 ## Variable Name Description
 
 The below variables should be replaced with the appropriate values for the local system.
-~~~~
+``` 
   
 <sdX> - SCSI device name associated to the physical disk device or SAN LUN. This device should be UNUSED.
 
@@ -1208,13 +1208,13 @@ The below variables should be replaced with the appropriate values for the local
 
 <vgname> - Volume group in which the logical volume for the file system will be placed
 
-~~~~
+``` 
 
 # Steps
 
 ## All works should be completed as the root user.
 
-~~~~
+``` 
 Note
 
 
@@ -1226,7 +1226,7 @@ To find the UUID at the Linux level, issue the following command as the root on 
 
  multipath -ll <mpathX>          ## e.g. <mpathX> = mpath0, mpath1, mpath2, etc . . . 
 
-~~~~
+``` 
 
 
 
@@ -1235,21 +1235,21 @@ To find the UUID at the Linux level, issue the following command as the root on 
 
   
 
-~~~~
+``` 
 
 scsi_id -g -u -s /block/<sdX>   ## e.g. <sdX> = sda, sdb, sdb, etc . . .
 
-~~~~
+``` 
 
   
 
 ## Linux 7.x
 
   
-~~~~
+``` 
 
 /usr/lib/udev/scsi_id -g -u -d /dev/<sdX>   ## e.g. <sdX> = sda, sdb, sdb, etc . . .  
-~~~~
+``` 
 
 ```
 
@@ -1266,7 +1266,7 @@ For example, if the target UUID is 360060e8005aff9000000aff9000012da, then the f
 
   
 
-~~~~
+``` 
 
 
 [root@ipht01 ~]# multipath -ll mpath1
@@ -1293,7 +1293,7 @@ mpath1 (360060e8005aff9000000aff9000012da) dm-33 HP,OPEN-V
 
 360060e8005aff9000000aff9000012da
 
-~~~~
+``` 
 
 
   
@@ -1329,7 +1329,7 @@ fdisk /dev/mapper/mpath<X> ## <X> = associated Multipath SCSI device name found 
 
   
 
-~~~~
+``` 
 
   • partprobe
 
@@ -1345,7 +1345,7 @@ fdisk /dev/mapper/mpath<X> ## <X> = associated Multipath SCSI device name found 
 
   • vgcreate <vgname> /dev/mapper/<mapthX>p1
 
-~~~~
+``` 
 
   
 
@@ -1359,11 +1359,11 @@ To determine if the volume_list parameter is configured, then the following comm
 
   
 
-~~~~
+``` 
 
 lvmconfig --type diff
 
-~~~~
+``` 
 
 For example, the following shows the volume groups vg00 and cerner1vg are the only volume groups activated at boot time.
 
@@ -1371,7 +1371,7 @@ For example, the following shows the volume groups vg00 and cerner1vg are the on
 
 Example
 
-~~~~
+``` 
 
 [root@app01]# lvmconfig --type diff
 
@@ -1387,7 +1387,7 @@ global {
 
 }
 
-~~~~
+``` 
 
   
 
@@ -1399,11 +1399,11 @@ Once done, verify with the lvmconfig command.
 
   
 
-~~~~
+``` 
 
 lvmconfig --type diff
 
-~~~~
+``` 
 
   
 
@@ -1509,7 +1509,7 @@ Discover the NFS share exported by NFS server ipaserver.example.com.
 
 ## Command Action Description
 
-~~~~
+``` 
 
 Installing NFS client: dnf group install “Network File System Client”  
 
@@ -1543,4 +1543,4 @@ Mounting through fstab: mount -a        
 
 Verifying the mounted filesystem and version:   mount                                                        
 
-~~~~
+``` 

@@ -7,7 +7,7 @@
 
 1) Verify Cluster status initially
 
-~~~~
+``` 
 pcs status
 
 pcs status nodes both
@@ -17,7 +17,7 @@ pcs status groups
 pcs status resources
 
 pcs status cluster
-~~~~
+``` 
   
 
 ## Place cluster into standby mode
@@ -27,20 +27,20 @@ pcs status cluster
 pcs cluster standby < cluster_name >
 
   
-~~~~
+``` 
 pcs status
 
 pcs status resources
-~~~~
+``` 
   
 
 ## Stop RHCS
 
   
-~~~~
+``` 
 pcs cluster stop < cluster_name >
 
-~~~~  
+```   
   
   
 
@@ -52,11 +52,11 @@ pcs cluster stop < cluster_name >
 
   
 
-~~~~
+``` 
 
 pcs constraint list --full
 
-~~~~
+``` 
 
   
 
@@ -76,7 +76,7 @@ Ticket Constraints:
 
   
 
-~~~~
+``` 
 
 pcs constraint location test01_sg prefers server01-cpn
 
@@ -88,7 +88,7 @@ pcs constraint location test04_sg prefers server01-cpn
 
 pcs constraint location test05_sg prefers server02-cpn
 
-~~~~
+``` 
 
   
 
@@ -96,15 +96,15 @@ pcs constraint location test05_sg prefers server02-cpn
 
   
 
-~~~~
+``` 
 
 pcs constraint list --full
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 Example Output
 
@@ -138,7 +138,7 @@ Colocation Constraints:
 
 Ticket Constraints:
 
-~~~~
+``` 
 
   
 
@@ -150,13 +150,13 @@ Ticket Constraints:
 
   
 
-~~~~
+``` 
 
 pcs constraint list --full
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 Example Output
 
@@ -174,7 +174,7 @@ Colocation Constraints:
 
 Ticket Constraints:
 
-~~~~
+``` 
 
   
 
@@ -182,25 +182,25 @@ Ticket Constraints:
 
   
 
-~~~~
+``` 
 
 pcs constraint remove cli-ban-test_sg-on-server01-cpn
 
-~~~~
+``` 
 
 3 – Verify the constraints have been removed using the pcs constraint list --full command.
 
   
 
-~~~~
+``` 
 
 pcs constraint list --full
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 Example Output
 
@@ -214,7 +214,7 @@ Colocation Constraints:
 
 Ticket Constraints:
 
-~~~~
+``` 
 
   
   
@@ -231,11 +231,11 @@ Enable Maintenance Mode
 
   
 
-~~~~
+``` 
 
 pcs property set maintenance-mode=true
 
-~~~~
+``` 
 
   
 
@@ -243,13 +243,13 @@ pcs property set maintenance-mode=true
 
   
 
-~~~~
+``` 
 
 pcs property
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 Example Output
 
@@ -269,7 +269,7 @@ Cluster Properties:
 
  no-quorum-policy: freeze
 
-~~~~
+``` 
 
   
 
@@ -277,11 +277,11 @@ Cluster Properties:
 
   
 
-~~~~
+``` 
 
 pcs status --full
 
-~~~~
+``` 
 
   
 
@@ -311,11 +311,11 @@ Last updated: Fri Jun  1 09:25:24 2018          Last change: Fri Jun  1 0
 
   
 
-~~~~
+``` 
 
 pcs property set maintenance-mode=false
 
-~~~~
+``` 
 
   
 
@@ -323,15 +323,15 @@ pcs property set maintenance-mode=false
 
   
 
-~~~~
+``` 
 
 pcs property
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 Example Output
 
@@ -349,7 +349,7 @@ Cluster Properties:
 
  no-quorum-policy: freeze
 
-~~~~
+``` 
 
   
   
@@ -358,7 +358,7 @@ Cluster Properties:
 
   
 
-~~~~
+``` 
 
 LOCATION  DESCRIPTION
 
@@ -374,7 +374,7 @@ LOCATION  DESCRIPTION
 
 /usr/lib/ocf/resource.d/heartbeat/  - Directory where resource scripts are located
 
-~~~~
+``` 
 
   
 
@@ -386,7 +386,7 @@ COMMAND DESCRIPTION
 
   
 
-~~~~
+``` 
 
 pcs cluster status  - Display status of cluster nodes
 
@@ -398,7 +398,7 @@ pcs status –full (double dashes)  - Display detailed cluster status of nodes 
 
 pcs resource  - Display status of all resources and resource groups
 
-~~~~
+``` 
 
   
 
@@ -410,7 +410,7 @@ COMMAND DESCRIPTION
 
   
 
-~~~~
+``` 
 
 pcs cluster standby - Place node in standby mode
 
@@ -418,7 +418,7 @@ pcs cluster standby - Place node in standby mode
 
 pcs cluster unstandby - Remove node from standby mode
 
-~~~~
+``` 
 
   
 
@@ -428,7 +428,7 @@ pcs cluster unstandby - Remove node from standby mode
 
 COMMAND DESCRIPTION
 
-~~~~
+``` 
 
   
 
@@ -446,7 +446,7 @@ pcs resource enable [resource_name]  - Start resource on current node
 
 pcs resource disable [resource_name] - Stop resource on current node
 
-~~~~
+``` 
 
   
 
@@ -458,7 +458,7 @@ COMMAND DESCRIPTION
 
   
 
-~~~~
+``` 
 
 pcs resource debug-start [source_name]  - Force resource to start on node where command is executed showing debug information. Use --full for even more verbose output.
 
@@ -470,7 +470,7 @@ pcs resource debug-stop [source_name] - Force resource to stop on node where com
 
 pcs resource debug-monitor [source_name] - Force resource to be monitored on node where command is executed showing debug information. Use --full for even more verbose output.
 
-~~~~
+``` 
 
   
 
@@ -482,7 +482,7 @@ COMMAND DESCRIPTION
 
   
 
-~~~~
+``` 
 
 pcs resource agents - List available resource agents
 
@@ -510,7 +510,7 @@ pcs resource delete [resource id] - Delete resource
 
 pcs resource cleanup [resource id] - Cleanup resource failures
 
-~~~~
+``` 
 
   
 
@@ -522,7 +522,7 @@ COMMAND DESCRIPTION
 
   
 
-~~~~
+``` 
 
   
 
@@ -558,7 +558,7 @@ pcs stonith cleanup [stonith_id] - Cleanup stonith agent failures
 
   
 
-~~~~
+``` 
 
   
 
@@ -578,11 +578,11 @@ Using the pcs stonith describe fence_ilo4_ssh command you can view all configura
 
   
 
-~~~~
+``` 
 
 pcs stonith describe fence_ilo4_ssh
 
-~~~~
+``` 
 
   
 
@@ -590,13 +590,13 @@ Example Output
 
   
 
-~~~~
+``` 
 
 fence_ilo4_ssh - Fence agent for HP iLO over SSH
 
 fence_ilo_ssh is a fence agent that connects to iLO device. It logs into device via ssh and reboot a specified outlet.
 
-~~~~
+``` 
 
   
 
@@ -704,11 +704,11 @@ You can also add the -v option to obtain verbose information. You can change the
 
   
 
-~~~~
+``` 
 
 fence_ilo4_ssh -a 192.168.1.100 -x -l hpilofence -p hpilopass -o status
 
-~~~~
+``` 
 
   
 
@@ -722,11 +722,11 @@ Status: ON
 
   
 
-~~~~
+``` 
 
 fence_ilo4_ssh -a 192.168.1.101 -x -l hpilofence -p hpilopass -o status
 
-~~~~
+``` 
 
   
 
@@ -748,11 +748,11 @@ Use the pcs stonith create command to create the stonith fencing device.
 
   
 
-~~~~
+``` 
 
 pcs stonith create server105-cpn_ilo4_fence fence_ilo4_ssh ipaddr="192.168.1.100" login="hpilofence" secure="true" passwd=hpilopass  pcmk_host_list="server105-cpn" delay=10 op monitor interval=60s
 
-~~~~
+``` 
 
   
 
@@ -760,11 +760,11 @@ pcs stonith create server105-cpn_ilo4_fence fence_ilo4_ssh ipaddr="192.168.1.100
 
   
 
-~~~~
+``` 
 
 pcs stonith create server106-cpn_ilo4_fence fence_ilo4_ssh ipaddr="192.168.1.101" login="hpilofence" secure="true" passwd=hpilopass  pcmk_host_list="server106-cpn" op monitor interval=60s
 
-~~~~
+``` 
 
   
 
@@ -776,11 +776,11 @@ pcs stonith create server106-cpn_ilo4_fence fence_ilo4_ssh ipaddr="192.168.1.101
 
   
 
-~~~~
+``` 
 
 pcs stonith show --full
 
-~~~~
+``` 
 
   
 
@@ -812,11 +812,11 @@ Once fencing devices are created use the pcs stonith fence [node_name] to verify
 
   
 
-~~~~
+``` 
 
 pcs stonith fence server105-cpn
 
-~~~~
+``` 
 
   
 
@@ -830,11 +830,11 @@ Node: server105-cpn fenced
 
   
 
-~~~~
+``` 
 
 pcs stonith fence server106-cpn
 
-~~~~
+``` 
 
   
 
@@ -842,11 +842,11 @@ Example Output
 
   
 
-~~~~
+``` 
 
 Node: server106-cpn fenced
 
-~~~~
+``` 
 
   
   
@@ -859,13 +859,13 @@ Node: server106-cpn fenced
 
   
 
-~~~~
+``` 
 
 pcs status
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 Example Output
 
@@ -945,7 +945,7 @@ Example Output
 
       pcsd: active/enabled
 
- ~~~~
+ ``` 
 
   
 
@@ -953,17 +953,17 @@ Example Output
 
   
 
-~~~~
+``` 
 
 pcs resource cleanup server106-cpn_ilo4_fence
 
-~~~~
+``` 
 
 Example Output
 
   
 
-~~~~
+``` 
 
 Cleaning up server106-cpn_ilo4_fence on server105-cpn, removing fail-count-server106-cpn_ilo4_fence
 
@@ -971,19 +971,19 @@ Cleaning up server106-cpn_ilo4_fence on server106-cpn, removing fail-count-serve
 
 Waiting for 2 replies from the CRMd.. OK
 
-~~~~
+``` 
 
 3 – Once this has completed issue the pcs status command and the Failed Action will be removed.
 
-~~~~
+``` 
 
 pcs status
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 Example Output
 
@@ -1059,6 +1059,6 @@ Example Output
 
       pcsd: active/enabled
 
-~~~~
+``` 
 
  [[Catagories]]  

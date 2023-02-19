@@ -1,10 +1,10 @@
 [[Index]] 
 
-~~~~
+```bash 
 
 sudo command-name
 
-~~~~
+``` 
 
   
 
@@ -14,29 +14,22 @@ as long as that user is authorized to run it in /etc/sudoers file
 
   
 
-## Configuring sudo Access
+## Configuring Sudo Access
 
-  
+```bash  
 
 1. Log in to the system as the root user.
 
 2. Create a normal user account using the useradd command. Replace USERNAME with the user name that you wish to create.
 
-  
+  useradd USERNAME
 
-~~~~
-
-   useradd USERNAME
-
-~~~~
 
 3. Set a password for the new user using the passwd command.
 
-  
 
-~~~~
 passwd USERNAME
-~~~~
+ 
 
   
 
@@ -52,11 +45,11 @@ passwd USERNAME
 
   
 
-~~~~
+
 
 passwd: all authentication tokens updated successfully.
 
-~~~~
+ 
 
   
 
@@ -66,11 +59,11 @@ the sudo command.
 
   
 
-~~~~
+ 
 
  visudo
 
-~~~~
+ 
 
   
 
@@ -82,9 +75,9 @@ the sudo command.
 
   
 
-~~~~
+ 
 %wheel ALL=(ALL) ALL
-~~~~
+ 
 
   
 
@@ -100,28 +93,28 @@ the sudo command.
 
   
 
-~~~~
+ 
 
 usermod -aG wheel USERNAME
 
-~~~~
+ 
 
   
 
 14. Test that the updated configuration allows the user you created to run commands using sudo.
 
-  
+```  
   
 
 1. Use the su to switch to the new user account that you created.
 
   
 
-~~~~
+```bash 
 
 su USERNAME -
 
-~~~~
+``` 
 
   
 
@@ -129,7 +122,7 @@ su USERNAME -
 
   
 
-~~~~
+```bash 
 
 3. $ groups
 
@@ -137,7 +130,7 @@ su USERNAME -
 
 # USERNAME wheel
 
-~~~~
+``` 
 
   
 
@@ -149,15 +142,15 @@ be displayed. You will be also be prompted to enter the password for the user
 
 account.
 
-~~~~
+```bash 
 
 5. $ sudo whoami
 
-~~~~
+``` 
 
   
 
-~~~~
+```bash 
 
 6. We trust you have received the usual lecture from the local
 
@@ -182,7 +175,7 @@ root
   
   
 
-~~~~
+```
 
   
 

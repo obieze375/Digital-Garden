@@ -1,6 +1,6 @@
 [[Index]] 
 
-~~~~
+```bash
 
 1. Get burner laptop and plug into LAN of infected system to use as terminal
 
@@ -10,4 +10,4 @@
 
 *** Files encrypted with Ransonware have file extensions of .FEED
 
-~~~~
+```

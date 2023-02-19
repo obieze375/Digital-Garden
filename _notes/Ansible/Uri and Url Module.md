@@ -3,9 +3,7 @@
 
 # Uri module
 
-
-~~~~
-
+```yaml
 - name: Check page contents, return status 200 and fail if the page contents uri doesn’t contain the word Linux
   uri:
     url: http://www.example.com
@@ -14,7 +12,7 @@
   register: this
   failed_when: "'Linux' not in this.content"
 
-~~~~
+``` 
 
   
 

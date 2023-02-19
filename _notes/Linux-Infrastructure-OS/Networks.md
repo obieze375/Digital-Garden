@@ -2,7 +2,7 @@
 
 ## Change Hostname:
 
-~~~~
+``` 
 
 hostnamectl set-hostname 'host_name'
 
@@ -12,7 +12,7 @@ hostnamectl set-hostname 'host_name'
 
 hostnamectl set-hostname 'node01'  
 
-~~~~
+``` 
 
   
 
@@ -23,7 +23,7 @@ hostnamectl set-hostname 'node01'  
 
   
 
-~~~~
+``` 
 
 • COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
 
@@ -75,7 +75,7 @@ hostnamectl set-hostname 'node01'  
 
 • init 1 root 7u unix 0xc1513880 0t0 8450 socket
 
-~~~~
+``` 
 
   
 
@@ -83,7 +83,7 @@ hostnamectl set-hostname 'node01'  
 
   
 
-~~~~
+``` 
 
 • lsof -u cyberpunk
 
@@ -127,7 +127,7 @@ hostnamectl set-hostname 'node01'  
 
   
 
- ~~~~
+ ``` 
 
   
 
@@ -136,12 +136,12 @@ hostnamectl set-hostname 'node01'  
   
 
 
-~~~~
+``` 
 lsof -i TCP:22
-~~~~
+``` 
 
   
-~~~~
+``` 
   
 
 • COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
@@ -154,7 +154,7 @@ lsof -i TCP:22
 
 • sshd 1471 root 4u IPv6 12685 0t0 TCP *:ssh (LISTEN)
 
-~~~~
+``` 
 
   
 
@@ -162,7 +162,7 @@ lsof -i TCP:22
 
   
 
- ~~~~
+ ``` 
 # lsof -i 4
 
   
@@ -189,12 +189,12 @@ lsof -i TCP:22
 
 • avahi-dae 1241 avahi 14u IPv4 11580 0t0 UDP *:58600 
 
-~~~~
+``` 
 
 
  lsof -i 6
 
- ~~~~
+ ``` 
 
   
 
@@ -224,7 +224,7 @@ lsof -i TCP:22
 
 • cupsd 1346 root 6u IPv6 12112 0t0 TCP localhost:ipp (LISTEN)
 
-  ~~~~ 
+  ```  
 
  
 
@@ -234,7 +234,7 @@ lsof -i TCP:22
 
   
 
-~~~~
+``` 
 
 lsof -i TCP:1-1024 
 
@@ -279,13 +279,13 @@ lsof -i TCP:1-1024
   
 
 • httpd 1918 root 7u IPv6 15995 0t0 TCP *:https (LISTEN)
-~~~~  
+```   
 
   
 ## Exclude User with ‘^’ Character 
 
 
-~~~~
+``` 
 
 lsof -i -u^root  
   
@@ -343,14 +343,14 @@ lsof -i -u^root  
 
 • rpc.statd 1277 rpcuser 11u IPv6 11862 0t0 TCP *:56428 (LISTEN)
  
-~~~~
+``` 
 
 
 ## Find Out who’s Looking What Files and Commands? 
   
 
 
-~~~~
+``` 
 lsof -i –u
 
   
@@ -365,14 +365,14 @@ lsof -i –u
 
 • ping 2525 cyberpunk cwd DIR 253,0 12288 15 /etc  
 
-~~~~
+``` 
 
   
 
 ## List all Network Connections  
   
 
-~~~~  
+```   
 lsof -i
 
 
@@ -386,14 +386,14 @@ lsof -i
 
 • rpcbind 1203 rpc 7u IPv4 11330 0t0 UDP *:954
 
-~~~~
+``` 
 
   
 
 ## Search by PID
   
 
-~~~~
+``` 
 lsof -p 1  
 
 • COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
@@ -419,34 +419,34 @@ lsof -p 1  
 • init 1 root mem REG 253,0 142472 189970 /lib/ld-2.12.so
    
 
-~~~~
+``` 
 
 ## Kill all Activity of Particular User 
 
-~~~~
+``` 
 kill -9 `lsof -t -u  
-~~~~
+``` 
 
 
 ## Network Interfaces:
   
 ## Bring Interface up
 
-~~~~
+``` 
 
 ifup eth0  
 
-~~~~
+``` 
 
 
 ## Bring Interface down
 
-~~~~
+``` 
   
 ifdown eth0  
   
 
-~~~~
+``` 
 
   
 
@@ -455,15 +455,15 @@ ifdown eth0  
   
 ## Check network interfaces:
 
-~~~~
+``` 
 
  ip addr  
 
-~~~~
+``` 
 
  
 
-~~~~  
+```   
 
 Monitor:
 
@@ -533,7 +533,7 @@ root@server1 ~]# ip addr show  
 
  valid_lft forever preferred_lft forever  
 
-~~~~
+``` 
 
  
  
@@ -547,7 +547,7 @@ root@server1 ~]# ip addr show  
 
   
 
-~~~~
+``` 
 
 $ netstat -a  
 
@@ -583,14 +583,14 @@ tcp6 0 0 ip6-localhost:ipp [::]:* LISTEN
 
   
 
-~~~~
+``` 
 
   
 
 ## List only TCP or UDP connections
   
 
-~~~~
+``` 
 
 netstat -at
 
@@ -629,7 +629,7 @@ tcp 0 0 enlightened.local:45038 a96-17-181-10.depl:http
 ESTABLISHED
 
   
-~~~~
+``` 
 
   
 
@@ -637,7 +637,7 @@ ESTABLISHED
 
   
 
-~~~~
+``` 
 
 $ netstat -au  
 
@@ -677,7 +677,7 @@ udp 0 0 *:ntp :
 
   
 
-~~~~
+``` 
 
   
 
@@ -685,7 +685,7 @@ udp 0 0 *:ntp :
 
   
 
-~~~~
+``` 
 
  $ netstat -ant  
 
@@ -719,7 +719,7 @@ tcp 0 0 192.168.1.2:33324 173.194.36.117:443 ESTABLISHED
 
 tcp6 0 0 ::1:631 :::* LISTEN
 
-~~~~
+``` 
 
   
 
@@ -727,7 +727,7 @@ tcp6 0 0 ::1:631 :::* LISTEN
 
   
 
-~~~~
+``` 
 
 • $ netstat -tnl
 
@@ -753,7 +753,7 @@ tcp 0 0 127.0.0.1:631 0.0.0.0:* LISTEN
 
 ffctcp6 0 0 ::1:631 :::* LISTEN
 
-~~~~
+``` 
 
   
 
@@ -761,9 +761,9 @@ ffctcp6 0 0 ::1:631 :::* LISTEN
 
   
 
-~~~~
+``` 
 netstat -tulpn is merge between tcp and udp
-~~~~  
+```   
 
   
 
@@ -772,7 +772,7 @@ netstat -tulpn is merge between tcp and udp
   
 
   
-~~~~
+``` 
 sudo netstat -nlpt
 
 
@@ -817,11 +817,11 @@ e option along with the p option to get the
 
 username too.
 
-~~~~
+``` 
 
 ## sudo netstat -ltpe
 
-~~~~
+``` 
 
 • Active Internet connections (only servers)
 
@@ -857,7 +857,7 @@ User Inode PID/Program name
 
 661/cupsd
 
-~~~~
+``` 
 
   
 
@@ -865,7 +865,7 @@ User Inode PID/Program name
 
   
 
-~~~~
+``` 
 
 • $ netstat -s
 
@@ -901,7 +901,7 @@ Ip:
 
   
 
-~~~~
+``` 
 
   
 
@@ -909,7 +909,7 @@ Ip:
 
   
 
-~~~~
+``` 
 
   
 
@@ -939,7 +939,7 @@ Iface
 
   
 
-~~~~
+``` 
 
   
 
@@ -947,7 +947,7 @@ Iface
 
   
 
-~~~~
+``` 
 
 • $ netstat -ie  
 
@@ -993,7 +993,7 @@ RX bytes:29637117 (29.6 MB) TX bytes:4590583 (4.5 MB)
 
  Interrupt:18 Memory:da000000-da020000  
 
-~~~~
+``` 
 
   
 
@@ -1001,7 +1001,7 @@ RX bytes:29637117 (29.6 MB) TX bytes:4590583 (4.5 MB)
 
   
 
-~~~~
+``` 
 
 netstat -g  
 
@@ -1060,7 +1060,7 @@ tcp 0 0 10.61.223.188:43191 10.61.239.93:1984 TIME_WAIT -
   
 
 tcp 0 0 10.61.223.188:22 10.14.40.60:54034 ESTABLISHED -      
-~~~~
+``` 
 
   
 
@@ -1068,11 +1068,11 @@ tcp 0 0 10.61.223.188:22 10.14.40.60:54034 ESTABLISHED -      
 
   
 
-~~~~
+``` 
 
 netstat -nap |grep :3506  
 
-~~~~
+``` 
 
   
 
@@ -1090,7 +1090,7 @@ netstat -nap |grep :3506  
 
   
 
-~~~~
+``` 
 
   
 
@@ -1106,7 +1106,7 @@ netstat -nap |grep :3506  
 
 . Solve problem and document solution
 
-~~~~
+``` 
 
   
   
@@ -1121,13 +1121,13 @@ Format:
 
   
 
-~~~~
+``` 
 
 ping -c COUNT HOST
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 Example:
 
@@ -1175,9 +1175,9 @@ PING google.com (216.58.2.7) 56 bytes of data.
 
 rtt min/avg/max/mdev = 21.489/22.924/24.154/1.111 ms
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 $ ping -c 3 google.com  
 
@@ -1215,9 +1215,9 @@ loss, time 2002ms
 
 pipe 3
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 $ ping -c 3 10.0.2.2  
 
@@ -1255,7 +1255,7 @@ PING 10.0.2.2 (10.0.2.2) 56(84) bytes of data.
 
 rtt min/avg/max/mdev = 0.103/0.192/0.272/0.070 ms
 
-~~~~
+``` 
 
   
 
@@ -1263,7 +1263,7 @@ rtt min/avg/max/mdev = 0.103/0.192/0.272/0.070 ms
 
   
 
-~~~~
+``` 
 
 traceroute -n google.com
 
@@ -1305,11 +1305,11 @@ Diagnosing Network Connections 413
 
 ms 216.58.216.78 20.724 ms
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 $ tracepath -n google.com
 
@@ -1329,7 +1329,7 @@ $ tracepath -n google.com
 
 2: 192.168.1.1 2.147ms asymm 64
 
-~~~~
+``` 
 
 ...
 
@@ -1337,21 +1337,21 @@ $ tracepath -n google.com
 
 ## Using curl to check firewall connectivity  
 
-~~~~
+``` 
 
 curl -k https://<url>:<port.no>
 
-~~~~
+``` 
 
   
 
 ## Download files with wget
 
-~~~~
+``` 
 
 wget --no-check-certificate
 
-~~~~
+``` 
 
 ## Netstat  
 
@@ -1363,7 +1363,7 @@ wget --no-check-certificate
 
   
 
-~~~~
+``` 
 
 -n Display numerical addresses and ports.
 
@@ -1391,9 +1391,9 @@ wget --no-check-certificate
 
 -u Limit the output to UDP (netstat -nulp)
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 [jason@linuxsvr ~]$ netstat -i
 
@@ -1415,9 +1415,9 @@ eth0 1500 3975 0 0 0 2627 0 0 0 BMRU
 
 lo 65536 8 0 0 0 8 0 0 0 LRU
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 [jason@linuxsvr ~]$ netstat -rn  
 
@@ -1439,9 +1439,9 @@ Destination Gateway Genmask Flags MSS Window irtt Iface
 
 10.0.2.0 0.0.0.0 255.255.255.0 U 0 0 0 eth0
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 [jason@linuxsvr ~]$ sudo netstat -ntlp  
 
@@ -1467,7 +1467,7 @@ tcp 0 0 0.0.0.0:22 0.0.0.0:* LISTEN 943/sshd
 
 tcp 0 0 127.0.0.1:25 0.0.0.0:* LISTEN 1313/master
 
-~~~~
+``` 
 
   
 
@@ -1475,7 +1475,7 @@ tcp 0 0 127.0.0.1:25 0.0.0.0:* LISTEN 1313/master
 
   
 
-~~~~
+``` 
 
 telnet HOST_OR_IP PORT_NUMBER
 
@@ -1515,11 +1515,11 @@ telnet> quit
 
 closed.
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
   
 
@@ -1615,7 +1615,7 @@ connection.slave-type: --
 
 connection.autoconnect-slaves: -1 (default)  
 
-~~~~
+``` 
 
   
 
@@ -1623,7 +1623,7 @@ connection.autoconnect-slaves: -1 (default)  
 
   
 
-~~~~  
+```   
 
 • Already existing IPv4 network configurations should not be impacted.  
 
@@ -1681,7 +1681,7 @@ To display Manual page for nmcli-examples - man nmcli-examples  
 
   
 
-~~~~
+``` 
 
   
 
@@ -1693,7 +1693,7 @@ Configure static route on system.example.com for destination 10.1.1.0/24 via 192
 
   
 
-~~~~
+``` 
 
 • Route configuration must be persistent after reboot.
 
@@ -1749,7 +1749,7 @@ vim /etc/sysconfig/network-scripts/route-system  
 
 :wq  
 
-~~~~
+``` 
 
 ## Configure hostname resolution:
 
@@ -1766,7 +1766,7 @@ vim /etc/sysconfig/network-scripts/route-system  
 ## Command Action/Description
   
 
-~~~~
+``` 
 
 To add entry in hosts file  
 
@@ -1827,7 +1827,7 @@ not on 192.168.99.0/24 network and then test ssh connection from ipaserver.examp
 
   
 
-~~~~
+``` 
 
   
 
@@ -1835,7 +1835,7 @@ Command Action/Description  
 
   
 
-~~~~
+``` 
 
   
 
@@ -1865,13 +1865,13 @@ Reloading firewall to make changes effective - firewall-cmd --reload  
 
 To verify firewall configs after making changes - firewall-cmd --list-all  
 
-~~~~
+``` 
 
 ## Packet Capture:
 
   
 
-~~~~
+``` 
 
 tcpdump
 
@@ -1893,7 +1893,7 @@ tcpdump
 
 -vvv Even more verbose output.
 
-~~~~
+``` 
 
   
 
@@ -1901,7 +1901,7 @@ $ sudo tcpdump  
 
   
 
-~~~~
+``` 
 
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
 
@@ -1929,11 +1929,11 @@ listening on eth0, link-type EN10MB (Ethernet), capture size 65535 bytes
 
 19:25:49.639763 IP 10.0.2.2.64440 > linuxsvr.ssh: Flags [.], ack 120, win 65535, length 0  
 
-~~~~
+``` 
 
 
 
-~~~~
+``` 
 
 $ sudo tcpdump –Anvvv  
 
@@ -1963,25 +1963,25 @@ E..@..@.@.(............P..>.:........4.....
 
 ..0K..-9GET /about
 
-~~~~
+``` 
 
   
 
   
 
-~~~~
+``` 
 
 tcpdump -w /temp/traffic.pcap -i eno1 -v host 9.9.9.9  
 
-~~~~
+``` 
 
   
 
-~~~~
+``` 
 
 tcpdump -w /<dir>/traffic.pcap -i <interface> -v host <ip_addr_interface_is_sending_traffic_to>
 
-~~~~
+``` 
 
   
 
@@ -1995,7 +1995,7 @@ tcpdump -w /<dir>/traffic.pcap -i <interface> -v host <ip_addr_interface_is_send
 
   
 
-~~~~
+``` 
 
 ------------ On Cent/RHEL 7 and Fedora 22+ ------------
 
@@ -2017,7 +2017,7 @@ tcpdump -w /<dir>/traffic.pcap -i <interface> -v host <ip_addr_interface_is_send
 
   • systemctl restart iptables
 
-~~~~
+``` 
 
   
   
@@ -2026,7 +2026,7 @@ tcpdump -w /<dir>/traffic.pcap -i <interface> -v host <ip_addr_interface_is_send
 
   
 
-~~~~
+``` 
 
 ------------ On Cent/RHEL 6/5 and Fedora ------------
 
@@ -2040,19 +2040,19 @@ tcpdump -w /<dir>/traffic.pcap -i <interface> -v host <ip_addr_interface_is_send
 
   • /etc/init.d/iptables restart
 
-~~~~
+``` 
 
 ## Check all IPtables Firewall Rules
 
-~~~~
+``` 
 
 iptables -L -n -v
 
-~~~~
+``` 
 
 ## Block Specific IP Address in IPtables Firewall
 
-~~~~
+``` 
 
 iptables -A INPUT -s xxx.xxx.xxx.xxx -j DROP
 
@@ -2062,40 +2062,40 @@ iptables -A INPUT -p tcp -s xxx.xxx.xxx.xxx -j DROP
 
 
 iptables -D INPUT -s xxx.xxx.xxx.xxx -j DROP
-~~~~
+``` 
 
 ## Block Specific Port on IPtables Firewall
 
 ## To block outgoing connections on a specific port use: 
 
-~~~~
+``` 
 iptables -A OUTPUT -p tcp --dport xxx -j DROP
-~~~~
+``` 
 
 ## Unblock IP Address in IPtables Firewall
 
 ## To allow incoming connections use:
 
-~~~~
+``` 
 
 iptables -A INPUT -p tcp --dport xxx -j ACCEPT
 
-~~~~
+``` 
 
 
 
-~~~~
+``` 
 In both examples change "xxx" with the actual port you wish to allow. If you want to block UDP traffic instead of TCP, simply change "tcp" with
 
 "udp" in the above iptables rule.
 
-~~~~
+``` 
 
 
 
 ## Allow Multiple Ports on IPtables using Multiport
 
-~~~~
+``` 
 
 You can allow multiple ports at once, by using multiport, below you can
 
@@ -2108,83 +2108,83 @@ iptables -A OUTPUT -p tcp -m multiport --sports 22,80,443 -j ACCEPT
 
 
 
-~~~~
+``` 
 
 ## Allow Specific Network Range on Particular Port on IPtables
 
-~~~~
+``` 
 You may want to limit certain connections on specific port to a given
 
 network. Let’s say you want to allow outgoing connections on port 22
 
 to network 192.168.100.0/24.
 
-~~~~
+``` 
 
 
 
-~~~~
+``` 
 iptables -A OUTPUT -p tcp -d 192.168.100.0/24 --dport 22 -j ACCEPT
-~~~~
+``` 
 
 ## Block Facebook on IPtables Firewall
 
-~~~~
+``` 
 host facebook.com
 
 facebook.com has address 66.220.156.68
-~~~~
+``` 
   
-~~~~
+``` 
 whois 66.220.156.68 | grep CIDR
 
 CIDR: 66.220.144.0/20
 
-~~~~
+``` 
 
 You can then block that Facebook network with:
 
   
 
-~~~~
+``` 
 
 iptables -A OUTPUT -p tcp -d 66.220.144.0/20 -j DROP
 
-~~~~
+``` 
 
 # Setup Port Forwarding in Iptables
 
-~~~~
+``` 
 
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 25 -j REDIRECT -- to-port 2525
 
-~~~~
+``` 
 
 # Block Network Flood on Apache Port with Iptables
 
-~~~~
+``` 
 
 iptables -A INPUT -p tcp --dport 80 -m limit --limit 100/minute --limitburst 200 -j ACCEPT
 
-~~~~
+``` 
 
 # Block Incoming Ping Requests on IPtables
 
   
 
-~~~~
+``` 
 
 iptables -A INPUT -p icmp -i eth0 -j DROP
 
-~~~~
+``` 
 
 # Block Incoming Ping Requests on IPtables
 
-~~~~
+``` 
 
 iptables -A INPUT -p icmp -i eth0 -j DROP
 
-~~~~
+``` 
 
   
 
@@ -2196,7 +2196,7 @@ Loopback access (access from 127.0.0.1) is important and you should
 
 always leave it active:
 
-~~~~
+``` 
 
 iptables -A INPUT -i lo -j ACCEPT
 
@@ -2204,7 +2204,7 @@ iptables -A INPUT -i lo -j ACCEPT
 
 iptables -A OUTPUT -o lo -j ACCEPT
 
-~~~~
+``` 
 
 # Keep a Log of Dropped Network Packets on Iptables
 
@@ -2214,24 +2214,24 @@ If you want to log the dropped packets on network interface eth0, you
 
 can use the following command:
 
-~~~~
+``` 
 
 iptables -A INPUT -i eth0 -j LOG --log-prefix "IPtables dropped packets:"  
   
-~~~~
+``` 
 
-~~~~
+``` 
 You can change the value after "--log-prefix" with something by your
 
 choice. The messages are logged in /var/log/messages and you can
 
 search for them with:
 
-~~~~
+``` 
 
 
 
-~~~~
+``` 
 
 grep "IPtables dropped packets:" /var/log/messages
   
@@ -2240,18 +2240,18 @@ You can block access to your system from specific MAC address by
 
 using:
 
-~~~~
+``` 
 
 ## Block Access to Specific MAC Address on IPtables
 
-~~~~
+``` 
 iptables -A INPUT -m mac --mac-source 00:00:00:00:00:00 -j DROP
 
 Of course, you will need to change "00:00:00:00:00:00" with the actual
 
 MAC address that you want to block.
 
-~~~~
+``` 
 
 # Limit the Number of Concurrent Connections per IP Address
 
@@ -2261,11 +2261,11 @@ MAC address that you want to block.
 
 from single IP address on given port you can use the command below:
 
-~~~~
+``` 
 
 iptables -A INPUT -p tcp --syn --dport 22 -m connlimit --connlimit-above 3 -j REJECT
 
-~~~~
+``` 
 
 The above command allows no more than 3 connections per client. Of
 
@@ -2285,11 +2285,11 @@ to time and may need to alter them. An easy way to search within your rules
 
 is to use:
 
-~~~~
+``` 
 
 iptables -L $table -v -n | grep $string
 
-~~~~
+``` 
 
 In the above example, you will need to change $table with the actual table
 
@@ -2299,11 +2299,11 @@ you are looking for.
 
 Here is an example:
 
-~~~~
+``` 
 
 iptables -L INPUT -v -n | grep 192.168.0.100
 
-~~~~
+``` 
 
 # Define New IPTables Chain
 
@@ -2313,33 +2313,33 @@ With iptables, you can define your own chain and store custom rules in
 
 it. To define a chain, use:
 
-~~~~
+``` 
 
 iptables -N custom-filter
 
-~~~~
+``` 
 
 Now you can check if your new filter is there: 
 
-~~~~
+``` 
 iptables -L
 
-~~~~
+``` 
 
 ## Flush IPtables Firewall Chains or Rules
 
 If you want to flush your firewall chains, you can use:
 
-~~~~
+``` 
 
 iptables -F
-~~~~
+``` 
 
 You can flush chains from specific table with:
 
-~~~~  
+```   
 iptables -t nat -F
-~~~~
+``` 
 
 You can change "nat" with the actual table which chains you wish to flush.
 
@@ -2351,17 +2351,17 @@ command. You can use the following to save and store your rules in a
 
 file:
 
-~~~~
+``` 
 
  iptables-save > ~/iptables.rules
 
-~~~~
+``` 
 
 It’s up to you where will you store the file and how you will name it.
 
 ## Restore IPtables Rules from a File
 
-~~~~
+``` 
 
 If you want to restore a list of iptables rules, you can use iptablesrestore. The command looks like this:
 
@@ -2385,24 +2385,24 @@ rules below for the site’s IP address.
 
 Be extra careful when using the rules below and use them onlyif you are sure what you are doing:
 
-~~~~
+``` 
 
 
-~~~~
+``` 
 iptables -I INPUT -d SITE -p tcp -m multiport --dports 21,25,110,143,465,587,993,995 -j DROP
-~~~~
+``` 
 
-~~~~
+``` 
 
 If you use cPanel or similar control panel, you may need to block it’s’ ports as well. Here is an example:
 
-~~~~
+``` 
 
-~~~~
+``` 
 
 iptables -I in_sg -d DEDI_IP -p tcp -m multiport --dports 2082,2083,2095,2096,2525,2086,2087 -j DROP
 
-~~~~
+``` 
 
 ## Allow Established and Related Connections
 
@@ -2414,21 +2414,21 @@ want to allow established and related incoming traffic. For incoming
 
 connections do it with:
 
-~~~~
+``` 
 iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
-~~~~
+``` 
 
 For outgoing use:
 
-~~~~
+``` 
 iptables -A OUTPUT -m conntrack --ctstate ESTABLISHED -j ACCEPT
-~~~~
+``` 
 
 
 ## Drop Invalid Packets in Iptables
 
 
-~~~~
+``` 
 
 It’s possible to have some network packets marked as invalid. Some
 
@@ -2436,12 +2436,12 @@ people may prefer to log those packages, but others prefer to drop
 
 them. To drop invalid the packets, you can use:
 
-~~~~
+``` 
 
 
-~~~~
+``` 
 iptables -A INPUT -m conntrack --ctstate INVALID -j DROP
-~~~~
+``` 
 
 ## Block Connection on Network Interface
 
@@ -2454,9 +2454,9 @@ certain IP address.
 
 For example:
 
-~~~~
+``` 
 iptables -A INPUT -i eth0 -s xxx.xxx.xxx.xxx -j DROP
-~~~~
+``` 
 
 Change “xxx.xxx.xxx.xxx” with the actual IP address (or network) that
 
@@ -2469,37 +2469,37 @@ If your system should not be sending any emails, you can block
 outgoing ports on SMTP ports. For example you can use this:
 
 
-~~~~
+``` 
 iptables -A OUTPUT -p tcp --dports 25,465,587 -j REJECT
-~~~~
+``` 
 
 ## UFW Method
 
 ## Enable UFW
 
-~~~~            
+```             
 
 sudo ufw enable
 
-~~~~
+``` 
 
 # Using IPv6 with UFW (Optional)
 
   
-~~~~
+``` 
 sudo nano /etc/default/ufw
-~~~~
+``` 
   
 
 Then make sure the value of IPV6 is yes. It should look like this:
 
-~~~~
+``` 
 
 /etc/default/ufw excerpt
 
 IPV6=yes
 
-~~~~
+``` 
 
 Save and close the file. Now, when UFW is enabled, it will be configured to write
 
@@ -2527,13 +2527,13 @@ within the server would be able to reach the outside world.
 
 with this tutorial. To set the defaults used by UFW, use these commands:
 
-~~~~
+``` 
 
 sudo ufw default deny incoming
 
 sudo ufw default allow outgoing
 
-~~~~
+``` 
 
 These commands set the defaults to deny incoming and allow outgoing connections. These
 
@@ -2545,7 +2545,7 @@ respond to incoming requests from outside users. We’ll look into that next.
 
 ## Allowing SSH Connections
 
-~~~~
+``` 
 
 sudo ufw allow ssh
 
@@ -2553,7 +2553,7 @@ sudo ufw allow ssh
 
 sudo ufw allow 22
 
-~~~~
+``` 
 
 If you configured your SSH daemon to use a different port, you will
 
@@ -2563,11 +2563,11 @@ listening on port 2222, you can use this command to allow connections
 
 on that port:
 
-~~~~
+``` 
 
 sudo ufw allow 2222
 
-~~~~
+``` 
 
 ## Allowing Other Connections
 
@@ -2585,29 +2585,29 @@ ports, instead of a single port.
 
 these commands:
 
-~~~~
+``` 
 
 sudo ufw allow 6000:6007/tcp
 
 sudo ufw allow 6000:6007/udp
 
-~~~~
+``` 
 
 ## Allowing specific addresses and ports
 
-~~~~
+``` 
 
 sudo ufw allow from 203.0.113.4
 
-~~~~
+``` 
 
 ## Allow specific ip addresses at ports:  
 
-~~~~
+``` 
 
 sudo ufw allow from 203.0.113.4 to any port 22
 
-~~~~
+``` 
 
 Allowing Subnets using CIDR notation to specify a
 
@@ -2617,15 +2617,15 @@ netmask.
 
 Example:
 
-~~~~
+``` 
 203.0.113.1 to 203.0.113.254
-~~~~
+``` 
 
 sudo ufw allow from 203.0.113.0/24
 
-~~~~
+``` 
 sudo ufw allow from 203.0.113.0/24 to any port 22
-~~~~
+``` 
 
 ## Connections to a Specific Network Interface
 
@@ -2633,7 +2633,7 @@ sudo ufw allow from 203.0.113.0/24 to any port 22
 
 Use ip addr or ifconfig to obtain network interface
 
-~~~~
+``` 
 
 sudo ufw allow in on eth0 to any port 80
 
@@ -2641,23 +2641,23 @@ sudo ufw allow in on eth0 to any port 80
 
 sudo ufw allow in on eth1 to any port 3306
 
-~~~~
+``` 
 
 ## Denying Connections
 
 For example, to deny HTTP connections, you could use this command:
 
-~~~~
+``` 
 sudo ufw deny http
-~~~~
+``` 
 
 Or if you want to deny all connections from 203.0.113.4 you could use
 
 this command:
 
-~~~~
+``` 
 sudo ufw deny from 203.0.113.4
-~~~~
+``` 
 
 ## Deleting Rules
 
@@ -2665,12 +2665,12 @@ sudo ufw deny from 203.0.113.4
 
 By Rule Number:
 
-~~~~
+``` 
 sudo ufw status numbered
-~~~~
+``` 
 
 
-~~~~
+``` 
 Numbered Output:
 
 Status: active
@@ -2693,17 +2693,17 @@ ALLOW IN
 
 Anywhere
 
- ~~~~ 
+ ```  
 
 If we decide that we want to delete rule 2, the one that allows port 80 (HTTP) connections,
 
 we can specify it in a UFW delete command like this:
 
-~~~~
+``` 
 
 sudo ufw delete 2
 
-~~~~
+``` 
 
 ## Deleting by Actual Rule
 
@@ -2711,15 +2711,15 @@ sudo ufw delete 2
 
 For example to remove the allow http rule, you could write it like this:
 
-~~~~
+``` 
 sudo ufw delete allow http
-~~~~  
+```   
 
 You could also specify the rule by allow 80, instead of by service name:
 
-~~~~
+``` 
 sudo ufw delete allow 80
-~~~~
+``` 
 
 This method will delete both IPv4 and IPv6 rules, if they exist.
 
@@ -2729,11 +2729,11 @@ This method will delete both IPv4 and IPv6 rules, if they exist.
 
 At any time, you can check the status of UFW with this command:
 
-~~~~
+``` 
 
 sudo ufw status verbose
 
-~~~~
+``` 
 
 If UFW is disabled, which it is by default, you’ll see something like this:
 
@@ -2741,7 +2741,7 @@ If UFW is disabled, which it is by default, you’ll see something like this:
 
 Output
 
-~~~~          
+```           
 
 Status: inactive
 
@@ -2771,15 +2771,15 @@ From
 
 Disabling or Resetting UFW (optional)
 
-~~~~
+``` 
 
 If you decide you don’t want to use UFW, you can disable it with this command:
 
-~~~~
+``` 
 
 sudo ufw disable
 
-~~~~
+``` 
 
 • Any rules that you created with UFW will no longer be active. You can
 
@@ -2789,20 +2789,20 @@ always run sudo ufw enable if you need to activate it later.
 
 start over, you can use the reset command:
 
-~~~~
+``` 
 sudo ufw reset
-~~~~  
+```   
 
 
 ## Alternative way to allow and deny connections
 
-~~~~
+``` 
 
 ufw allow from 0.0.0.0 to any port 9090 proto tcp/udp
 
 ufw deny from 0.0.0.0 to any port 9090 proto tcp/udp
 
-~~~~
+``` 
 
 
 [[Index]] 

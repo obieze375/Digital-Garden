@@ -10,11 +10,11 @@
 
   
 
-~~~~
+```bash 
 
 df -h or df -h. or df -h | grep /<file_system_name>
 
-~~~~
+``` 
 
 Filesystem Size Used Avail Use% Mounted on
 
@@ -48,7 +48,7 @@ The below variables should be replaced with the appropriate values for the local
 
   
 
-~~~~
+```bash 
 
 <vgname>      Volume group in which the logical volume for the file system will be placed
 
@@ -76,7 +76,7 @@ The below variables should be replaced with the appropriate values for the local
 
 <perm>          Permissions on the mount point. For example, "755".
 
-~~~~
+```
 
   
 
@@ -102,11 +102,11 @@ If the system is a Linux 7 cluster, then special care is required with any share
 
   
 
-~~~~
+```bash 
 
 vgdisplay -s <vgname>
 
-~~~~
+```
 
   
 
@@ -114,11 +114,11 @@ vgdisplay -s <vgname>
 
   
 
-~~~~
+```bash 
 
 lvcreate -L +<size>M -n <lvname> <vgname>
 
-~~~~
+```
 
 ## 3. Issue the command to create the file system. Use ext3 for Linux 5, ext4 for Linux 6, and xfs for Linux 7.
 
@@ -126,47 +126,47 @@ lvcreate -L +<size>M -n <lvname> <vgname>
 
 ### Linux 5 Example ###
 
-~~~~
+```bash 
 
 mkfs.ext3 -j /dev/<vgname>/<lvname>
 
-~~~~
+``` 
 
 ### Linux 6 Example ###
 
-~~~~
+```bash 
 
 mkfs.ext4 /dev/<vgname>/<lvname>
 
-~~~~
+```
 
 ### Linux 7 Example ###
 
   
 
-~~~~
+```bash 
 
 mkfs.xfs /dev/<vgname>/<lvname>  
-
-~~~~
+```
+ 
 
   
 
 ## 4. (For ext3 and ext4 file systems only) Set the automatic file system check flags to off to help with boot times.
 
-~~~~
+```bash 
 
 tune2fs -c0 -i0 /dev/<vgname>/<lvname>
 
-~~~~  
+```   
 
 ## 5. Create the new mount point directory.
 
-~~~~
+```bash 
 
 mkdir <mount_pt>
 
-~~~~
+``` 
 
 
 
@@ -174,47 +174,47 @@ mkdir <mount_pt>
 
 ## Linux 5 Example 
 
-~~~~
+```bash 
 
 echo "/dev/mapper/<vgname>-<lvname> <mount_pt> ext3 defaults 0 0" >> /etc/fstab
 
-~~~~
+``` 
 
 ## Linux 6 Example    
 
-~~~~
+```bash 
 echo "/dev/mapper/<vgname>-<lvname> <mount_pt> ext4 defaults 0 0" >> /etc/fstab
-~~~~
+``` 
 
 ## Linux 7 Example     
 
-~~~~
+```bash 
 
 echo "/dev/mapper/<vgname>-<lvname> <mount_pt> xfs defaults,nofail 0 0" >> /etc/fstab  
 
-~~~~
+``` 
 
 ## 7. Linux 7 Only.  After updating /etc/fstab, it is advisable to update systemd's unit files with the following command.
 
-~~~~
+```bash 
 systemctl daemon-reload
 
-~~~~
+``` 
 
   
 
 
 ## Mount the new file system.
 
-~~~~
+```bash 
 
 mount <mount_pt>
 
-~~~~
+``` 
 
 ## If necessary, modify ownership and permissions on the mount point.
 
-~~~~
+```bash 
 
 chown <user>:<group> <mount_pt>
 
@@ -222,7 +222,7 @@ chown <user>:<group> <mount_pt>
 
 chmod <perm> <mount_pt>
 
-~~~~
+``` 
 
   
 
@@ -242,7 +242,7 @@ Make sure you have full backups of any file system to be shrunk. There is an ele
 
 ## 1. Record the original used space of the file system. For this example, consider the /data file system consuming 2.1GB of space.
 
-~~~~
+```bash 
 
 [root@app1 ~]# df -h
 
@@ -262,19 +262,19 @@ tmpfs                 147M     0  147M   0% /dev/shm
 
                       4.0G  2.1G  1.8G  55% /data
 
-~~~~
+``` 
 
 ## 2. Umount the file system. If the file system is not un-mounting, check if there are any processes using it with fuser -cu command. In the example, the interactive session has its current directory as /data, so changing directories is required to unmount /data.
 
   
 
-~~~~
+```bash 
 
 umount /data
 
-~~~~
+``` 
 
-~~~~
+```bash 
 
 [root@app1 data]# umount /data
 
@@ -294,7 +294,7 @@ umount: /data: device is busy
 
 [root@app1 /]# umount /data
 
-~~~~
+``` 
 
   
   
@@ -303,15 +303,15 @@ umount: /data: device is busy
 
   
 
-~~~~
+```bash 
 
 e2fsck –f /dev/mapper/appvg1-applv01
 
-~~~~
+``` 
 
   
 
-~~~~
+```bash 
 
 [root@app1 /]# e2fsck -f /dev/mapper/appvg1-applv01
 
@@ -329,7 +329,7 @@ Pass 5: Checking group summary information
 
 /dev/mapper/appvg1-applv01: 12/524288 files (8.3% non-contiguous), 559713/1047552 blocks
 
-~~~~
+``` 
 
   
 
@@ -337,14 +337,14 @@ Pass 5: Checking group summary information
 
   
 
-~~~~
+```bash 
 
 resize2fs /dev/mapper/appvg1-applv01 3G
 
-~~~~
+``` 
 
   
-~~~~
+```bash 
 [root@app1 /]# resize2fs /dev/mapper/appvg1-applv01 3G
 
 resize2fs 1.39 (29-May-2006)
@@ -352,22 +352,22 @@ resize2fs 1.39 (29-May-2006)
 Resizing the filesystem on /dev/mapper/appvg1-applv01 to 786432 (4k) blocks.
 
 The filesystem on /dev/mapper/appvg1-applv01 is now 786432 blocks long.
-~~~~
+```
   
 
 ## 5. Check the consistency of the file system again.
 
   
 
-~~~~
+```bash 
 
 e2fsck –f /dev/mapper/appvg1-applv01
 
-~~~~
+``` 
 
   
 
-~~~~
+```bash 
 
 [root@app1 /]# e2fsck -f /dev/mapper/appvg1-applv01
 
@@ -385,7 +385,7 @@ Pass 5: Checking group summary information
 
 /dev/mapper/appvg1-applv01: 12/393216 files (8.3% non-contiguous), 555087/786432 blocks
 
-~~~~
+``` 
 
   
 
@@ -393,15 +393,15 @@ Pass 5: Checking group summary information
 
   
 
-~~~~
+```bash 
 
 lvresize –L3G /dev/mapper/appvg1-applv01
 
-~~~~
+``` 
 
   
 
-~~~~
+```bash 
 
 [root@app1 /]# lvresize -L3G /dev/mapper/appvg1-applv01
 
@@ -415,7 +415,7 @@ Do you really want to reduce applv01? [y/n]: y
 
   Logical volume applv01 successfully resized
 
-~~~~
+``` 
 
   
 
@@ -425,7 +425,7 @@ mount /data
 
   
 
-~~~~
+```bash 
 
 [root@app1 /]# mount /dev/mapper/appvg1-applv01 /data
 
@@ -446,16 +446,16 @@ tmpfs                 147M     0  147M   0% /dev/shm
                       3.0G  2.1G  843M  72% /data  
 
 
-~~~~
+``` 
   
 
 # Checking File Systems filled above 80%
 
-~~~~
+```bash 
 
 df -Ph | awk '0+$5 >= 80 {print}'
 
-~~~~
+```
 
   
 
@@ -463,7 +463,7 @@ df -Ph | awk '0+$5 >= 80 {print}'
 
   
 
-~~~~
+```bash 
 
  
 
@@ -505,7 +505,7 @@ Verifying mounted share: mount    
 
   
 
-~~~~
+``` 
 
   
 
@@ -598,7 +598,7 @@ Discover the NFS share exported by NFS server ipaserver.example.com.
 
 ## Command Action Description
 
-~~~~
+```bash 
 
 Installing NFS client: dnf group install “Network File System Client”  
 
@@ -632,4 +632,136 @@ Mounting through fstab: mount -a        
 
 Verifying the mounted filesystem and version:   mount                                                        
 
-~~~~
+``` 
+
+
+## RHEL8 LAB: Mount File Systems and Find Files 
+
+```bash
+[root@serverb ~]# lsblk -fs
+NAME FSTYPE LABEL UUID MOUNTPOINT
+...output omitted...
+vdb1 xfs 7694653c-45f6-4749-bd87-f2f69c37daa7
+└─vdb
+...output omitted...
+
+```
+
+
+From the preceding output, the vdb1 block device contains the XFS file system, which
+is not mounted on the system.
+
+## Create the /review5-disk directory. 
+
+```bash 
+[root@serverb ~]# mkdir /review5-disk
+1.4. Mount the vdb1 block device on the /review5-disk directory.
+[root@serverb ~]# mount /dev/vdb1 /review5-disk
+
+```
+
+## Verify that the vdb1 block device is mounted on the /review5-disk directory.
+
+```bash
+[root@serverb ~]# df -Th
+Filesystem Type Size Used Avail Use% Mounted on
+...output omitted...
+/dev/vdb1 xfs 2.0G 47M 2.0G 3% /review5-disk
+...output omitted...
+
+```
+
+
+## Locate the review5-path file. Save its absolute path in the /review5-disk/review5-path.txt file.
+## Locate the review5-path file. Redirect all error messages to the /dev/null special file 
+
+```bash 
+[root@serverb ~]# find / -iname review5-path 2>/dev/null
+/var/tmp/review5-path
+
+
+```
+
+Note the absolute path to the review5-path file from the preceding output.
+
+
+## Use the vim /review5-disk/review5-path.txt command and save the absolute path to the review5-path file. The following example shows the expected content of the /review5-disk/review5-path.txt file. 
+
+```bash 
+[root@serverb ~]# cat /review5-disk/review5-path.txt
+/var/tmp/review5-path
+
+```
+
+
+
+## Locate all files that the contractor1 user and the contractor group own. The files must have 640 octal permissions. Save the absolute paths to all of these files in the /review5-disk/review5-perms.txt file. 
+
+## Locate all the files that the contractor1 user and the contractor group own and that have 640 octal permission. Redirect all the errors to the /dev/null special file.
+
+```bash 
+[root@serverb ~]# find / -user contractor1 \
+-group contractor -perm 640 2>/dev/null
+/usr/share/review5-perms
+
+```
+
+
+The /usr/share/review5-perms file is the only file that meets the criteria of the
+preceding find command. Note the absolute path to the review5-perms file. 
+
+## Use the vim /review5-disk/review5-perms.txt command and save the absolute path of the review5-perms file. The following example shows the expected content of the /review5-disk/review5-perms.txt file.
+
+```bash
+[root@serverb ~]# cat /review5-disk/review5-perms.txt
+/usr/share/review5-perms
+```
+
+ 
+
+
+## Locate all the files with a size of 100 bytes. Save the absolute paths of these files in the /review5-disk/review5-size.txt file. Locate all the files with a size of exactly 100 bytes. Redirect all the errors to the /dev/null special file. 
+
+```bash 
+[root@serverb ~]# find / -size 100c 2>/dev/null
+/usr/share/licenses/ethtool/LICENSE
+/usr/share/doc/libuser
+/usr/share/doc/plymouth/AUTHORS
+...output omitted...
+/opt/review5-size
+...output omitted...
+```
+
+The preceding output might vary depending on the number of files that match the
+size criteria in your system. Note the absolute paths to all the files from the preceding
+output. 
+
+Use the vim /review5-disk/review5-size.txt command and save the
+absolute path of the files from the preceding output. The following example shows the
+expected content of the /review5-disk/review5-size.txt file. 
+
+```bash 
+[root@serverb ~]# cat /review5-disk/review5-size.txt
+...output omitted...
+/opt/review5-size
+...output omitted...
+```
+Return to the workstation system as the student user. 
+
+```bash 
+[root@serverb ~]# exit
+logout
+[student@serverb ~]$ exit
+logout
+Connection to serverb closed.
+[student@workstation ~]$
+
+
+```
+
+
+
+
+```bash 
+
+```

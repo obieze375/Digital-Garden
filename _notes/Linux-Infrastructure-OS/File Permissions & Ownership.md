@@ -17,7 +17,7 @@ made accessible to other users by changing its access permissions. Every user ha
 
 for controlling access to their files.
 
-~~~~
+```bash 
 
 • Permissions for a file or directory may be restricted to by types
 
@@ -45,7 +45,7 @@ for controlling access to their files.
 
 • chmod
 
-~~~~
+``` 
 
   
 
@@ -53,7 +53,7 @@ for controlling access to their files.
 
   
 
-~~~~
+```bash 
 
 Type User Group Everyone else
 
@@ -71,7 +71,7 @@ rwx  rwx        rwx
 
 --- = 4th 3 bits defines the permission for everyone else
 
-~~~~
+``` 
 
   
 
@@ -79,7 +79,7 @@ Permissions can also be change through numerical method. Each of the permission 
 
 by either a numeric equivalent:
 
-~~~~
+```bash 
 
 read=4, write=2, execute=1
 
@@ -91,7 +91,7 @@ or a single letter:
 
 read=r, write=w, execute=x
 
-~~~~
+``` 
 
   
 
@@ -121,11 +121,11 @@ execute, the command to use would be
 
   
 
-~~~~
+```bash 
 
 chmod 755 file1 or chmod u=rwx,go=rx file1
 
-~~~~
+``` 
 
   
 
@@ -143,11 +143,11 @@ where the dot (.) indicates this directory.
 
 ## File Ownership
 
-~~~~
+```bash 
 
 chown - change ownership
 
-~~~~
+``` 
 
   
 
@@ -163,7 +163,7 @@ Syntax
 
   
 
-~~~~
+```bash 
 
 chown [options] user[:group] file (SVR4)
 
@@ -175,7 +175,7 @@ Common Options
 
 -f force, and don’t report any errors
 
-~~~~
+``` 
 
   
 
@@ -183,19 +183,19 @@ Examples
 
   
 
-~~~~
+```bash 
 
 chown new_owner file
 
-~~~~
+``` 
 
   
 
-~~~~
+```bash 
 
 chgrp - change group
 
-~~~~
+``` 
 
   
 
@@ -208,7 +208,7 @@ command.
 Syntax
 
   
-~~~~  
+```bash   
 
 chgrp [options] group file
 
@@ -217,15 +217,15 @@ Common Options
 -R recursively descend through the directory structure
 
 -f force, and don’t report any errors
-~~~~
+``` 
   
 
 Examples
 
   
 
-~~~~
+```bash 
 
 % chgrp
 
-~~~~
+``` 

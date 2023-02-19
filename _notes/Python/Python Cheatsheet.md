@@ -4490,7 +4490,7 @@ For example we are developing script which is designed to be used as module, we 
 
 [_Return to the Top_](#python-cheatsheet)
 
-### Calling Main Function from anotherr function
+### Calling Main Function from another function
 
 ```python
 from time import sleep

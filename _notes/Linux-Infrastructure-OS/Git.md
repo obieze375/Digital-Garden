@@ -4,7 +4,7 @@
 
   
 
-~~~~
+```bash 
 
 To search and replace all instances of a value in vscode:
 
@@ -30,9 +30,7 @@ to open vscode in a certain directory cd to that dir and enter: code .
 
 Also add git graph and indent rainbow in vscode
 
-~~~~
-
-  
+```  
 
 # Git Commands
 
@@ -42,7 +40,7 @@ Also add git graph and indent rainbow in vscode
 
   
 
-~~~~  
+```bash   
 
   
 
@@ -107,7 +105,7 @@ Add untracked>>
 
 git push
 
-~~~~
+``` 
 
   
 
@@ -115,13 +113,13 @@ git push
 
   
 
-~~~~  
+```bash   
 
 git checkout <branch name> 
 
 git checkout –b <new branch name>
 
-~~~~
+``` 
 
   
 
@@ -129,9 +127,9 @@ git checkout –b <new branch name>
 
   
 
-~~~~
+```bash 
 git checkout -- <filename>
-~~~~
+``` 
 
   
 
@@ -139,9 +137,9 @@ git checkout -- <filename>
 
   
 
-~~~~
+```bash 
 git branch  
-~~~~
+``` 
 
   
 
@@ -149,9 +147,9 @@ git branch  
 
   
 
-~~~~
+```bash 
 git status  
-~~~~
+``` 
 
   
 
@@ -159,9 +157,9 @@ git status  
 
   
 
-~~~~
+```bash 
 git rm  etc
-~~~~
+``` 
 
   
 
@@ -169,9 +167,9 @@ git rm  etc
 
   
 
-~~~~
+```bash 
 git pull  
-~~~~
+``` 
 
   
 
@@ -179,29 +177,29 @@ git pull  
 
   
 
-~~~~
+```bash 
 git revert <git_id> 
-~~~~ 
+```  
 
 ## Remove Files From Git Commit
 
 
 In order to remove some files from a Git commit, use the “git reset” command with the “–soft” option and specify the commit before HEAD. 
 
-~~~~
+```bash 
 
   $ git reset --soft HEAD~1
 
-~~~~  
+```   
 
 When running this command, you will be presented with the files from the most recent commit (HEAD) and you will be able to commit them.
 
 Now that your files are in the staging area, you can remove them (or unstage them) using the “git reset” command again.
  
-~~~~ 
+```bash  
 $ git reset HEAD <file>
 
-~~~~
+``` 
 
 
 
@@ -209,47 +207,47 @@ $ git reset HEAD <file>
 
   
 
-~~~~  
+```bash   
 git branch -D <branch_name>   
-~~~~ 
+```  
 
 
 ## To checkout local changes not yet pushed to git:
  
   
-~~~~ 
+```bash  
 git checkout filename 
-~~~~
+``` 
 
   
 
 ## To checkout local changes not yet pushed to git on a different branch:  
 
-~~~~
+```bash 
 git checkout  --filename
-~~~~
+``` 
 
 ## Checkout file that is in source control  
 
-~~~~     
+```bash      
 
 git checkout origin/<branch_name> -- filename
 
-~~~~
+``` 
 
 
 ## Check Logs
 
   
 
-~~~~
+```bash 
 git log
-~~~~
+``` 
 
   
 # Dealing with conflicts when merging  in Vscode
 
-~~~~
+```bash 
 
 • Checkout source branch
 
@@ -265,41 +263,41 @@ git log
 
 • In vscode select stage change option and save file
 
-~~~~ 
+```  
 
 # Update Branch locally after deleting in Bitbucket/Github
 
   
 
-~~~~  
+```bash   
 
  -> git branch -D branch_name
 
  -> git pull
 
-~~~~ 
+```  
 
 
 # Etiquette for Pull Requests:
-~~~~   
+```bash    
 -> Keep the Jira ID in the heading of the PR (This automatically links both together)
 
  git commit -m "comment"
 
-~~~~
+``` 
 
 ## Git add and commit together - For files already present in git
 
   
-~~~~ 
+```bash  
 
 git commit -am "comment"  
 
-~~~~
+``` 
 
 ## Shortcut Commands for Editing in Vscode
 
-~~~~
+```bash 
 -   Copy: Ctrl + C
     
 -   Cut: Ctrl + X
@@ -311,6 +309,6 @@ git commit -am "comment"  
 -   Undo: ctrl + u
 
 -   Redo: ctrl + r
-~~~~
+``` 
 
 [[Index]] 
