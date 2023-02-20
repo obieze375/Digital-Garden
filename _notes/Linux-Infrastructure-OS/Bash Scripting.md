@@ -10,6 +10,20 @@ name="John"
 echo "Hello $name!"
 ```
 
+## Running script
+
+```
+  • chmod +x _filename 
+  
+  • ./ -> Runs scripts as an excecutable
+```
+
+
+
+
+
+
+
 ## DEBUGGING SHELL PROGRAMS
 
 
@@ -77,7 +91,7 @@ echo "Hello $name!"
 
   • trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 
-  • ./
+  • ./ -> Runs scripts as an excecutable
 
   
   
@@ -1290,8 +1304,7 @@ esac
   
 
 ## Until
-
-# ----------------------
+## ----------------------
 
   
 

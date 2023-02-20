@@ -1,5 +1,25 @@
 ## In this exercise, you manage users and groups, adjust Sudo configuration, and configure SSH on your managed hosts.
 
+## users_vars.yml
+
+```yaml 
+---
+users:
+  - username: user1
+    groups: webadmin
+  - username: user2
+    groups: webadmin
+  - username: user3
+    groups: webadmin
+  - username: user4
+    groups: webadmin
+  - username: user5
+    groups: webadmin
+
+```
+
+
+
 ```yaml
 ---
 - name: Create multiple local users

@@ -1,121 +1,201 @@
 [[Index]] 
 
-### CONCEPTS
+## Basic Commands
 
-**SELinux = LABELING** system
-Every process, file, directory, system object has a LABEL.
-Policy rules control access between labeled processes and labeled
-objects.
-The kernel enforces these rules.
+SELinux (Security Enhanced Linux) is a security protocol for Linux administrators that allows them to acquire more control. The SELinux protocol allows them to enforce the resource policies that represents how much access a program or any user do have. This SELinux is supported by several commands that automates the task of an administrator. In this article, we would provide the explanation and execution of all basic SELinux commands that a regular user may need to know.
 
-```
-Labeling → files, process, ports, etc. (system objects)
-Type enforcement → Isolates processes from each other based on types
-```
-### LABELING
+## **What are the basic commands of SELinux?**
 
-Label format:
-user:role:type:level (optional)
+This section contains the most used and basic commands of SELinux. So, the primary step is to fire up the terminal and start executing these commands.
 
-user → identity known to the policy authorized for a specific set of roles and a specific MLS/MCS range
-role → attribute of RBAC, serves as an intermediary between domains and SELinux users
-type → attribute of type enforcement, defines a domain for processes and a type for files
-level → attribute of MLS/MCS, pair of levels, written as lowlevel-highlevel if the levels differ, or lowlevel if the
-levels are identical
-**TYPE ENFORCEMENT**
-Targeted: Processes that are targeted run in a confined domain, and processes that are not targeted run in an unconfined domain
-Multi-level security (mls): Control processes (domains) based on the level of the data they will be using
-Multi-category security (mcs): Protects like processes from each other (like VMs, OpenShift Gears, SELinux sandboxes, containers, etc.)
-**SELINUX MODES @ BOOT**
-Kernel parameters:
-**enforcing= 0** → boot in permissive mode
-**selinux= 0** → kernel to not load any part of the SELinux infrastructure
-**autorelabel= 1** → forces the system to relabel
+## **Check the status of SELinux**
 
-If you need to relabel the entire system:
-**# touch /.autorelabel
-# reboot**
-If the system labeling contains a large amount of errors, you might need to boot in permissive mode for the
-autorelabel to succeed.
-**SELINUX STATES CHECK STATUS:
-enforcing** SELinux security policy is enforced Configuration file: Check if SELinux is enabled: **# getenforce
-permissive** SELinux prints warnings instead of
-enforcing **/etc/selinux/config**
+Although the SELinux is enabled by default, it is recommended to verify the status to avoid any inconvenience. If the service is disabled or stopped then it would not be possible to use this utility.
+
+## **– sestatus**
+
+The sestatus command of SELinux provides detailed information about the status of SELinux. The command written below will check the status of SELinux.
+
+As it is observed from the output that the SELinux is enabled.
 
 ```
-SELinux status tool: # sestatus
+$ sestatus
 ```
-**disabled** No SELinux policy is loaded Enable/disable SELinux (temporarily): **# setenforce [1|0]**
-
-## opensource.com
-
-## Learn more in our sysadmin’s guide to SELinux, by Alex Callejas: https://red.ht/2zpWppY
-
-## Twitter^ @ opensourceway | facebook.com/opensourceway | CC BY-SA 4.
 
 
-### EXAMPLE OF LABELING: APACHE WEB SERVER CHECK/CREATE/MODIFY SELINUX CONTEXTS/LABELS:
 
-Binary **/usr/sbin/httpd httpd_exec_t** Many commands accept the argument -Z to view, create, and modify context:
 
-- ls -Z
-- id -Z
-- ps -Z
-- netstat -Z
-- cp -Z
-- mkdir -Z
-Contexts are set when files are created based on their parent directory’s
-context (with a few exceptions). RPMs can set contexts as part of
-installation.
+![](assets/Picture1-2.png)
 
-Configuration directory **/etc/httpd httpd_config_t**
 
-Logfile directory **/var/log/httpd httpd_log_t**
 
-Content directory **/var/www/html httpd_sys_content_t**
+## **– getenforce**
 
-Startup script **/usr/lib/systemd/system/httpd.service httpd_unit_file_d**
-Process running **/usr/sbin/httpd -DFOREGROUND httpd_t**
-Ports (netstat -tulpnZ) 80/tcp, 443/tcp **httpd_t**
+This command also provides the information about the status; however, its output is just one word and that can be either **_enforcing_** or **_permissive_ .** The default state is enforcing which refers to enabled state and if the output returns permissive that means the service isn’t working. Type the following command to check its status.
 
-Port type (semanage port -l) 80, 81, 443, 488, 8008, 8009, 8443, 9000 **http_port_t
-TROUBLESHOOTING**
-SELinux tools: **# yum -y install setroubleshoot setroubleshoot-server** ← Reboot or restart auditd after you install
-Logging: **/var/log/messages /var/log/audit/audit.log /var/lib/setroubleshoot/setroubleshoot_database.xml
-journalctl** List all logs related to setroubleshoot: **# journalctl -t setroubleshoot --since=14:**
-List all logs related to a particular
-SELinux label:
+**Note :** The permissive output shows that SELinux is enabled but not enforced by SELinux policy rules. However, enforcing means that SELinux rules are being followed.
 
 ```
-# journalctl _SELINUX_CONTEXT=system_u:system_r:policykit_t:s
+$ getenforce
 ```
-**ausearch** Look for SELinux errors in the audit log: **# ausearch -m AVC,USER_AVC,SELINUX_ERR -ts today -i**
-Search for SELinux AVC messages for a
-particular service:
+
+![](assets/Picture2-2.png)
+
+## **Change the status of SELinux**
+
+To change the status of the SELinux, you can exercise the setenforce command.
+
+**Note :** It is to notice that the setenforce command manipulates the status temporarily. If you want to do it permanently, then you have to access the configuration file of SELinux to make permanent changes.
+
+## **– setenforce**
+
+The setenforce command in SELinux accepts the value **0** or **1**.Where 0 refers to permissive mode and 1 changes the current mode to permissive mode.
+
+The command described below changes the status of SELinux to enforcing mode (but temporarily).
 
 ```
-# ausearch -m avc -c httpd -i
+$ sudo setenforce 1
 ```
-Edit/modify labels
-(semanage)
 
-know the label: **# semanage fcontext -a -t httpd_sys_content_t ‘/srv/myweb(/.*)?’**
-know the file with the equivalent labeling: **# semanage fcontext -a -e /srv/myweb /var/www**
-Restore the context (for both cases): **# restorecon -vR /srv/myweb**
-Edit/modify labels (chcon) know the label: **# chcon -t httpd_system_content_t /var/www/html/index.html** Note: If you move instead of copy
-a file, the file keeps its original
-context.
+![](assets/Picture3-2.png)
 
-know the file with the equivalent labeling: **# chcon --reference /var/www/html/ /var/www/html/index.html**
-Restore the context (for both cases): **# restorecon -vR /var/www/html/index.html**
-Add new port to service: **# semanage port -a -t http_port_t -p tcp 8585** ← SELinux needs to know
-**Booleans** Booleans allow parts of SELinux policy to be changed at runtime without any knowledge of SELinux policy writing.
-To see all booleans: **# getsebool -a** To see the description of each one: **# semanage boolean -l**
-To set a boolean execute: **# setsebool [boolean] [1|0]** To configure it permanently, add -P: Example : # setseebol httpd_enable_ftp_server 1 -P
+And you can change the status to **_Permissive_** with the help of following command.
 
-# Opensource.com : SELinux Commands Cheat Sheet PAGE 2 OF 2 BY ALEX CALLEJAS
+```
+$ sudo setenforce 0
+```
 
+![](assets/Picture4-2.png)
 
+## **Manage the SELinux Boolean(s)**
+
+The Boolean’s associated with SELinux can be managed by two commands. The **_getsebool_** command allows you to get all SELinux Boolean at once or one by one. And the **_setsebool_** command can be used to set the Boolean of an SELinux. The **_getsebool_** command in Linux can be used to get the Boolean associated with SELinux.
+
+## **– getsebool**
+
+To get all the Boolean values in SELinux, the **_getsebool_** command is used with **_\-a_** flag as provided below.
+
+You will observe either **on** or **off** values:
+
+```
+$ getsebool -a 
+```
+
+![](assets/Picture5-2.png)
+
+However, you can get the value of a specific Boolean by specifying its name. The commands written below will get the value of one Boolean named **_allow\_kerberos._**
+
+```
+$ getsebool allow_kerberos
+```
+
+![](assets/Picture6-2.png)
+
+## **– setsebool**
+
+The setsebool command is used to sets the current state of SELinux Boolean to a given value. This command can also be applied on set of SELinux Boolean.
+
+Let’s say we get the current state of **_allow\_execmod_** by using **_getsebool_** command.
+
+```
+$ getsebool allow_execmod
+```
+
+![](assets/Picture7-2.png)
+
+And we change the current state **off** to **on** with the help of **_setsebool_** command as provided below. 
+
+```
+$ sudo setsebool allow_execmod on
+```
+
+![](assets/Picture8-2.png)
+
+Or you can replace **off** and **on** keywords with **0** and **1** respectively to change the state of SELinux Boolean.
+
+**Note:** Make sure to run setstatus, setsebool, semanage commands using root privileges.
+
+## **Manage SELinux policy**
+
+The **_semanage_** command provide an extensive support to manage multiple operations in SELinux. This section contains the examples of few most used semanage commands. 
+
+## **– semanage user**
+
+You can list down the current SELinux users with the help of command written below.
+
+```
+$ sudo semanage user -l 
+```
+
+![](assets/Picture9-1.png)
+
+## **– semanage module**
+
+The SELinux modules are manipulated by using **_semanage module_** command of semanage tool. Firstly, get the list of modules by using the following command.
+
+```
+$ sudo semanage module -l
+```
+
+![](assets/Picture10-1.png)
+
+You can disable any module using **_\-d_** flag of this semanage module. To do so, you have to follow the syntax mentioned here:
+
+```
+$ semanage module -d <module-name>
+```
+
+To enable it again, the **_\-e_** option as shown below.
+
+```
+$ semanage module -e <module-name>
+```
+
+## **– semanage port**
+
+To get the list of ports of SELinux, the semanage command is used as shown below. The output contains three columns, the first displays the port type, the second column shows the protocol followed by each port and the last columns represents the port numbers.
+
+```
+$ sudo semanage port -l 
+```
+
+![](assets/Picture11-1.png)
+
+You can also create a new port as well. Like, the below-mentioned command adds up a new port with following values.
+
+-   port type is represented by **_t_** in the command and is assigned a value **_http\_port\_t_**
+-   The **\-p** flag used here represents the protocol and is set to **_tcp_**
+-   And at the end, port number is specified and is set to 2222.
+
+Whereas the **\-a** flag is used here to direct the command to add new port.
+
+```
+$ sudo semanage port -a -t http_port_t -p tcp 2222
+```
+
+![](assets/Picture12-1.png)
+
+## **Bonus Tip**
+
+Here, we have a bonus tip for you that will surely assist you if you are using SELinux on regular basis. So, let’s get into it,
+
+## **Change the status of SELinux permanently**
+
+In case, if you want to change the status of SELinux permanently then you have to access the config file of SELinux that is placed in **_/etc/selinux/config._** The command written below opens the file in nano editor.
+
+```
+$ sudo nano /etc/selinux/config 
+```
+
+![](assets/Picture13-1.png)
+
+As the file is opened, you will observer a line <**SELINUX=permissive**\>; you have to change the value and replace **_permissive_** with **_disabled_** _or **enforcing**_(whatever state you want)**_._** After performing the change, press “**Ctrl+S**” to save the changes and get out of file by pressing “**Ctrl+X**“.
+
+To enforce the changes, you must reboot your system. After restart, the status will be turned as provided.
+
+## **Conclusion**
+
+SELinux has extensive list of commands that eases the way of users to get a control over the accessibility of several apps/users. This article lists down the most important SELinux commands that you must need to know. The commands written here can be exercised for several purposes related to SELinux. Like from checking/changing the status of SELinux to manipulating the configuration settings.
 
 
 
