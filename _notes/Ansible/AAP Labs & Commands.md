@@ -725,7 +725,7 @@ ansible-navigator:
 
     replay: artifacts/ansible_artifact.json
 
-    save-as: artifacts/ansible_artifact.jsonl
+    save-as: artifacts/ansible_artifact.json
 
 ```
 
