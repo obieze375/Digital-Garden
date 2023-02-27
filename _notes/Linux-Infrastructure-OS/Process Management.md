@@ -82,12 +82,12 @@ To verify results -  top  
 
   
 
-# What to do if a process is locked
+## What to do if a process is locked
 
   
   
 
-# STEP 1:  
+## STEP 1:  
 
   
 

@@ -1,6 +1,8 @@
 [[Index]] 
 
-## Configuration for remote server being accessed
+## Configuration for remote server being accessed 
+
+** Make sure ssh is installed on both sides as in the servers and either the firewall is down or it allows ssh via s pecific port to both Ip's of the servers
 
 ```bash 
 

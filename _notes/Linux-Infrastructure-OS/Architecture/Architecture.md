@@ -103,13 +103,14 @@ NAS Protocols
 
 From <https://www.netapp.com/data-storage/what-is-san-storage-area-network/>
 
+ ![](image/SANs.jpg)
 
-![](assets/SANs.jpg)
 
-![](assets/SANs2.jpg)
+  
+![](image/SANs2.png)
 
-![](assets/SANs3.jpg)
 
+![](image/SANs3.png)
 
 
 
@@ -118,7 +119,7 @@ From <https://www.netapp.com/data-storage/what-is-san-storage-area-network/>
   
   
 
-The assets example on the left illustrates a highly available system.
+The image example on the left illustrates a highly available system.
 
   
 
@@ -130,7 +131,7 @@ The individual pieces are not necessarily built with fault tolerance in mind.
 
   
 
-The assets on the right shows the rear panel of a rack mounted server.  
+The image on the right shows the rear panel of a rack mounted server.  
 
   
 
@@ -148,8 +149,18 @@ If one power supply were to fail, the other three could maintain power to the sy
 
 We’re also assuming here that the power supplies can be replaced while the system is up and running.
 
- ![](assets/SANs4.jpg)
+ ![](image/SANs4.png) 
+  
 
+
+
+
+![](image/SANs5.png)
+
+
+
+  
+  
   
 
 In this example diagram we have two nodes in a simple cluster.
@@ -186,9 +197,7 @@ A fencing agent could be a network connected power switch, or some other type of
 
 # Jump Server Architecture
 
-![](assets/jump%20servers.jpg)
-
-
+![](image/jump%20servers.jpg)
 
   
 
@@ -207,11 +216,7 @@ The concept of a “jump” server has been around for decades, but is rarely in
 
 # SDDC - Software Defined Data Centre
 
-![](assets/sddc.png)
-
-
-
-
+![](image/sddc.png)
 
 
 
@@ -224,10 +229,8 @@ An SDDC (software-defined data center) is a data storage facility in which all i
 
 # Blades Server
 
-![](assets/Blade_Server_Chassis.png)
 
-
-
+![](image/Blade_Server_Chassis.png)
 
 A blade server, sometimes referred to as a high-density server, is a compact device containing a computer used to manage and distribute data in a collection of computers and systems, called a network. Its role is to act as a conduit between computers, programs, applications and systems.
 

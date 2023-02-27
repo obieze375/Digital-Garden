@@ -2,6 +2,7 @@
 [[Index]] 
 
   
+
 # History of Unix/Linux
 
   
@@ -121,11 +122,11 @@ world-wide.
   
   
 
-## Inside Linux
+# Inside Linux
 
   
 
-## Kernel
+# Kernel
 
   
 
@@ -165,7 +166,7 @@ details are provided for your information only.
 
   
 
-## Shell
+# Shell
 
   
 
@@ -225,7 +226,7 @@ scripts" are used to accomplish a series of tasks.
 
   
 
-## Utilities
+# Utilities
 
   
 
@@ -263,7 +264,7 @@ Modular: single functions can be grouped to perform more complex tasks
 
   
 
-## Operating system
+# Operating system
 
   
 
@@ -307,7 +308,7 @@ An operating system performs these services for applications:
 
   
 
-## Various Parts of an Operating System
+# Various Parts of an Operating System
 
   
 
@@ -350,7 +351,7 @@ system. Documentation, and sometimes even games, can also be part of it.
 
   
 
-## Important parts of the kernel
+# Important parts of the kernel
 
   
 
@@ -384,10 +385,8 @@ The Linux kernel consists of several important parts:
 
 The following figure shows some of the more important parts of the Linux kernel
 
-![](assets/kernel.png)
-
-
-
+  
+![](image/kernel.png)
 
 - Probably the most important parts of the kernel (nothing else works without them) are memory
 
@@ -415,7 +414,7 @@ The following figure shows some of the more important parts of the Linux kernel
 
   
 
-## Examples of computer operating systems
+# Examples of computer operating systems
 
   
 
@@ -443,7 +442,7 @@ The following figure shows some of the more important parts of the Linux kernel
 
   
 
-## Hard Disk
+# Hard Disk
 
   
 
@@ -481,7 +480,7 @@ address range on today's hard disks.
 
   
 
-## Disk Cache
+# Disk Cache
 
   
 
@@ -497,17 +496,15 @@ likely to be accessed next. Write caching is also provided with some disk caches
 
   
 
-## Recover/Reset Root Password
+# Recover/Reset Root Password
 
   
   
 
 1 – In the boot grub menu select option to edit
 
-![](assets/password-retrieve1.png)
 
-
-
+![](image/password-retrieve1.png)
   
 
 
@@ -517,30 +514,26 @@ likely to be accessed next. Write caching is also provided with some disk caches
 
 2 – Select Option to edit (e).
 
-![](assets/password-retrieve2.png)
+  
 
-
-
+![](image/password-retrieve2.png)
 
   
   
 
 3 – Go to the line = ro and change it with rw init=/sysroot/bin/sh
 
-![](assets/password-retrieve3.png)
+  
 
-
-
-
+![](image/password-retrieve3.png)
 
   
   
 
 4 – Now press Control+x to start on single user mode
 
-![](assets/password-retrieve4.png)
-
-
+  
+![](image/password-retrieve4.png)
 
 
   

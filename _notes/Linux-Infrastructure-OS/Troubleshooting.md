@@ -25,7 +25,7 @@
 
 ## Can't SSH to server as root user
 
-![](assets/can't-ssh-to-server.png)
+![](can't-ssh-to-server.png)
 
 
 
@@ -71,7 +71,7 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot CD into a Directory
 
-![](assets/cd-directory.png)
+![](cd-directory.png)
 
 
 
@@ -80,7 +80,7 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot Open a File Or Run a Script
 
-![](assets/can't-open-file.png)
+![](can't-open-file.png)
 
 
 
@@ -91,7 +91,7 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot Create Links
 
-![](assets/cannot-link.png)
+![](cannot-link.png)
 
 
 
@@ -101,7 +101,7 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot Write to a File
 
-![](assets/cannot-edit-file.png)
+![](cannot-edit-file.png)
 
 
  
@@ -111,7 +111,7 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot Change File Permissions / Ownership
 
-![](assets/cannot-change-file-perm.png)
+![](cannot-change-file-perm.png)
 
 
 
@@ -123,7 +123,7 @@ failed to connect -> Firewall/connectivity issue -> sshd or the whole server mig
 
 ## Cannot View Other Users Files
 
-![](assets/cannot-view-other-users-files.png)
+![](cannot-view-other-users-files.png)
 
 
 
@@ -1110,7 +1110,7 @@ bash -v hello1.sh  
 
 ## Server is not reachable
 
-![](assets/Server_Unreachable_Troubleshooting.docx_1.png)
+![](Server_Unreachable_Troubleshooting.docx_1.png)
 
 
 
@@ -1121,7 +1121,7 @@ bash -v hello1.sh  
 
 ## Firewall Issue
 
-![](assets/Firewall%20Issue.docx_1.png)
+![](Firewall%20Issue.docx_1.png)
 
 
 
@@ -1131,7 +1131,7 @@ bash -v hello1.sh  
 
 ## Cannot connect to a website or service hosted on server
 
-![](assets/Can't%20connect%20to%20Website.png)
+![](Can't%20connect%20to%20Website.png)
 
 
 
@@ -1235,7 +1235,7 @@ Based on the results the best option is to identify and kill PIDS that is causin
 
 One of options of the strace utility is to help as a troubleshooting utility. If you want to know what a process is doing, or why it hangs, strace will definitely help. By running strace without any parameters, it will already show why a process is doing. You can trace a running process, or instruct strace to start it for you.
 
-![](assets/strace1.png)
+![](strace1.png)
 
 <img src="/assets/"/>
 
@@ -1365,7 +1365,7 @@ statfs (retrieve file system related details)
 
 ## A related example screen output:
 
-![](assets/strace2.png)
+![](strace2.png)
 
 
  

@@ -73,7 +73,7 @@ Hello World!!
 ```
 
 
-## Introduction to Linux commands.
+## Head & Tail Commands
 
 Some files are long and might need more space to be displayed than the terminal provides. The
 cat command does not display the contents of a file as pages. The less command displays one
