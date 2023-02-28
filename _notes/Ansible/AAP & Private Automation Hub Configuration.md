@@ -3,10 +3,6 @@
 # Initial Configuration of Automation Controller and Private Automation Hub 
 
 
-```bash
-
-```
-
 ## From a terminal window, change into the /home/student/certified-EEs directory. 
 
 ```bash
