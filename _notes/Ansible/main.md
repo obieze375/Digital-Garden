@@ -64,7 +64,7 @@ Having said that, the exercises themselves should take roughly 4-5 hours. The fi
 There is also a series of exercises that go above and beyond our normal workshop content.  Please check out our supplemental exercises if you want more content to learn from.
 
 
-[[ansible_rhel/1.1-setup-README]] 
+[[1.1-setup-README]] 
 
 [[ansible_rhel/1.2-thebasics-README]]  
 
@@ -92,6 +92,6 @@ There is also a series of exercises that go above and beyond our normal workshop
 
 [[ansible_rhel/2.7-wrap-README]]  
 
-[[main]]
+[[Index]]
 
 

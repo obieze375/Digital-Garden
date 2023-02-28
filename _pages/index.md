@@ -461,9 +461,13 @@ permalink: /
 
 [[AAP & Private Automation Hub Configuration]]
 
+[[Main]]
+
 [[1.1-setup-README]]
 
-[[Main]]
+[[1.2-thebasics-README]]
+
+
 
 
 
