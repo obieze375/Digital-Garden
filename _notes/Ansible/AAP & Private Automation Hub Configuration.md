@@ -153,33 +153,6 @@ password.
 ## Navigate to Resources > Templates to display existing templates.
 ## Click the Launch Template icon to initiate the job. The Demo Job Template resource uses the Demo Credential machine credential resource to connect to the workstation.lab.example.com host in the Demo Inventory resource.
 
-[[ansible_rhel/1.1-setup/README]] 
-
-[[ansible_rhel/1.2-thebasics/README]]  
-
-[[ansible_rhel/1.3-playbook/README]]  
-
-[[ansible_rhel/1.4-variables/README]]  
-
-[[ansible_rhel/1.5-handlers/README]]  
-
-[[ansible_rhel/1.6-templates/README]]   
-
-[[ansible_rhel/1.7-role/README]]  
-
-[[ansible_rhel/2.1-intro/README]]  
-
-[[ansible_rhel/2.2-cred/README]]  
-
-[[ansible_rhel/2.3-projects/README]]   
-
-[[ansible_rhel/2.4-surveys/README]]  
-
-[[ansible_rhel/2.5-rbac/README]]   
-
-[[ansible_rhel/2.6-workflows/README]]  
-
-[[ansible_rhel/2.7-wrap/README]] 
 
 [[Index]] 
 

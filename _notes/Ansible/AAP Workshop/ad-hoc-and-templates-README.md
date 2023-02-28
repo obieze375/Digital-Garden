@@ -134,36 +134,32 @@ First run the playbook itself, then run curl against `node1` with port `8080` an
 <h1>This is a production webserver, take care!</h1>
 </body>
 ```
+[[1.1-setup-README]] 
 
+[[1.2-thebasics-README]]  
 
+[[1.3-playbook-README]]  
 
+[[1.4-variables-README]]  
 
-[[ansible_rhel/1.1-setup-README]] 
+[[1.5-handlers-README]]  
 
-[[ansible_rhel/1.2-thebasics-README]]  
+[[1.6-templates-README]]   
 
-[[ansible_rhel/1.3-playbook-README]]  
+[[1.7-role-README]]  
 
-[[ansible_rhel/1.4-variables-README]]  
+[[2.1-intro-README]]  
 
-[[ansible_rhel/1.5-handlers-README]]  
+[[2.2-cred-README]]  
 
-[[ansible_rhel/1.6-templates-README]]   
+[[2.3-projects-README]]   
 
-[[ansible_rhel/1.7-role-README]]  
+[[2.4-surveys-README]]  
 
-[[ansible_rhel/2.1-intro-README]]  
+[[2.5-rbac-README]]   
 
-[[ansible_rhel/2.2-cred-README]]  
+[[2.6-workflows-README]]  
 
-[[ansible_rhel/2.3-projects-README]]   
+[[2.7-wrap-README]]  
 
-[[ansible_rhel/2.4-surveys-README]]  
-
-[ansible_rhel/2.5-rbac-README]]   
-
-[[ansible_rhel/2.6-workflows-README]]  
-
-[[ansible_rhel/2.7-wrap-README]]  
-
-[[main]] 
+[[main]]

@@ -742,39 +742,7 @@ $ code-server site.yml
 ```
 
 
-[Click here to return to the Ansible for Red Hat Enterprise Linux Workshop](ansible_rhel/README.md) 
-
-[[ansible_rhel/1.1-setup/README]] 
-
-[[ansible_rhel/1.2-thebasics/README]]  
-
-[[ansible_rhel/1.3-playbook/README]]  
-
-[[ansible_rhel/1.4-variables/README]]  
-
-[[ansible_rhel/1.5-handlers/README]]  
-
-[[ansible_rhel/1.6-templates/README]]   
-
-[[ansible_rhel/1.7-role/README]]  
-
-[[ansible_rhel/2.1-intro/README]]  
-
-[[ansible_rhel/2.2-cred/README]]  
-
-[[ansible_rhel/2.3-projects/README]]   
-
-[[ansible_rhel/2.4-surveys/README]]  
-
-[[ansible_rhel/2.5-rbac/README]]   
-
-[[ansible_rhel/2.6-workflows/README]]  
-
-[[ansible_rhel/2.7-wrap/README]]  
-
-[[AAP Installation]]
-
-[[AAP & Private Automation Hub Configuration]]
 
 
+[[AAP Workshop/main]] 
 [[Index]] 
