@@ -386,7 +386,7 @@ The Linux kernel consists of several important parts:
 The following figure shows some of the more important parts of the Linux kernel
 
   
-![](image/kernel.png)
+![](assets/image/kernel.png)
 
 - Probably the most important parts of the kernel (nothing else works without them) are memory
 
@@ -504,7 +504,7 @@ likely to be accessed next. Write caching is also provided with some disk caches
 1 – In the boot grub menu select option to edit
 
 
-![](image/password-retrieve1.png)
+![](assets/image/password-retrieve1.png)
   
 
 
@@ -516,7 +516,7 @@ likely to be accessed next. Write caching is also provided with some disk caches
 
   
 
-![](image/password-retrieve2.png)
+![](assets/image/password-retrieve2.png)
 
   
   
@@ -525,7 +525,7 @@ likely to be accessed next. Write caching is also provided with some disk caches
 
   
 
-![](image/password-retrieve3.png)
+![](assets/image/password-retrieve3.png)
 
   
   
@@ -533,7 +533,7 @@ likely to be accessed next. Write caching is also provided with some disk caches
 4 – Now press Control+x to start on single user mode
 
   
-![](image/password-retrieve4.png)
+![](assets/image/password-retrieve4.png)
 
 
   

@@ -1,9 +1,9 @@
 [[Index]] 
 
 
-![](Screen Shot 2015-11-07 at 10.15.07 AM.png)
+![](assets/image/Screen Shot 2015-11-07 at 10.15.07 AM.png)
 
-![](linux-boot-process.png)
+![](assets/image/linux-boot-process.png)
 ---
 * BIOS
 

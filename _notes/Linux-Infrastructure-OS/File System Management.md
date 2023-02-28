@@ -1,7 +1,7 @@
 [[Index]] 
 
 
- ![](file-permission-1.png)
+ ![](assets/image/file-permission-1.png)
 
 
 
@@ -511,7 +511,7 @@ Verifying mounted share: mount    
 
 ## NFS (Network File Share)
 
-![](assets/nfs.png)
+![](assets/image/nfs.png)
 
 
 

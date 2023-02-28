@@ -5,9 +5,9 @@
 
 ## Disk Management
 
-![](image/lvm.jpg)
-![](image/filesystem_explain.png)
-![](image/filesystem_explain2.png)
+![](assets/image/lvm.jpg)
+![](assets/image/filesystem_explain.png)
+![](assets/image/filesystem_explain2.png)
 
 
 

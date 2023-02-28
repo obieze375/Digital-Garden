@@ -2,7 +2,7 @@
 
 Under each user's HOME directory, the file is .ssh / config; configuration file can enter personalized SSH configuration, such as time-out settings
 
-###Commonly used SSH client personalized configuration items
+### Commonly used SSH client personalized configuration items
 
 |Configuration Item Name	|value	|Explanation
 |--|--|--|

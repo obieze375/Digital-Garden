@@ -1,6 +1,6 @@
 # Kerberos
 
-###In a nutshell
+### In a nutshell
 Basically, Kerberos comes down to just this:
 
 * a protocol for authentication
@@ -22,7 +22,7 @@ Admins create realms – Kerberos realms – that will encompass all that is ava
 
 Your machine, the Client, lives within this realm, as well as the service or host you want to request and the Key Distribution Center, KDC (no, not the KGB, although I always think of that, too). In the following example, I separate out the Authentication Server and the Ticket Granting Server, but both are within the KDC.
 
-![](Kerb.001.jpg)
+![](assets/image/Kerb.001.jpg)
 
 ###To keep in the back of your mind
 You may want to come back up here after you read through the gritty details on how the example works.
@@ -57,11 +57,11 @@ You want to access an HTTP Service, but first you must introduce yourself to the
 * requested lifetime for the validity of the TGT,
 and is sent to the Authentication Server.
 
-![](Kerb.002.jpg)
+![](assets/image/Kerb.002.jpg)
 
 The Authentication Server will check if you are in the KDC database. This check is only to see if you exist; no credentials are checked.
 
-![](Kerb.003.jpg)
+![](assets/image/Kerb.003.jpg)
 
 If there are no errors (e.g. user is not found), it will randomly generate a key called a session key for use between you and the Ticket Granting Server (TGS).
 
@@ -83,11 +83,11 @@ and is encrypted with the TGS Secret Key . The other message contains:
 
 and is encrypted with your Client Secret Key. Note that the TGS Session Key is the shared key between you and the TGS.
 
-![](Kerb.004.jpg)
+![](assets/image/Kerb.004.jpg)
 
 Your Client Secret Key is determined by prompting you for your password, appending a salt (made up of user@REALMNAME.COM) and hashing the whole thing. Now you can use it for decrypting the second message in order to obtain the TGS Session Key. If the password is incorrect, then you will not be able to decrypt the message. Please note that this is the step in which the password you enter is implicitly validated.
 
-![](Kerb.005.jpg)
+![](assets/image/Kerb.005.jpg)
 
 You can not, however, decrypt the TGT since you do not know the TGS Secret Key. The encrypted TGT is stored within your credential cache.
 
@@ -106,15 +106,15 @@ You send an unencrypted message that contains:
 
 along with the encrypted Authenticator and TGT to the Ticket Granting Server.
 
-![](Kerb.006.jpg)
+![](assets/image/Kerb.006.jpg)
 
 The Ticket Granting Server will first check the KDC database to see if the HTTP Service exists.
 
-![](Kerb.007.jpg)
+![](assets/image/Kerb.007.jpg)
 
 If so, the TGS decrypts the TGT with its Secret Key . Since the now-unencrypted TGT contains the TGS Session Key, the TGS can decrypt the Authenticator you sent.
 
-![](Kerb.008.jpg)
+![](assets/image/Kerb.008.jpg)
 
 The TGS will then do the following:
 
@@ -135,7 +135,7 @@ The Ticket Granting Server then randomly generates the HTTP Service Session Key,
 
 and encrypts it with the HTTP Service Secret Key.
 
-![](Kerb.009.jpg)
+![](assets/image/Kerb.009.jpg)
 
 Then the TGS sends you two messages. One is the encrypted HTTP Service Ticket; the other contains:
 
@@ -150,7 +150,7 @@ Your machine decrypts the latter message with the TGS Session Key that it cached
 
 Your machine can not, however, decrypt the HTTP Service Ticket since it’s encrypted with the HTTP Service Secret Key.
 
-![](Kerb.010.jpg)
+![](assets/image/Kerb.010.jpg)
 
 ###You and the HTTP Service
 To now access the HTTP Service, your machine prepares another Authenticator message that contains:
@@ -160,11 +160,11 @@ To now access the HTTP Service, your machine prepares another Authenticator mess
 
 and is encrypted with the HTTP Service Session Key. Your machine then sends the Authenticator and the still-encrypted HTTP Service Ticket received from the TGS.
 
-![](Kerb.011.jpg)
+![](assets/image/Kerb.011.jpg)
 
 The HTTP Service then decrypts the Ticket with its Secret Key to obtain the HTTP Service Session Key. It then uses that Session Key to decrypt the Authenticator message you sent.
 
-![](Kerb.012.jpg)
+![](assets/image/Kerb.012.jpg)
 
 Similar to the TGS, the HTTP Server will then do the following:
 
@@ -176,17 +176,17 @@ Similar to the TGS, the HTTP Server will then do the following:
 
 The HTTP Service then sends an Authenticator message containing its ID and timestamp in order to confirm its identity to you and is encrypted with the HTTP Service Session Key.
 
-![](Kerb.013.jpg)
+![](assets/image/Kerb.013.jpg)
 
 Your machine reads the Authenticator message by decrypting with the cached HTTP Service Session Key, and knows that it has to receive a message with the HTTP Service’s ID and timestamp.
 
-![](Kerb.014.jpg)
+![](assets/image/Kerb.014.jpg)
 
 And now you have been authenticated to use the HTTP Service. Future requests use the cached HTTP Service Ticket, so long as it has not expired as defined within the lifetime attribute.
 
 While I will write on this later, the HTTP Service itself must be able to support Kerberos. As well, you must also have a browser that supports SPNEGO/Negotiate.
 
-![](Kerb.015.jpg)
+![](assets/image/Kerb.015.jpg)
 
 Perhaps re-read the points previously outlined; check out this or this current implementation, especially the one on which I am paid to work that communicates with this popular implementation; or review a tutorial, resource guide, the go-to video that was sent to me when I started learning about Kerberos, or the RFC itself.
 

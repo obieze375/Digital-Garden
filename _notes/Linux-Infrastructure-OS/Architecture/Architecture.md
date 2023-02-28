@@ -103,14 +103,14 @@ NAS Protocols
 
 From <https://www.netapp.com/data-storage/what-is-san-storage-area-network/>
 
- ![](image/SANs.jpg)
+ ![](assets/image/SANs.jpg)
 
 
   
-![](image/SANs2.png)
+![](assets/image/SANs2.png)
 
 
-![](image/SANs3.png)
+![](assets/image/SANs3.png)
 
 
 
@@ -149,13 +149,13 @@ If one power supply were to fail, the other three could maintain power to the sy
 
 We’re also assuming here that the power supplies can be replaced while the system is up and running.
 
- ![](image/SANs4.png) 
+ ![](assets/image/SANs4.png) 
   
 
 
 
 
-![](image/SANs5.png)
+![](assets/image/SANs5.png)
 
 
 
@@ -197,7 +197,7 @@ A fencing agent could be a network connected power switch, or some other type of
 
 # Jump Server Architecture
 
-![](image/jump%20servers.jpg)
+![](assets/image/jump%20servers.jpg)
 
   
 
@@ -216,7 +216,7 @@ The concept of a “jump” server has been around for decades, but is rarely in
 
 # SDDC - Software Defined Data Centre
 
-![](image/sddc.png)
+![](assets/image/sddc.png)
 
 
 
@@ -230,7 +230,7 @@ An SDDC (software-defined data center) is a data storage facility in which all i
 # Blades Server
 
 
-![](image/Blade_Server_Chassis.png)
+![](assets/image/Blade_Server_Chassis.png)
 
 A blade server, sometimes referred to as a high-density server, is a compact device containing a computer used to manage and distribute data in a collection of computers and systems, called a network. Its role is to act as a conduit between computers, programs, applications and systems.
 

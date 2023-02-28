@@ -1159,7 +1159,7 @@ examples. Remove the first three lines of the editing_final_lab.txt file.
 Use the arrow keys to position the cursor at the first character in the first line. Enter the linebased visual mode with Shift+V. Move down by using the down arrow key twice to select
 the first three lines. Delete the lines by typing x.
 
-![](assets/vim1.png)
+![](assets/image/vim1.png)
 
 Enter the visual mode of Vim. Remove the last seven characters from the first column on the
 first line. Preserve only the first four characters of the first column.
@@ -1169,7 +1169,7 @@ line. Enter the visual mode by typing v.
 Use the arrow keys to position the cursor at the last character of the first column on the first
 line. Delete the selection by typing x.
 
-![](assets/vim2.png)
+![](assets/image/vim2.png)
 
 Enter the visual block mode of Vim. Repeat the operation of the previous step, but this time
 select from the second to the last line. Preserve only the first four characters of the first
@@ -1179,7 +1179,7 @@ Use the arrow keys to position the cursor at the fifth character of the second l
 visual mode by using the control sequence Ctrl+V. Use the arrow keys to position the cursor
 at the last character of the first column on the last line. Delete the selection by typing x.
 
-![](assets/vim3.png)
+![](assets/image/vim3.png)
 
 ## Enter the visual block mode of Vim and remove the fourth column of the file.
 
@@ -1187,7 +1187,7 @@ Use the arrow keys to position the cursor at the first character of the fourth c
 the visual block mode by using Ctrl+V. Use the arrow keys to position the cursor at the last
 character and row of the fourth column. Delete the selection by typing x.
 
-![](assets/vim4.png)
+![](assets/image/vim4.png)
 
 
 ## Enter the visual block mode of Vim to remove the time column, leaving the month and day columns on all lines.
@@ -1196,7 +1196,7 @@ Use the arrow keys to position the cursor at the first character of the current 
 Enter the visual block mode by typing Ctrl+V. Use the arrow keys to position the cursor at
 the last character of the seventh column on the last row. Delete the selection by typing x. 
 
-![](assets/vim5.png)
+![](assets/image/vim5.png)
 
 
 ## Enter the visual line mode of Vim and remove the rows that contain the Desktop and Public strings.
@@ -1205,13 +1205,13 @@ Use the arrow keys to position the cursor at any character on the Desktop row. E
 mode with uppercase V. The full line is selected. Delete the selection by typing x. Repeat the
 operation for the row with the Public string.
 
-![](assets/vim6.png)
+![](assets/image/vim6.png)
 
 ## Save your changes and exit the file.
 
 To save and exit the file, enter the last-line :wq command.
 
-![](assets/vim7.png)
+![](assets/image/vim7.png)
 
 ## Back up the editing_final_lab.txt file and append the date (in seconds) at the end of the file name preceded with an underscore (_) character. Use the lab_file shell variable.
 

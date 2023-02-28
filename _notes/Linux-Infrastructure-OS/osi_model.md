@@ -2,11 +2,11 @@
 
 # OSI MODEL
 
-![](osi-model.jpg)
+![](assets/image/osi-model.jpg)
 
-![](osi-2.png)
+![](assets/image/osi-2.png)
 
-![](osi-tcp.png)
+![](assets/image/osi-tcp.png)
 
 
 ###The Layers

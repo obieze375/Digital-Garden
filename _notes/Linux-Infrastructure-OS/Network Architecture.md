@@ -1,2 +1,2 @@
-![](image/soho.png)
+![](assets/image/soho.png)
 

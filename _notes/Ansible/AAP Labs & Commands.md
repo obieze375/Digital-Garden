@@ -3,13 +3,13 @@
 
 https://www.redhat.com/en/interactive-labs
 
-  ![](AAP.png)
+  ![](assets/AAP.png)
 
 #### A recap: Ansible Automation Platform 2 component overview
 
 Ansible Automation Platform 2 introduced an entire suite of tools and components that enables enterprises to scale automation across their organizations. Ansible Automation Platform is no longer just an upstream command line Ansible package with support, nor is the platform simply just a graphical user interface for Ansible. Let's look at a high level diagram that details the different components available:
 
-  ![](AAP2.png)
+  ![](assets/AAP2.png)
 There are a lot of components besides just the well known “ansible-*” binary command line tools. Red Hat has developed multiple components to help customers create, manage and scale their automation. Let’s break these down and highlight what has been released!
 
 **Execution environment builder** ([documentation](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/ansible_builder_guide))**:** This is a command line tool that helps automation creators quickly package together their automation into containerized images called automation execution environments .
@@ -303,7 +303,7 @@ optional arguments:
 
   
 
-![](Ansible/ansible-navigator-welcome.png)
+![](assets/Ansible/ansible-navigator-welcome.png)
 
   
 
@@ -511,7 +511,7 @@ $ ansible-navigator doc ping
 
   
 
-![](https://www.techbeatly.com/wp-content/uploads/2021/12/ansible-navigator-doc-techbealy.png)
+![](assets/https://www.techbeatly.com/wp-content/uploads/2021/12/ansible-navigator-doc-techbealy.png)
 
   
 
@@ -531,7 +531,7 @@ $ ansible-navigator images
 
   
 
-![](Ansible/ansible-navigator-images-techbealy.png)
+![](assets/Ansible/ansible-navigator-images-techbealy.png)
 
   
 
@@ -551,7 +551,7 @@ $ ansible-navigator collections
 
   
 
-![](Ansible/ansible-navigator-collections-techbealy.png)
+![](assets/Ansible/ansible-navigator-collections-techbealy.png)
 
   
 
@@ -571,7 +571,7 @@ $ ansible-navigator run site.yml -m stdout
 
   
 
-![](Ansible/ansible-navigator-run-1024x446.png)
+![](assets/Ansible/ansible-navigator-run-1024x446.png)
 
   
 
@@ -649,11 +649,11 @@ List and explore the inventory details.
 
   
 
-![](Ansible/ansible-navigator-inventory-1.png)
+![](assets/Ansible/ansible-navigator-inventory-1.png)
 
   
 
-![](Ansible/ansible-navigator-inventory-2.png)
+![](assets/Ansible/ansible-navigator-inventory-2.png)
 
   
 

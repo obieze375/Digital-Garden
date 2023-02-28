@@ -1,4 +1,0 @@
-
-## SOHO
-
-![](soho.png)
