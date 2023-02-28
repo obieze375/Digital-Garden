@@ -15,7 +15,7 @@ Let’s get started with: The first thing we need is an inventory of your manage
 
 Create the inventory:
 
-  - In the web UI menu on the left side, go to **RESOURCES** → **Inventories**, click the ![plus](AAP/green_plus.png) button on the right side and choose **Inventory**.
+  - In the web UI menu on the left side, go to **RESOURCES** → **Inventories**, click the ![plus](assets/AAP/green_plus.png) button on the right side and choose **Inventory**.
 
 
   <table>
@@ -72,7 +72,7 @@ Note the names for the nodes and the IP addresses, we will use them to fill the 
 
   - Click on  the **HOSTS** button
 
-  - To the right click the ![plus](AAP/green_plus.png) button.
+  - To the right click the ![plus](assets/AAP/green_plus.png) button.
 
   - **HOST NAME:** `node1`
 
@@ -119,13 +119,13 @@ What does this mean?
 
 Now we will configure the credentials to access our managed hosts from Tower. In the **RESOURCES** menu choose **Credentials**. Now:
 
-Click the ![plus](AAP/green_plus.png) button to add new credentials
+Click the ![plus](assets/AAP/green_plus.png) button to add new credentials
 
   - **NAME:** Workshop Credentials
 
   - **ORGANIZATION:** Default
 
-  - **CREDENTIAL TYPE:** Click on the magnifying glass, pick **Machine** and click ![plus](AAP/select.png)
+  - **CREDENTIAL TYPE:** Click on the magnifying glass, pick **Machine** and click ![plus](assets/AAP/select.png)
 
   - **USERNAME:** student\<X\> - make sure to replace the **\<X\>** with your actual student number!
 
