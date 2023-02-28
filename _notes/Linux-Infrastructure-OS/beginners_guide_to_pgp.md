@@ -6,7 +6,7 @@ This is the first installment of what will likely be a series of articles aimed 
 
 We’re going to start off this series by introducing you to PGP, which is by far the most widely used encryption software available and a critical component to online privacy. Whether you’re purchasing drugs from Silk Road or just sending emails to friends and family, it’s something with which even casual internet users should familiarize themselves.
 
-###What is PGP?
+## What is PGP?
 
 PGP stands for Pretty Good Privacy. At it’s core, it is an internet standard (called OpenPGP) used for data encryption and digital signatures. Software that employs this standard is available in both a free, open source version produced by the Free Software Foundation called the GNU Privacy Guard (or GPG for short) as well as a low-cost commercial version.
 
@@ -18,13 +18,13 @@ PGP makes use of public-key encryption. One key (a public key) is used to encryp
 
 As a new user, you will generate a new public-private key pair. Just like the names suggest, you’ll share your public key with others so that they can send you encrypted messages or files, while keeping your private key secret so that you can decrypt the data. The process by which the key pair is generated makes it impossible (given current technology and knowledge of mathematics) for an attacker to derive your private key from the public key.
 
-###Use Cases
+## Use Cases
 
 The most obvious use case for this type of encryption is email. Anyone who has your public key can send you encrypted emails which only you can view. Likewise, you can send encrypted emails to your contacts by first downloading their public keys. In a future post we’ll provide a more thorough tutorial demonstrating how to set up an email client to work with PGP. What you need to keep in mind, however, is only the body of the email will be encrypted. The subject and metadata (to, from, cc, and timestamp) will still be visible to anyone snooping on your emails.
 
 You aren’t limited to just encrypting emails either. Buyers at anonymous marketplaces like Silk Road frequently download their merchant’s public key and use it to encrypt their shipping address so that only the merchant view it. Edward Snowden persuaded journalist Glenn Greenwald to set up PGP prior to leaking the top secret classified documents that revealed the depths of the NSA’s spying operation. You can encrypt whole folders and files with your own public key to protect them from attackers who may gain access to your hard drive. In other words, PGP can be used in just about every conceivable case where strong encryption is needed.
 
-###Digital Signatures
+## Digital Signatures
 
 Another feature of public-key cryptography is it allows for the creation of something called digital signatures. Much like your real life signature, a digital signature can be used to authenticate data but with the added benefit of being completely unforgeable (again given the current state of cryptography).
 
@@ -38,11 +38,11 @@ Returning to Edward Snowden, suppose the NSA had intercepted the classified docu
 
 Digital signatures are also extremely useful in verifying the integrity of software. A great example here would be Bitcoin wallets. Given the security implications, you want to be able to trust that the wallet you download is legitimate and wont leak information that would allow someone to steal your bitcoins. While all Bitcoin wallets are open source, unless you check and compile the source code yourself, you will most likely download a pre-compiled version that could contain malicious lines of code. Software developers will typically sign the software and provide a link to download the public key used for signing. With Bitcoin-Qt, lead developer Gavin Andresen signs new versions with his PGP key. Simply by checking the signature with his public key you can guarantee you’ve downloaded a legitimate copy.
 
-###How Secure Is It?
+## How Secure Is It?
 
 If all of this is new to you, you’re likely wondering how secure is the encryption used in PGP. Can we really trust it to protect us from from the NSA and its $52.9 billion black budget? All I can really say is that the cryptographic algorithms used in PGP are all part of the public domain have been heavily vetted by the community of experts. At this point in time there are no feasible attacks known to the general public or academia. It’s certainly possible that the NSA has access to highly advanced math that isn’t publicly known, but even there the best attacks typically don’t reveal the plaintext, rather they just make the keys slightly easier to brute force. The fact that the NSA has pressured Google, Microsoft, Apple etc. into giving them backdoors into their systems seems to be prima facie evidence that they can’t break commercial cryptographic algorithms.
 
-###Getting Started
+## Getting Started
 
 The first thing you need to do to get started is download and install GPG. If you use the Ubuntu operating system you’re in luck, you already have it. It can be found in the apps menu as “Passwords and Keys”.
 
@@ -56,7 +56,7 @@ And Mac users should download the GPG Suite for OS X from here.
 
 In each of these operating systems you can access GPG as well as a number of advanced options from the command line, but as a new user, you’re better off learning to use the GUI for now.
 
-###Generating A New Certificate
+## Generating A New Certificate
 
 In PGP a “certificate” is essentially a public key with extra data attached to help others verify that the key really belongs to you. In practice this is usually your name, email address and one or more digital signatures from others (more on that later).
 
@@ -114,19 +114,19 @@ QjgA/j1J7nN42zDMJxoAKQDvp+H3dErZVY7hJ8qHeGVbExWGAP97G/jWhl6FEg7M
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-###Key Servers
+## Key Servers
 
 You might want to consider uploading your public key to a key server such as the MIT Key Server or PGP Global Directory. These are searchable directories from which other people can download your public key without first asking you for it. This functionality comes in especially handy when using email. Some email clients can be configured to search the key servers for the PGP keys of your contacts or anyone who has sent you an encrypted email and import them automatically.
 
 Just keep in mind that once you upload a key to a server, you typically can’t remove it. It’s probably a good idea to play around with PGP first, get used to it, then once you’ve created your permanent key, upload it. That way you don’t litter the key server with multiple keys bearing your name.
 
-###Importing Keys
+## Importing Keys
 
 In order to encrypt files to send to others, you will first need to import their public key into PGP. You can do this by downloading the .asc file containing their public key (either directly from others or from a key server), clicking “Import” or “Import Certificate”, and selecting the file. In Linux you can import a key simply by double clicking the .asc file. In Windows you have the option to copy the public key block and import it directly from the clipboard.
 
 The software will typically let you view, edit and sign the public keys on your keyring. More on signing other people’s keys later.
 
-###Encrypting Data
+## Encrypting Data
 
 You have two options for encrypting data in PGP ― you can encrypt a plain text message from the clipboard or encrypt whole files. Let’s start with encrypting plain text messages. The first thing you need to do is pull up your plain text editor (Notepad in Windows, GNU Emacs works well for this in Linux). You’ll have to forgive me for not being familiar with OS X, but I assume you can encrypt from the clipboard in that operating system (though I’m not positive).
 
@@ -196,7 +196,7 @@ Notice that the message is at the top under the header, while the signature is a
 
 Also keep in mind that encrypting and signing are not mutually exclusive. You can opt to both encrypt and sign data to protect the message from eavesdroppers and allow the recipient to verify the message came from you.
 
-###Verifying Signatures
+## Verifying Signatures
 
 To verify a signature on a signed message or file you will obviously have to first download and import the corresponding public key. Just like with decryption, you can either verify the signed message from your clipboard or by selecting the file. If you’re verifying a signed file, you’ll likely be prompted to select both the file and the detached signature (.sig) file.
 
@@ -255,7 +255,7 @@ user@users-desktop:~$ md5sum [FILE]
 
 Otherwise, you could easily use an online hash calculator.
 
-###Key Management
+## Key Management
 
 Finally, we should probably talk a little about key management. One of the downsides to PGP is susceptibility to something called a man-in-the-middle attack. This attack works like this: Let’s say you want to securely communicate with someone using PGP. The first thing you would do is download their public key. However, it may be possible for an attacker to intercept your internet communications before they reach the server containing the public key. The attacker could send you one of his own public keys and make you think it’s the public key of your communication partner. Not knowing any better, you would encrypt your messages with the attacker’s public key allowing him view all your communications. Even worse, the attacker could re-encrypt the message with the correct public key and forward it along it the destination. Neither you nor your communication partner would know the message was intercepted.
 
