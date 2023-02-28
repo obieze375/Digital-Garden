@@ -17,7 +17,7 @@ Create the inventory:
 
   - In the web UI menu on the left side, go to **RESOURCES** → **Inventories**, click the ![plus](images/green_plus.png) button on the right side and choose **Inventory**.
 
-
+```html
   <table>
     <tr>
       <th>Parameter</th>
@@ -34,7 +34,7 @@ Create the inventory:
   </table>
 
   - Click **SAVE**
-
+```
 
 Now there will be two inventories, the **Demo Inventory** and the **Workshop Inventory**. In the **Workshop Inventory** click the **Hosts** button, it will be empty since we have not added any hosts there.
 

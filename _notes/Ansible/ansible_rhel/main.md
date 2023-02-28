@@ -95,7 +95,5 @@ There is also a series of exercises that go above and beyond our normal workshop
 
 [[main]] 
 
-
----
 ![Red Hat Ansible Automation](../../images/rh-ansible-automation-platform.png)
 
