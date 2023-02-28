@@ -1,6 +1,5 @@
 # Ad Hoc Commands, Templates and Variables
 
-**Read this in other languages**: ![uk](../../../../images/uk.png) [English](main.md),  ![japan](../../../../images/japan.png)[日本語](README.ja.md), ![brazil](../../../../images/brazil.png) [Portugues do Brasil](README.pt-br.md).
 
 * [Step 1 - Bonus Lab: Ad Hoc Commands](#step-1---bonus-lab-ad-hoc-commands)
 * [Step 2 - Bonus Lab: Templates and Variables](#step-2---bonus-lab-templates-and-variables)
@@ -86,6 +85,8 @@ listen_port: 80
 
   - Edit the "Listen" directive in `httpd.conf.j2` to make it look like this:
 
+
+
 <!-- {% raw %} -->
 ```ini
 [...]
@@ -134,7 +135,7 @@ First run the playbook itself, then run curl against `node1` with port `8080` an
 </body>
 ```
 
-----
+
 
 
 [[ansible_rhel/1.1-setup-README]] 

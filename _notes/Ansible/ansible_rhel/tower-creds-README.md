@@ -1,6 +1,5 @@
 # Exercise 2.2 - Inventories, credentials and ad hoc commands
 
-**Read this in other languages**: ![uk](../../../../images/uk.png) [English](main.md),  ![japan](../../../../images/japan.png)[日本語](README.ja.md), ![brazil](../../../../images/brazil.png) [Portugues do Brasil](README.pt-br.md).
 
 * [Create an Inventory](#create-an-inventory)
 * [Machine Credentials](#machine-credentials)
@@ -18,6 +17,7 @@ Create the inventory:
 
   - In the web UI menu on the left side, go to **RESOURCES** → **Inventories**, click the ![plus](images/green_plus.png) button on the right side and choose **Inventory**.
 
+
   <table>
     <tr>
       <th>Parameter</th>
@@ -34,6 +34,7 @@ Create the inventory:
   </table>
 
   - Click **SAVE**
+
 
 Now there will be two inventories, the **Demo Inventory** and the **Workshop Inventory**. In the **Workshop Inventory** click the **Hosts** button, it will be empty since we have not added any hosts there.
 
@@ -202,7 +203,7 @@ Okay, a small challenge: Run an ad hoc to make sure the package "tmux" is instal
 >
 > The yellow output of the command indicates Ansible has actually done something (here it needed to install the package). If you run the ad hoc command a second time, the output will be green and inform you that the package was already installed. So yellow in Ansible doesn’t mean "be careful"…​ ;-).
 
-----
+
 
 [[ansible_rhel/1.1-setup-README]] 
 
