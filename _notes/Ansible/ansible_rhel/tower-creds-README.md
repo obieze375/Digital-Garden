@@ -235,4 +235,4 @@ Okay, a small challenge: Run an ad hoc to make sure the package "tmux" is instal
 [[main]] 
 
 
-[Click here to return to the Ansible for Red Hat Enterprise Linux Workshop](../../README.md#section-2---ansible-tower-exercises)
+
