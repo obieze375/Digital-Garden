@@ -467,6 +467,30 @@ permalink: /
 
 [[1.2-thebasics-README]]
 
+[[1.3-playbook-README]]  
+
+[[1.4-variables-README]]  
+
+[[1.5-handlers-README]]  
+
+[[1.6-templates-README]]   
+
+[[1.7-role-README]]  
+
+[[2.1-intro-README]]  
+
+[[2.2-cred-README]]  
+
+[[2.3-projects-README]]   
+
+[[2.4-surveys-README]]  
+
+[2.5-rbac-README]]   
+
+[[2.6-workflows-README]]  
+
+[[2.7-wrap-README]]  
+
 
 
 
