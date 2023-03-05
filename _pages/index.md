@@ -5,20 +5,10 @@ id: home
 permalink: /
 ---
 
-* [Linux](## Linux)
-* [Ansible](##Ansible)
-* [Container](##Container)
-* [AWS](##AWS)
-* [Network](##Networking Engineering)
-* [Jenkins](##Jenkins)
-* [Terraform & Terragrunt](##Terraform & Terragrunt)
-* [Cybersecurity](## Ethical Hacking & CyberSecurity)
-* [Python](## Python)
-* [SQL](## MySQL & Oracle SQL )
-* [Architecture](## Architecture)
+<a href="## Linux">Linux</a>
 
 
-<div id="Linux"></div>
+
 
 ## Linux: 
 
