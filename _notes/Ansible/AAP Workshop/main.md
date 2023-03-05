@@ -37,27 +37,40 @@ Having said that, the exercises themselves should take roughly 4-5 hours. The fi
 
 ## Lab Diagram
 
-![ansible rhel lab diagram](../../images/rhel_lab_diagram.png)
+![ansible rhel lab diagram](assets/AAP/rhel_lab_diagram.png)
 
 ## Section 1 - Command-line Ansible Exercises
 
-* [Exercise 1.1 - Check the Prerequisites](1.1-setup)
-* [Exercise 1.2 - The Ansible Basics](1.2-thebasics)
-* [Exercise 1.3 - Writing Your First Playbook](1.3-playbook)
-* [Exercise 1.4 - Using Variables](1.4-variables)
-* [Exercise 1.5 - Conditionals, Handlers and Loops](1.5-handlers)
-* [Exercise 1.6 - Templates](1.6-templates)
-* [Exercise 1.7 - Roles](1.7-role)
+* Check the Prerequisites - [[1.1-setup-README]]  
+
+* The Ansible Basics      - [[1.2-thebasics-README]] 
+
+* Writing Your First Playbook - [[1.3-playbook-README]] 
+
+* Using Variables - [[1.4-variables-README]] 
+
+* Conditionals, Handlers and Loops - [[1.5-handlers-README]]  
+
+* Templates - [[1.6-templates-README]]  
+
+* Roles - [[1.6-templates-README]]  
 
 ## Section 2 - Ansible Automation Platform Exercises
 
-* [Exercise 2.1 - Introduction to automation controller](2.1-intro)
-* [Exercise 2.2 - Inventories, credentials and ad hoc commands](2.2-cred)
-* [Exercise 2.3 - Projects & job templates](2.3-projects)
-* [Exercise 2.4 - Surveys](2.4-surveys)
-* [Exercise 2.5 - Role based access control](2.5-rbac)
-* [Exercise 2.6 - Workflows](2.6-workflows)
-* [Exercise 2.7 - Wrap up](2.7-wrap)
+* Introduction to automation controller - [[2.1-intro-README]]  
+
+* Inventories, credentials and ad hoc commands - [[2.2-cred-README]] 
+
+* Projects & job templates - [[2.3-projects-README]]  
+
+* Surveys - [[2.4-surveys-README]] 
+
+* Role based access control - [[2.5-rbac-README]]   
+
+* Workflows - [[2.6-workflows-README]]
+
+* Wrap up - [[2.7-wrap-README]]  
+
 
 ## Supplemental Exercises
 

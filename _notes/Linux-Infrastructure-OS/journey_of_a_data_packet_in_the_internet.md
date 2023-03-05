@@ -72,4 +72,6 @@ After this the response is formed and transmitted back in the same way as descri
 
 There you have it. This is how a data packet travels from source to destination in the Internet.
 
+![](assets/image/tcppacket.gif)
+
 [[Index]] 

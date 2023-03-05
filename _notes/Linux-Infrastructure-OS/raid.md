@@ -8,7 +8,7 @@ Main article: Standard RAID levels
 Storage servers with 24 hard disk drives and built-in hardware RAID controllers supporting various RAID levels.
 A number of standard schemes have evolved. These are called levels. Originally, there were five RAID levels, but many variations have evolved, notably several nested levels and many non-standard levels (mostly proprietary). RAID levels and their associated data formats are standardized by the Storage Networking Industry Association (SNIA) in the Common RAID Disk Drive Format (DDF) standard
 
-![](raid_levels.png)
+![](assets/image/raid_levels.png)
 
 ![](StorageOptimizeRAID.jpg)
 

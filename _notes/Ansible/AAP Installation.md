@@ -2,10 +2,10 @@
 
 # Installing Automation Controller and Private Automation Hub
 
-## The lab command downloads the certs and the controller directories to the workstation machine. Verify the contents in both directories. 
+ The lab command downloads the certs and the controller directories to the workstation machine. Verify the contents in both directories. 
 
 
-## The certs directory contains the signed certificates for the automation controller,the private automation hub and the database servers, their associated private keys,and a GLS Training Classroom CA certificate. Use the tree command to list the files in the certs directory. 
+ The certs directory contains the signed certificates for the automation controller,the private automation hub and the database servers, their associated private keys,and a GLS Training Classroom CA certificate. Use the tree command to list the files in the certs directory. 
 
 ```bash
 [student@workstation ~]$ tree certs
@@ -35,7 +35,7 @@ certs
 
 You do not use all of these files in this exercise. 
 
-## The controller directory contains the manifest file to use for subscribing to then automation controller. Use the tree command to verify this. 
+ The controller directory contains the manifest file to use for subscribing to then automation controller. Use the tree command to verify this. 
 
 ```bash
 [student@workstation ~]$ tree controller
@@ -49,7 +49,7 @@ controller
 
 
 
-## The lab command also downloads the Red Hat Ansible Automation Platform Bundle installer. Extract it. For simplicity, rename the extracted directory to aap2.2-bundle. 
+ The lab command also downloads the Red Hat Ansible Automation Platform Bundle installer. Extract it. For simplicity, rename the extracted directory to aap2.2-bundle. 
 
 Change to the directory that contains the extracted contents. 
 
@@ -64,7 +64,7 @@ Change to the directory that contains the extracted contents.
  
 
 
-## Modify the inventory file to specify the following details: 
+ Modify the inventory file to specify the following details: 
 
 • The three servers to install
 • The passwords for the administrator account on each server
@@ -74,9 +74,9 @@ Change to the directory that contains the extracted contents.
 
 
 
-## Edit the inventory file to specify the fully qualified domain name (FQDN) of the automation controller, the private automation hub, and the database servers as follows: 
+ Edit the inventory file to specify the fully qualified domain name (FQDN) of the automation controller, the private automation hub, and the database servers as follows: 
 
-## Section of the inventory FQDN
+ Section of the inventory FQDN
 
 ```bash
 [automationcontroller] controller.lab.example.com
@@ -90,9 +90,9 @@ Change to the directory that contains the extracted contents.
 
 
 
-## Set the values for the following variables related to the automation controller, its container registry, and its database.
+ Set the values for the following variables related to the automation controller, its container registry, and its database.
 
-## Variable Value
+ Variable Value
 
 ```bash
 
@@ -112,9 +112,9 @@ registry_password redhat
 You use the private automation hub as the container registry for the automation
 controller. 
 
-## Set the values for the following variables related to the private automation hub and its database: 
+ Set the values for the following variables related to the private automation hub and its database: 
 
-## Variable Value 
+ ## Variable Value 
 
 ```bash
 automationhub_admin_password redhat
@@ -126,10 +126,10 @@ automationhub_pg_password redhat
 
 
 
-## Set the variables for the signed certificates for the controller, hub, and db servers, the associated private keys, and the GLS Training Classroom CA certificate as follows:
+ Set the variables for the signed certificates for the controller, hub, and db servers, the associated private keys, and the GLS Training Classroom CA certificate as follows:
 
 
-## Variable Value 
+ ## Variable Value 
 
 ```bash
 custom_ca_cert /home/student/certs/classroom-ca.pem
@@ -154,7 +154,7 @@ db.lab.example.com.key
 
 
 
-## When modified, the uncommented content of the inventory file displays as follows: 
+ When modified, the uncommented content of the inventory file displays as follows: 
 
 ```bash
 [automationcontroller]
@@ -214,7 +214,7 @@ You can use the ~/install-installation/inventory file for comparison.
 As the root user, run the installation script. 
 
 
-## Use the sudo command to change to the root user, using student as the password. Change to the /home/student/aap2.2-bundle directory and execute the setup.sh installation script. The script can take up to 20 minutes to complete. 
+ Use the sudo command to change to the root user, using student as the password. Change to the /home/student/aap2.2-bundle directory and execute the setup.sh installation script. The script can take up to 20 minutes to complete. 
 
 
 ```bash
@@ -265,14 +265,14 @@ environment.
 
 ```
 
-## After the installer finishes successfully, exit from the root session. 
+ After the installer finishes successfully, exit from the root session. 
 
 ```bash
 [root@workstation aap2.2-bundle]# exit
 ```
 
 
-## On the workstation machine, navigate to the automation controller web UI to finish the initial configuration. Verify that no warning messages are displayed about the authenticity of the certificate for the automation controller. 
+ On the workstation machine, navigate to the automation controller web UI to finish the initial configuration. Verify that no warning messages are displayed about the authenticity of the certificate for the automation controller. 
 
 Open a browser and navigate to https://controller.lab.example.com.
 Because you configured the certificate for the automation controller in the
@@ -280,7 +280,7 @@ inventory file, and because the workstation machine trusts the CA that signed
 the certificate, no warning message is displayed about the authenticity of the
 certificate. 
 
-Important 
+## Important 
 
 The machines in the classroom environment trust any certificate signed by
 the GLS Training Classroom CA. If your organization uses a corporate or an
@@ -292,39 +292,39 @@ directory and run the update-ca-trust command.
 These steps are not necessary if you use certificates signed by a publicly
 recognizable certificate authority.
 
-## Click the lock icon next to the URL, and then on the pop-up menu, verify this is a secure connection. 
+ Click the lock icon next to the URL, and then on the pop-up menu, verify this is a secure connection. 
 
 Optional. Click Connection secure, More Information, and then click View Certificate
 to view the certificate. 
 
-## Log in to the web UI as the admin user with redhat as the password. 
+ Log in to the web UI as the admin user with redhat as the password. 
 
-## The screen automatically displays the option to upload the subscription manifest file.Click Browse and select the manifest.zip file located in the /home/student/controller directory. Click Next. 
+ The screen automatically displays the option to upload the subscription manifest file.Click Browse and select the manifest.zip file located in the /home/student/controller directory. Click Next. 
 
-## Do not make any changes to the User and Insights analytics step. Click Next.
+ Do not make any changes to the User and Insights analytics step. Click Next.
 
 Although the red asterisk in the Username and Password fields might suggest that
 it is mandatory to provide your Red Hat credentials, it is not. When you provide
 the credentials the automation controller can send the collected data to https://
 cloud.redhat.com. This is not necessary for this exercise. 
 
-## Click Submit to accept the End User License Agreement. 
+ Click Submit to accept the End User License Agreement. 
 
-## The automation controller web UI displays the Dashboard. 
+ The automation controller web UI displays the Dashboard. 
 
-## On the workstation machine, navigate to the private automation hub web UI to ensure that the installation was successful. Verify that there is no warning message about the authenticity of the certificate for the private automation hub. 
+ On the workstation machine, navigate to the private automation hub web UI to ensure that the installation was successful. Verify that there is no warning message about the authenticity of the certificate for the private automation hub. 
 
-## Open a new tab in the browser and navigate to https://hub.lab.example.com. As with the controller server, there is no warning message about the authenticity of the certificate. Click the lock next to the URL, and then verify the secure connection on the pop-up menu. 
+ Open a new tab in the browser and navigate to https://hub.lab.example.com. As with the controller server, there is no warning message about the authenticity of the certificate. Click the lock next to the URL, and then verify the secure connection on the pop-up menu. 
 
-## Log in to the web UI as the admin user with redhat as the password. 
+ Log in to the web UI as the admin user with redhat as the password. 
 
-## The private automation hub web UI displays the dashboard. 
+ The private automation hub web UI displays the dashboard. 
 
-## As the postgres user on the database server, verify the existence of the awx and the
+ As the postgres user on the database server, verify the existence of the awx and the
 privateautomationhub databases. 
 
 
-## Log in to the db.lab.example.com database server as the student user. Use the sudo command to become the postgres user, and then list the databases using the psql command. Verify that both databases appear in the list. 
+ Log in to the db.lab.example.com database server as the student user. Use the sudo command to become the postgres user, and then list the databases using the psql command. Verify that both databases appear in the list. 
 
 ```bash
 [student@workstation aap2.2-bundle]$ ssh student@db.lab.example.com
@@ -349,7 +349,7 @@ awx | awx | UTF8 | en_US.UTF-8 | en_US.UTF-8 | ...
 
 
 
-## Exit from the postgres session and from the db machine. 
+ Exit from the postgres session and from the db machine. 
 
 ```bash
 [postgres@db ~]$ exit

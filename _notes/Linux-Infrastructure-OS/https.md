@@ -89,4 +89,58 @@ Once he complied, GoDaddy, the Lavabit CA, revoked the certificate, having (corr
 
 HTTPS is not unbreakable, and the SSL protocol has to evolve constantly as new attacks against it are discovered and squashed. But it is still an impressively robust way of transmitting secret data without caring who sees your messages. There are of course many implementation details not mentioned here, such as the exact format and order of the handshake messages, abbreviated handshakes to pick up recent sessions without having to renegotiate keys and cipher suites, and the numerous different encryption options available at each stage. The key thing to remember is that whilst HTTPS keeps data safe on the wire to its destination, it in no way protects you (as a user or a developer) against XSS or database leaks or any of the other things-that-go-bump-in-the-night. Be happy that it’s got your back, but stay vigilant. In the immortal words of Will Smith, “Walk in shadow, move in silence, guard against extra-terrestrial violence.”
 
+### HTTP Response Codes
+
+  
+
+Response codes indicate whether a request was completed successfully or failed. You’ve probably seen them floating around in pop culture references or been on the receiving end of a hyperlink that goes nowhere.  
+  
+
+There are 4 categories of HTTP responses:
+
+  
+
+1.  200s: Successful responses
+
+2.  300s: Redirects
+
+3.  400s: Client errors
+
+4.  500s: Server errors
+
+  
+
+Take a look at some of the most common response codes:
+
+  
+
+<table><tbody><tr><td><strong>Code</strong></td><td><strong>What It’s Telling</strong></td><td><strong>What it Means</strong></td></tr><tr><td>200</td><td>OK</td><td>Request succeeded.</td></tr><tr><td>302, 307</td><td>Found, Temporary Redirect</td><td>The URI of the requested resource has been changed temporarily.<br></td></tr><tr><td>301, 308</td><td>Moved Permanently, Permanent Redirect</td><td>The URI of the requested resource has been changed&nbsp;<em>permanently.</em><br></td></tr><tr><td>400</td><td>Bad Request</td><td>The server can’t understand the request being sent.</td></tr><tr><td>401</td><td>Unauthorized</td><td>The client must authenticate itself before sending the request.</td></tr><tr><td>403</td><td>Forbidden</td><td>The client does not have enough permission to access the content.</td></tr><tr><td>404</td><td>Not Found</td><td>The server can’t find the requested resource.</td></tr><tr><td>408</td><td>Request Timeout</td><td>The response was sent to an idle connection and the server wants to terminate it.</td></tr><tr><td>418</td><td>I am a Teapot</td><td>The server refuses to brew coffee because it is, permanently, a teapot.</td></tr><tr><td>500</td><td>Internal Server Error</td><td>The server does not know how to handle a request.</td></tr><tr><td>502</td><td>Bad Gateway</td><td>The server you are trying to access is a gateway or a reverse proxy (it sits between the client and an actual server that serves the page). You get this error when the gateway gets an incorrect response from a source server.</td></tr><tr><td>503</td><td>Service Unavailable</td><td>The server can’t process the request. This usually happens when a server is down or overloaded.<br></td></tr><tr><td>504</td><td>Gateway timeout</td><td>Similar to 502, the gateway can’t get a response in time.</td></tr></tbody></table>
+
+  
+
+### HTTP Headers
+
+  
+
+HTTP headers allow the client to add additional information to a request for purposes such as authentication, caching, and specifying the type of client device sending the request. Headers are widely used to control traffic and implement features such as canary releases, blue-green deployments, and a/b testing.
+
+  
+
+Headers fall into 4 general contexts:
+
+  
+
+1.  General Header: A header that works for both response and requests messages.
+
+2.  Request Header: A header that only applies to request messages from a client.
+
+3.  Response Header: A header that only applies to responses from a server.
+
+4.  Entity Header: A header that gives information about the entity itself or the resource requested.
+
+  
+
+Headers are case-insensitive in the structure Name: Value.
+
+
 [[Index]] 

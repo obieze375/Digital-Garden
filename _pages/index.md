@@ -5,7 +5,20 @@ id: home
 permalink: /
 ---
 
-## Linux:
+* [Linux](## Linux)
+* [Ansible](## Ansible)
+* [Container](## Container)
+* [AWS](## AWS)
+* [Network](## Networking Engineering)
+* [Jenkins](## Jenkins)
+* [Terraform & Terragrunt](## Terraform & Terragrunt)
+* [Cybersecurity](## Ethical Hacking & CyberSecurity)
+* [Python](## Python)
+* [SQL](## MySQL & Oracle SQL )
+* [Architecture](## Architecture)
+
+
+## Linux: <br id="Linux">
 
 [[Background Knowledge of OS's]] 
 
@@ -351,13 +364,13 @@ permalink: /
 
 [[Requesting a Webpage]] 
 
-[[Linux-Infrastructure-OS/DHCP]] 
+[[DHCP]] 
 
 [[Network Architecture]]
 
 
 
-## Ansible: 
+## Ansible: <br id="Ansible">
 
  [[Introduction]] 
 
@@ -463,7 +476,7 @@ permalink: /
 
 
 
-## Containers: 
+## Containers: <br id="Containers">
 
 [[Docker]]
 
@@ -477,7 +490,7 @@ permalink: /
 
 [[AWS]]
 
-## Network Engineering:
+## Network Engineering: <br id="Network"> 
 
 [[ACL]]
 
@@ -487,7 +500,7 @@ permalink: /
 
 [[Configure Routers _ Switches]]
 
-[[DevOps & Infra Notes/CCNAmd/Interview Questions/DHCP]]
+[[DHCP]]
 
 [[Error Codes]]
 
@@ -515,33 +528,33 @@ permalink: /
 
 [[Packet Tracer Commands]] 
 
-## Jenkins:
+## Jenkins: <br id="Jenkins">
 
 [[Jenkins-pipeline-templates]]
 
 [[Jenkins-workplan]]
 
-## Terraform & Terragrunt:
+## Terraform & Terragrunt: <br id="Terraform">
 
 [[Link to Repo]]
 
-## Ethical Hacking & CyberSecurity
+## Ethical Hacking & CyberSecurity <br id="Cybersecurity">
 
 [[Online-Privacy-Security-101]]
 
 
 
-## Python 
+## Python <br id="Python">
 
 [[Python Cheatsheet]]
 
-## MySQL & Oracle SQL
+## MySQL & Oracle SQL <br id="SQL">
 
  [[MySQL]] 
 
  [[Oracle SQL]]  
 
 
-## Architecture
+## Architecture  <br id="Architecture">
 
  [[Architecture]]

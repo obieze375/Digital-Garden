@@ -2,7 +2,7 @@
 
 # SMTP
 
-###Sending an Email Message:
+### Sending an Email Message:
 ```
 import smtplib
 import email.utils
@@ -22,7 +22,7 @@ finally:
     server.quit()
 ```
 
-###Authentication and Encryption:
+### Authentication and Encryption:
 
 ```
 import smtplib

@@ -1,5 +1,27 @@
 [[Index]] 
 
+The most critical component of networking is the IP address. Every time you surf the internet, your browser is connected to its remote server using an IP address. You cannot use the internet or network without one.
+
+An IP address is a 32-bit number divided into four 8-bit sections called octets. It can be represented in both decimal and binary formats. An IP address may contain a subnetwork that’s different from the host. The address comes with a subnet mask that distinguishes the part of the IP address that is the network and the part that is the host address.
+
+For example, given an IP address of 192.168.12.20 with the subnet mask of 255.255.255.0, 192.168.12 represents a network address and .20 represents a host address. The concept of a netmask leads us to the idea of classful addressing, which divides the 32-bit IP address into 5 sub-classes.
+
+In classful addressing, all IP addresses have an 8-bit, 16-bit. or 24-bit network prefix. Class A has an 8-bit long network ID and a 24-bit host ID. There are over 16 million class A addresses. Class B has network and host IDs of 16 bits each—there are 65,535 class B addresses. Class C holds the smallest networks—254 addresses. Each Class C network ID is 24 bits long with an 8-bit long host.
+
+When ordering IP addresses, you want to keep in mind the size of your network and order a class that fits your needs. It’s conceptually easy to do this when you have very large or small networks. But problems arise in the middle when you’re in between Class B and C: you need more than 254 addresses but less than 65,535.
+
+Let’s use an example. Let’s assume that you need 1000 addresses in your network. It’s more than 254, so you have to go with the next largest class—Class B. But now you’re only occupying 1,000 addresses and left with 65,000 unused ones. It doesn’t make sense. One solution to this could be to use multiple class C ranges. But having a huge number of small networks makes routing overly complicated! In our search for a new solution to this IP trolley problem, we’ve started to break networks using Classless Inter-Domain Routing.
+
+Instead of having network classes with fixed sizes, network administrators are allowed to move the subnet boundary to anywhere inside the parent network. In other words, we are no longer limited by 8-bit, 16-bit, or 24-bit netmasks.
+
+Let’s go back to our example. Imagine that we have an address that gives us 254 hosts..but we want 300 hosts. Using the old solution, you could get two Class C ranges (making your life more complicated). Now with Classless Interdomain Routing, instead of getting an additional Class C network, we can simply decrease our netmask bits by one and get a network that has 510 hosts. That’s much more reasonable!
+
+The table below outlines the most common combination of addresses and netmasks and important details about them.
+
+<table><tbody><tr><td><strong>Prefix</strong></td><td><strong>Netmask</strong></td><td><strong>Number of addresses</strong></td><td><strong>Relation to class</strong></td><td><strong>Comment</strong></td></tr><tr><td>/32</td><td>255.255.255.255<br></td><td>1</td><td>Class C/256</td><td>Single host in a network</td></tr><tr><td>/25</td><td>255.255.255.128<br></td><td>128</td><td>Class C/2</td><td><br></td></tr><tr><td>/24</td><td>255.255.255.0<br></td><td>256<br></td><td>Class C</td><td><br></td></tr><tr><td>/23</td><td>255.255.254.0<br></td><td>512</td><td>Class C*2</td><td><br></td></tr><tr><td>/16</td><td>255.255.0.0<br></td><td>65,536<br></td><td>Class C*256 = Class B</td><td><br></td></tr><tr><td>/15</td><td>255.254.0.0<br></td><td>131,072<br></td><td>Class B*2</td><td><br></td></tr><tr><td>/8</td><td>255.0.0.0</td><td>16,777,216<br></td><td>Class B*256 = Class A</td><td><br></td></tr><tr><td>/0</td><td>0.0.0.0</td><td>4,294,967,296<br></td><td>Class A*256</td><td>0.0.0.0/0 means entire internet. Often used in public firewall rules</td></tr></tbody></table>
+
+
+
 # CIDR (Classless InterDomain Routing)
 
 CIDR (Classless Inter-Domain Routing) was introduced in 1993 (RCF 1517) replacing the previous generation of IP address syntax - classful networks. CIDR allowed for more efficient use of IPv4 address space and prefix aggregation, known as route summarization or supernetting.
