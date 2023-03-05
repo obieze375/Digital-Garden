@@ -6,19 +6,21 @@ permalink: /
 ---
 
 * [Linux](## Linux)
-* [Ansible](## Ansible)
-* [Container](## Container)
-* [AWS](## AWS)
-* [Network](## Networking Engineering)
-* [Jenkins](## Jenkins)
-* [Terraform & Terragrunt](## Terraform & Terragrunt)
+* [Ansible](##Ansible)
+* [Container](##Container)
+* [AWS](##AWS)
+* [Network](##Networking Engineering)
+* [Jenkins](##Jenkins)
+* [Terraform & Terragrunt](##Terraform & Terragrunt)
 * [Cybersecurity](## Ethical Hacking & CyberSecurity)
 * [Python](## Python)
 * [SQL](## MySQL & Oracle SQL )
 * [Architecture](## Architecture)
 
 
-## Linux: <br id="Linux">
+<div id="Linux"></div>
+
+## Linux: 
 
 [[Background Knowledge of OS's]] 
 
@@ -28,7 +30,7 @@ permalink: /
 
 [[Fundamentals of Computer Architecture1_v1.2.pdf]]
 
-[[Fundamentals of Computer Architecture2_v1.2.pdf]]]
+[[Fundamentals of Computer Architecture2_v1.2.pdf]]
 
 [[Git]]
 
