@@ -147,6 +147,7 @@ password.
 ## Launch the Demo Job Template job. 
 
 ## Navigate to Resources > Templates to display existing templates.
+
 ## Click the Launch Template icon to initiate the job. The Demo Job Template resource uses the Demo Credential machine credential resource to connect to the workstation.lab.example.com host in the Demo Inventory resource.
 
 

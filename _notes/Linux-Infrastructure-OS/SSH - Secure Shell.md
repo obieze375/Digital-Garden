@@ -300,13 +300,157 @@ remotefile 100% 7
 ```
 
 
+---
+created: 2023-04-24T14:14:46 (UTC +01:00)
+tags: []
+source: https://comtechies.com/password-authentication-aws-ec2.html
+author: byBibin Wilson
+---
+
+# How to Setup Password Authentication For AWS ec2 Instances
+
+> ## Excerpt
+> In this tutorial, I have added the configurations and steps required for password authentication for ec2 instances. You can setup password for root as well.
+
+---
+In this tutorial, I have added the configurations required for ec2 user password authentication for AWS ec2 Linux instances.
+
+## What is the default password for ec2?
+
+**By default, ec2 instances don’t have password authentication**. You have to use the private key to connect to the instances.
+
+However, you might have situations to use ec2 password-based authentication for your ec2 instances. So **it is possible to set up an ec2 user password manually**.
+
+I assume that you have an instance up and running. Follow the steps given below for the ec2 password authentication setup.
+
+Note: I highly discourage using ec2 user password authentication on cloud instances unless required. It is always safe to use private key-based authentication.
+
+Let’s get started with the setup.
+
+**Step 1:** Log in to the server using ssh client of your choice using the private key. For Windows machines, you can use putty for connecting to the instance. If you want the steps, you can follow this article. [Connecting ec2 instance using putty](https://comtechies.com/how-to-connect-an-amazon-ec2-ubuntu-linux-instances-using-putty.html).
+
+If you are using Mac or Linux, you can use the following command to connect to the instance.
+
+```
+ssh -i your-key.pem username@(public-ip-address)
+```
+
+**Step 2:**  Open the `sshd_config` file.
+
+```
+sudo vi /etc/ssh/sshd_config
+```
+
+**Step 3:**  Find the line containing “**`PasswordAuthentication`**” parameter and change its value from “**`no`**” to “**`yes`**“
+
+```
+PasswordAuthentication yes
+```
+
+![image/sshd.png](sshd.png)
+
+If you want to set up “**`root`**” ec2 user password, find  “**`PermitRootLogin`**” parameter and change its value from “**`prohibit-password`**” to “**`yes`**“
+
+After the changes, save the file and exit.
+
+> **Note**: If you are looking for a managed cloud hosting solution using AWS cloud, check out [Cloudways Hosting](https://comtechies.com/recommends/cloudways-hosting). It makes your AWS cloud hosting easy with less administrative overhead.
+
+**Step 4:** Setup ec2 user password using the “**`passwd`**” command along with the username.  
+
+You need to enter the password twice. For example, if you want to set up a password for “**`ubuntu`**” user, use the following command.
+
+```
+sudo passwd ubuntu
+```
+
+In AWS, different ec2 instances have different user names. Following are the default usernames of common ec2 instances.
+
+<table><tbody><tr><td><strong>Instance</strong></td><td><strong>Username</strong></td></tr><tr><td>Ubuntu</td><td>ubuntu</td></tr><tr><td>Redhat Linux</td><td>ec2-user</td></tr><tr><td>Amazon Linux</td><td>ec2-user</td></tr><tr><td>CentOS</td><td>centos</td></tr><tr><td>Debian</td><td>admin or root</td></tr></tbody></table>
+
+Default ec2 usernames to set password
+
+**Step 5:** Now, restart the “**sshd**” service using the following command.
+
+```
+sudo service sshd restart
+```
+
+**Step 6:** Now you can log out and log in using the password you set for the user. For example,
+
+```
+ssh ubuntu@35.162.225.240
+```
+
+I hope this ec2 user password setup article helps. Let me know in the comment section if you face any errors.
+
+##### Also Read
+
+[! Instance Password FAQ’s
+
+### How do I find my EC2 instance password?
+
+By default, the password authentication for ec2 Linux instances is disabled. Therefore, you need to allow PasswordAuthentication and manually create a password for the user. However, for windows ec2 instances, you will get the option to create an admin password while creating the ec2 windows instance.
 
 
+# Passwordless ssh between two AWS instances – 
 
+  
 
+> ## Excerpt
 
+> Hadoop clusters require passwordless shh between nodes for proper communication. This is all done on the instance you wish to connect FROM! The recipe how I made paswordless shh work between two in…
 
+  
 
+---
+
+Hadoop clusters require passwordless shh between nodes for proper communication.
+
+  
+
+This is all done on the instance you wish to connect FROM!
+
+  
+
+The recipe how I made paswordless shh work between two instances is the following:
+
+  
+
+-   **create ec2 instances** – they should be in the same subnet and have the same security group
+
+-   **Open ports between them** – make sure instances can communicate to each other. Use the default security group which has one rule relevant for this case:
+
+    -   **Type**: All Traffic
+
+    -   **Source**: Custom – id of the security group
+
+-   **Log in** to the instance you want to connect from to the other instance
+
+-   **Run**:
+
+    <table><tbody><tr><td><p>1</p></td><td><div><p><code>ssh</code><code>-keygen -t rsa -N </code><code>""</code> <code>-f </code><code>/home/ubuntu/</code><code>.</code><code>ssh</code><code>/id_rsa</code></p></div></td></tr></tbody></table>
+
+    to generate a new rsa key.
+
+-   Copy your private AWS key as ~/.ssh/my.key (or whatever name you want to use)
+
+-   Make sure you change the permission to 600
+
+  
+
+-   Copy the public key to the instance you wish to connect to passwordless
+
+  
+
+<table><tbody><tr><td><p>1</p></td><td><div><p><code>cat</code> <code>~/.</code><code>ssh</code><code>/id_rsa</code><code>.pub | </code><code>ssh</code> <code>-i ~/.</code><code>ssh</code><code>/my</code><code>.key ubuntu@10.0.0.X </code><code>"cat &gt;&gt; ~/.ssh/authorized_keys"</code></p></div></td></tr></tbody></table>
+
+  
+
+If you test the passwordless ssh to the other machine, it should work.
+
+  
+
+## Post navigation
 
 
 
