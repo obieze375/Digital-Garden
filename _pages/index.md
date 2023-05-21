@@ -358,8 +358,9 @@ permalink: /
 
 [[DHCP]] 
 
-[[Network Architecture]]
+[[Network Architecture]] 
 
+[[Red Hat Image Builder -UI]]
 
 
 ## Ansible: <br id="Ansible">
