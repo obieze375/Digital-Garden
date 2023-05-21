@@ -4,7 +4,7 @@
 
 The container images for the execution environments contain the necessary components to execute Ansible automation jobs. These include Python, Ansible (ansible-core), [Ansible Runner](https://ansible-runner.readthedocs.io/en/stable/), required Python libraries, and dependencies.
 
-![](ee.png)
+![](assets/ee.png)
 
 
 ## Use ansible-builder to create a custom execution environment
@@ -349,7 +349,7 @@ Storing signatures
 
   
 
-![](image-25.png)
+![](assets/image-25.png)
 
   
 
@@ -357,7 +357,7 @@ Storing signatures
 
   
 
-![](image-26.png)
+![](assets/image-26.png)
 
   
 
@@ -369,7 +369,7 @@ The image is available.
 
   
 
-![](image-27.png)
+![](assets/image-27.png)
 
   
 
@@ -393,7 +393,7 @@ You will use it to configure the Execution Environment on the controller.
 
   
 
-![](image-28.png)
+![](assets/image-28.png)
 
   
 
@@ -403,7 +403,7 @@ You will use it to configure the Execution Environment on the controller.
 
   
 
-![](image-29.png)
+![](assets/image-29.png)
 
   
 
@@ -411,7 +411,7 @@ You will use it to configure the Execution Environment on the controller.
 
   
 
-![](image-30.png) 
+![](assets/image-30.png) 
 
  ## Steps to push an EE to automation hub 
 

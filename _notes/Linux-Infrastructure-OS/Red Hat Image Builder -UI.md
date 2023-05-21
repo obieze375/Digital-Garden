@@ -79,12 +79,12 @@ I sense some disbelief, so I'll walk through an example. And if you prefer to le
 
 First, log in to the tool at [console.redhat.com](https://console.redhat.com/?intcmp=701f20000012ngPAAQ). Once you've logged in with your Red Hat Customer Portal account, navigate to **Red Hat Enterprise Linux** and select **Red Hat Insights**.
 
-![](rh_image.png)
+![](assets/rh_image.png)
 
 The link for **image builder** is toward the bottom of the Insights panel (or just navigate straight to the [tool](https://console.redhat.com/insights/image-builder)).
 
 
-![](rh_image2.png)
+![](assets/rh_image2.png)
 
 
 
@@ -93,13 +93,13 @@ The link for **image builder** is toward the bottom of the Insights panel (or ju
 Now you can begin to create a new image.
 
 
-![](rh_image3.png)
+![](assets/rh_image3.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
 
 
-![](rh_image4.png)
+![](assets/rh_image4.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
@@ -111,7 +111,7 @@ From the **Create image** wizard, you define how your image will look. First, ch
 For this example, imagine you want to deploy a production instance on Google Cloud Platform (GCP) but also have a qcow2 file to do testing and development work from your local laptop.
 
 
-![](rh_image5.png)
+![](assets/rh_image5.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
@@ -119,7 +119,7 @@ For this example, imagine you want to deploy a production instance on Google Clo
 Notice that when you select certain options, your breadcrumb trail adjusts to reflect the additional steps. For GCP, you can choose to share the template with a user account, a service account, a group account, or a domain. For this example, I will just share it with my Red Hat account on GCP.
 
 
-![](rh_image6.png)
+![](assets/rh_image6.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
@@ -127,7 +127,7 @@ Notice that when you select certain options, your breadcrumb trail adjusts to re
 Now, this is one of my favorite features: You can bake your registration into the image. All you need is a valid activation key setup in your customer portal. But that's not all; you can also preconfigure your image to register with Red Hat Insights right from the template.
 
 
-![](rh_image7.png)
+![](assets/rh_image7.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
@@ -135,7 +135,7 @@ Now, this is one of my favorite features: You can bake your registration into th
 One of the newest additions to the image builder tool is manually configured filesystems. You can now define sizes and locations for multiple partitions. For this example, I'll add a `home` partition, and also add a `webapp` directory under `opt`. I will set both of those to 5GB but leave the root at the default 10GB.
 
 
-![](rh_image8.png)
+![](assets/rh_image8.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
@@ -143,7 +143,7 @@ One of the newest additions to the image builder tool is manually configured fil
 Next stop, packages. There are literally thousands of packages available in the Red Hat repositories. You can add any combination of these packages to your image. For instance, I am a huge fan of [tmux](https://opensource.com/downloads/tmux-cheat-sheet?intcmp=701f20000012ngPAAQ), a terminal multiplexer. I mentioned this would be a web application, so I'll grab Nginx, too.
 
 
-![](rh_image9.png)
+![](assets/rh_image9.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
@@ -153,13 +153,13 @@ What you cannot see from this menu is that image builder automatically added all
 All that is left is to give your image a descriptive name and review the choices. Image builder does the rest.
 
 
-![](rh_image10.png)
+![](assets/rh_image10.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
 
 
-![](rh_image12.png)
+![](assets/rh_image12.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
@@ -167,7 +167,7 @@ All that is left is to give your image a descriptive name and review the choices
 Building an image varies greatly between how complex the image is, how large the actual image will be, and, like all shared services, how heavy of a load there is on the platform. In this demonstration, I saw between 10 and 18 minutes.
 
 
-![](rh_image13.png)
+![](assets/rh_image13.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
@@ -177,7 +177,7 @@ Once the images are done building, you can start deploying them. For the qcow2 i
 You receive an image name for the GCP image that you can use to copy the template into your GCP account. You can use it just as you would any other cloud image.
 
 
-![](rh_image14.png)
+![](assets/rh_image14.png)
 
 
 (Eric Hendricks, CC BY-SA 4.0)
