@@ -9,7 +9,7 @@
 [[Red Hat Image Builder -UI]] 
 
 
-```
+```yaml
 
 name = "fedora"
 description = "Fedora IMage"
