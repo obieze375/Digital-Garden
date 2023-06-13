@@ -9,7 +9,7 @@
 [[Red Hat Image Builder -UI]] 
 
 
-```yaml
+```
 
 name = "fedora"
 description = "Fedora IMage"
@@ -20,12 +20,15 @@ append = "net.ifnames.prefix=net quiet systemd.show_status=yes"
 
 # Filesystem
 #
+
 [[customizations.filesystem]]
 mountpoint = "/boot"
 size = "1 GiB"
+
 #[[customizations.filesystem]]
 #mountpoint = "swap"
 #size = "2 GiB"
+
 [[customizations.filesystem]]
 mountpoint = "/"
 size = "8 GiB"
