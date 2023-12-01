@@ -43,7 +43,10 @@ Let’s assume you have four different environments in your project. Dev, QA, St
 
 Because of the change in configs and deployment parameters for each environment, you need to maintain different Nginx deployment files for each environment. Or you will have a single deployment file and you will need to write custom shell or python scripts to replace values based on the environment. But it is not a scalable approach. Here is where the helm chart comes into the picture.
 
-[![what is a helm chart](https://devopscube.com/wp-content/uploads/2022/12/helm-chart.drawio.png)](img/helm1.png)
+
+
+
+![][assets/helm1.png] 
 
 Helm charts are a combination of [Kubernetes YAML manifest](https://devopscube.com/create-kubernetes-yaml/) templates and helm-specific files. You can call it a helm package. Since the Kubernetes YAML manifest can be templated, you don’t have to maintain multiple helm charts of different environments. Helm uses the [go templating engine](https://pkg.go.dev/text/template) for the templating functionality.
 
@@ -222,7 +225,9 @@ To know more about supported Objects check the [Helm Builtin Object](https://hel
 
 The following image shows how the built-in objects are getting substituted inside a template.
 
-[![helm template directive substitution workflow](https://devopscube.com/wp-content/uploads/2022/12/helm-template.png)](img/helm1.png)
+[! [helm template directive substitution workflow] (assets/helm/helm2.png)] 
+
+
 
 First, you need to figure out what values could change or what you want to templatize. I am choosing **name**, **replicas, container name, image and imagePullPolicy** which I have highlighter in the YAML file in bold.
 
@@ -412,7 +417,8 @@ kubectl get pods
 
 We can see the deployment **`frontend-nginx`**, **`nginx-service`** and pods are up and running as shown below.
 
-[![validate helm chart deployment](https://devopscube.com/wp-content/uploads/2022/12/image-7.png)](img/helm2.png)
+[! [validate helm chart deployment] (assets/helm/helm3.png)] 
+
 
 We discussed how a single helm chart can be used for multiple environments using different **`values.yaml`** files. To install a helm chart with external `**values.yaml**` file, you can use the following command with the `--values` flag and path of the values file.
 
@@ -432,7 +438,7 @@ helm upgrade frontend nginx-chart
 
 For example, we have changed the replicas from 2 to 1. You can see the revision number is 2 and only 1 pod is running.
 
-[![helm chart upgrade](https://devopscube.com/wp-content/uploads/2022/12/image-8.png)](img/helm3.png)
+[! [helm chart upgrade] (assets/helm/helm4.png)] 
 
 Now if we want to roll back the changes which we have just done and deploy the previous one again, we can use the rollback command to do that.
 
@@ -442,7 +448,8 @@ helm rollback frontend
 
 The above command will roll back the helm release to the previous one.
 
-[![helm chart rollback](https://devopscube.com/wp-content/uploads/2022/12/image-10.png)](img/helm4.png)
+[! [helm chart rollback] (assets/helm/helm5.png)] 
+
 
 After the rollback, we can see 2 pods are running again. Note that helm takes the rollback as a new revision, that’s why we’re getting the revision as 3.
 

@@ -177,11 +177,13 @@ kubectl apply -f documentation/modules/ROOT/examples/bgd-app/bgd-app.yaml
 
 The newly created Application appears as a tile with the title `bgd-app` in the Argo CD UI.
 
-![SampleApp](argocd-app1.png)
+![picture of new terminal](assets/AAP/vscode-new-terminal.png)
+
+![SampleApp](assets/Argocd/argocd-app1.png)
 
 Clicking on this tile takes you to the application details page. You may see it as still progressing or fully synced.
 
-![SampleApp](argocd-app2.png)
+![SampleApp][assets/argocd/argocd-app2.png]
 
 <table><tbody><tr><td><i title="Note"></i></td><td>You may have to click on <code>show hidden resources</code> on this page to see all of the resources.</td></tr></tbody></table>
 
@@ -298,3 +300,6 @@ kubectl patch application/bgd-app -n argocd --type=merge -p='{"spec":{"syncPolic
 ```
 kubectl patch application/bgd-app -n openshift-gitops --type=merge -p='{"spec":{"syncPolicy":{"automated":{"prune":true,"selfHeal":true}}}}'
 ```
+
+[def]: assets/argocd/argocd-app2.png
+[def2]: assets/argocd/argocd-app1.png
